@@ -14,12 +14,24 @@
 
 Directions: Clone this repository, open the files and fill them out according to the directions
 
+Method one:
+
 - Opening index.html:
 
   - Right click on index.html
   - Hover over "Open with..."
   - Select your code editor (to change code) OR chrome (to see it)
   - Whenever you change your code, make sure to refresh the chrome page
+
+  Method Two:
+
+- Opening index.html from VS code:
+
+  - Follow method one and open your file within VS code
+  - Install the extension Live Server
+  - Right click on the index.html and then select open with Live Server, when you are finished, click the close server button on the bottom right of VS code.
+
+  ![Live Server button](assets/Liveserver.png)
 
 - Running javascript files:
 
@@ -34,8 +46,9 @@ Directions: Clone this repository, open the files and fill them out according to
 ## Exercises Due :athletic_shoe:
 
 - [ ] Exercise A: Bootstrap Website & Russian Doll Rule
+      Create a clone of this website: http://www.dagusa.com/
 
-- [ ] Finish the 'What is one thing that I learned from doing this project?' in the readme
+* [ ] Finish the 'What is one thing that I learned from doing this project?' in the readme
 
 ### Tips :tipping_hand_woman:
 
