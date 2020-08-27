@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Solution for day 4 using Bootstrap v4</title>
-
     <!-- 
       This is where we declare all of the external libraries our page uses
       
@@ -17,16 +16,246 @@
 
       Refer to the Practice directory
     -->
+    <!-- animate css. Used the file already in the exercise instead of the external link on animates website -->
+    <link
+    rel="stylesheet"
+    href="./assets/css/animate.css"
+  />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font awesome css -->
+    <script src="https://kit.fontawesome.com/cdb5c88cee.js" crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-
   <!-- Nav bar setup -->
-
-  <body data-spy="scroll" data-target=".navbar">
+  
+  <body data-spy="scroll" data-target=".navbar" class="pagetop">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-
+    <nav class="navbar navbar-expand-sm navbar-light navbardefault navbar-fixed-top affix-top">
+      <div class="container-fluid">
+        <div class="navbarheader">
+          <a class="navbarbrand" href="#pagetop">THE ONLY BOOTSTRAP PAGE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item ">
+                <a class="nav-link" href="#about">ABOUT <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fouricons">FOUR ICONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bullshit">BULLSHIT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#callme">CALL ME</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Can use Jumbotron -->
+  <header>
+    <div class="headercontent">
+      <div class="headerContentInner">
+        <h1 class="headerh">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+        <hr class="greenhr">
+        <p class="headerp">Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+          <a class="btn btn-orange btn-lg" href="#about" role="button">THIS BUTTON MAKES THE PAGE SCROLL</a>
+      </div>
+  </div>
+  </header>
+    <section class="bgprimary" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="abouth">
+              Want to make an original website yourself?
+            </h2>
+            <hr class="whitehr">
+            <p class="aboutp">
+              Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!
+            </p>
+            <a href="http://letmegooglethat.com/?q=bootstrap+template" target="_blank" class="btn btn-white btn-xl">
+              GOOGLE THAT SHIT
+            </a>
+          </div>
+        </div>
+    </section>
+    <section class="fouricons" id="fouricons">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="">
+              So Fucking Creative
+            </h2>
+            <hr class="greenhr">
+          </div>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="servicebox">
+              <i class="icons fas fa-4x fa-globe-asia animate__animated animate__bounceIn"></i>
+              <h3>
+                This Fucking Template
+              </h3>
+              <p class="text-muted">
+                Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center ">
+            <div class="servicebox">
+              <i class="icons fas fa-4x fa-paper-plane animate__animated animate__bounceIn"></i>
+              <h3>
+                This Set of Four Icons
+              </h3>
+              <p class="text-muted">
+                Look at this cool set of four icons describing different things about us! We use four, because it's the default.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="servicebox">
+              <i class="icons fas fa-4x fa-thumbs-down animate__animated animate__bounceIn"></i>
+              <h3>
+                Lots of Effort
+              </h3>
+              <p class="text-muted">
+                We even changed some of the icons! We take the extra effort to make our designs truly original. (TBF this actually is more effort because I'm not just copy pasting a template, but still)
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="servicebox">
+              <i class="icons far fa-4x fa-kiss-wink-heart animate__animated animate__bounceIn"></i>
+              <h3>
+                Made with Love
+              </h3>
+              <p class="text-muted">
+                Because nothing says hard work and talent like editing a few lines of text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="portfolio nopadding" id="bullshit">
+      <div class="container-fluid flex-direction-row">
+        <div class="row no-gutter padding-0">
+          <div class="col-lg-3 col-sm-6 padding-0">
+            <div class="portfolioBox">
+              <img src="./assets/images/1.jpg" alt="1" class="img-responsive">
+              <div class="portfolioBoxCaption">
+                <div class="portfolio-box-caption-content">
+                <div class="projectcategory text-faded">
+                  One Thing
+                </div>
+                <div class="projectname">
+                  Look
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 padding-0">
+            <div class="portfolioBox">
+              <img src="./assets/images/2.jpg" alt="2" class="img-responsive">
+              <div class="portfolioBoxCaption">
+                <div class="portfolio-box-caption-content">
+                <div class="projectcategory text-faded">
+                  Two Thing
+                </div>
+                <div class="projectname">
+                  At
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 padding-0">
+            <div class="portfolioBox">
+              <img src="./assets/images/3.jpg" alt="3" class="img-responsive">
+              <div class="portfolioBoxCaption">
+                <div class="portfolio-box-caption-content">
+                <div class="projectcategory text-faded">
+                  Three Thing
+                </div>
+                <div class="projectname">
+                  This
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 padding-0">
+            <div class="portfolioBox">
+              <img src="./assets/images/4.jpg" alt="4" class="img-responsive">
+              <div class="portfolioBoxCaption">
+                <div class="portfolio-box-caption-content">
+                <div class="projectcategory text-faded">
+                  Four Thing
+                </div>
+                <div class="projectname">
+                  Bullshit
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="bgdark">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="asided">
+            <h2>
+            Seriously, It's This Fucking Template!
+            </h2>
+            <a href="" class="btn btn-white btn-xl animate__animated animate__tada animate__infinite">That's Amazing!</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <section class="contact" id="callme">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-lg-offset-2 text-center contacttext">
+            <h2 class="sectionheading">
+              My Contact Information
+            </h2>
+            <hr class="greenhr">
+            <p>
+              Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.
+            </p>
+            <p>
+              Honestly this template does look really nice, though.
+            </p>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2 text-center contacticons">
+            <i class="fas fa-phone animate__animated animate__fadeInDown" ></i>
+            <p>
+              +1-800-go-fuck-yourself
+            </p>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2 text-center contacticons">
+            <i class="fas fa-envelope-open-text animate__animated animate__fadeInDown"></i>
+            <a href="mailto:test@testing.com">
+              holy@shit.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Second Section -->
 
     <!-- Four icons -->
@@ -41,5 +270,11 @@
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+     <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./assets/js/smoothscroll.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

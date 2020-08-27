@@ -1,3 +1,286 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body{
+    font: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+@media (min-width:700px){
+    .container {
+        width: 670px;
+    }
+}
+@media (min-width:900px){
+    .container {
+        width: 870px;
+    }
+}
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width:700px){
+    .header {
+        width: 670px;
+    }
+}
+@media (min-width:900px){
+    .header {
+        width: 870px;
+    }
+}
+@media (min-width:1200px){
+    .header {
+        width: 1170px;
+    }
+}
+a{
+    color: #2a9d8f;
+}
+a:hover, a:focus{
+    color: #2a9d34;
+}
+h1,h2{
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+h3,h4,h5,h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+section {
+    padding: 100px ;
+    display: block;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+}
+aside {
+    padding: 50px ;
+}
+.nopadding {
+    padding: 0;
+}
+.navbardefault {
+    border-color: rgba(34,34,34,.05);
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color: white;
+}
+.navbardefault .navbarheader .navbarbrand {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: bolder;
+    color: #2a9d8f;
+}
+.navbardefault .navbarheader .navbarbrand:hover,
+.navbardefault .navbarheader .navbarbrand:focus {
+    color: #2a9d8f;
+}
+.navbardefault .nav>li>a,
+.navbardefault .nav>li>a:focus {
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+}
+.navbardefault .nav>li>a:hover,
+.navbardefault .nav>li>a:focus:hover {
+    color: #2a9d8f;
+}
+.navbardefault .nav>li.active>a,
+.navbardefault .nav>li.active>a:focus {
+    color: #2a9d8f;
+    background-color: transparent;
+}
+.navbardefault .nav>li.active>a:hover,
+.navbardefault .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+@media(min-width:768px) {
+    .navbardefault {
+        border-color: grey);
+        background-color: transparent;
+    }
+
+    .navbardefault .navbarheader .navbarbrand {
+        color: grey);
+    }
+
+    .navbardefault .navbarheader .navbarbrand:hover,
+    .navbardefault .navbarheader .navbarbrand:focus {
+        color: white;
+    }
+
+    .navbardefault .nav>li>a,
+    .navbardefault .nav>li>a:focus {
+        color: lightgray);
+    }
+
+    .navbardefault .nav>li>a:hover,
+    .navbardefault .nav>li>a:focus:hover {
+        color: white;
+    }
+
+    .navbardefault.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: white;
+    }
+
+    .navbardefault.affix .navbarheader .navbarbrand {
+        font-size: 14px;
+        color: #2a9d8f;
+    }
+
+    .navbardefault.affix .navbarheader .navbarbrand:hover,
+    .navbardefault.affix .navbarheader .navbarbrand:focus {
+        color: #2a9d8f;
+    }
+
+    .navbar-default.affix .nav>li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: black;
+    }
+
+    .navbardefault.affix .nav> i>a:hover,
+    .navbardefault.affix .nav>li>a:focus:hover {
+        color: #2a9d8f;
+    }
+}
+header{
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: white;
+    background-image: url(/code/FTWD_Web_Day_04/Exercise_A/assets/images/header.jpg);
+    background-size: cover;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+.headercontent{
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContentInner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerh{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.greenhr{
+    width: 50px;
+    border-color: #2a9d8f;
+    border-width: 3px;
+}
+.whitehr{
+    width: 50px;
+    border-width: 3px;
+    border-color: white;
+}
+.headerp{
+    color: lightgrey;
+    font-weight: 300;
+    font-size: 20px;
+    width: 700px;
+    margin-bottom: 50px;
+}
+.btn{
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #2a9d8f;
+    color: white;
+    border-radius: 70px;
+    padding: 15px 30px 15px 30px;
+    font-weight: bold;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+}
+.bgprimary {
+    background-color: #2a9d8f;
+}
+.abouth{
+    color: white;
+}
+.aboutp{
+    color: white;
+}
+.icons{
+    color: #2a9d8f;
+    margin: 20px;
+}
+.portfolioBox {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+.img-responsive{
+    max-width: 100%;
+    max-height: auto;
+}
+.portfolioBox .portfolioBoxCaption{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    background-color: rgba(71, 156, 131, 0.9);
+}
+.portfolioBox .portfolioBoxCaption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+ .projectcategory {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: lightgrey;
+}
+.projectname {
+    font-size: 20px;
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.portfolioBox:hover .portfolioBoxCaption {
+    opacity: 1;
+}
+.bgdark {
+    color: white;
+    background-color: rgb(25, 26, 25)
+}
+.contact {
+    position: relative;
+
+}
+.text-center{
+    text-align: center;
+}
+.contacticons{
+    float: left;
+}
