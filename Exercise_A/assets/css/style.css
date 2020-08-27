@@ -1,3 +1,195 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+/* GENERAL */
+
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+/* HEADER */
+h1 ,
+h2 ,
+h3 ,
+h4 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+p {
+    font-family: 'Merriweather','Helvetica Neue',Arial,sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    margin: 0;
+    border-bottom: solid 1px #fff;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* HERO */
+
+.jumbotron {
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;   
+}
+
+.jumbotron p {
+    color: rgba(255,255,255,.7);
+}
+
+.jumbotron-fluid {
+    padding: 10% 15% 0;
+}
+
+.hr-red {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+    margin: 25px auto;
+}
+
+.display-4 {
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 1px;
+}
+
+.jumbotron-fluid p {
+    margin: 0 10% 5%;
+}
+
+/* BUTTON */
+
+.btn-danger {
+    border-radius: 200px;
+    background-color: #f05f40;
+    border-color: #f05f40;
+    font-size: 90%;
+    font-weight: 700;
+    padding: 13px 30px;
+}
+
+/* FACTS */
+
+#section-facts {
+    background-color: #f05f40;
+    height: 65vh;
+    padding: 7% 26%;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+
+.hr-white {
+    max-width: 50px;
+    border-color: #fff;
+    border-width: 3px;
+    margin: 30px auto;
+}
+
+#section-facts p {
+    font-size: 16px;
+    color: rgba(255,255,255,.7);
+    
+}
+
+.btn-light {
+    border-radius: 200px;
+    background-color: #fff;
+    border-color: #fff;
+    font-size: 90%;
+    font-weight: 700;
+    padding: 13px 25px;
+}
+
+/* FEATURES */
+
+#section-features {
+    color: rgb(65, 65, 65);
+    padding: 7% 12%;
+}
+
+#section-features p {
+    color: #777;
+    font-size: 16px;
+}
+
+.fas {
+    font-size: 340%;
+    padding-bottom: 14px;
+    color: #f05f40;
+    padding-top: 10px
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* GALLERY */
+
+#section-gallery {
+    height: 56vh;
+    background-color: #222; 
+}
+
+.row {
+    padding:0;
+    margin: 0;
+}
+
+#section-gallery h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+}
+
+/* CONTACT */
+
+#section-contact {
+    background-color: #fff;
+    height: 70vh;
+    color: #000;
+}
+
+#section-contact h2 {
+    padding-top: 110px;
+    
+}
+
+#section-contact p {
+    padding: 0 25%;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
