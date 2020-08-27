@@ -5,41 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Solution for day 4 using Bootstrap v4</title>
-
     <!-- 
       This is where we declare all of the external libraries our page uses
       
       You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+      Animate CSS v
+      Bootstrap CSS v
+      You own custom stylesheet v
+      FontAwesome v
 
       Refer to the Practice directory
     -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css" class="src">
+    <script src="https://kit.fontawesome.com/a82fe9e8c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <!-- Nav bar setup -->
-
   <body data-spy="scroll" data-target=".navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+    <div class="top-nav fixed-top" id="nav">
+      <nav id="navbar-example2" class="navbar navbar-light navbar-expand-lg">
+        <a class="navbar-brand" href="#"><span>THE ONLY BOOTSTRAP PAGE</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-pills ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#link-second"><span>ABOUT</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link-icons"><span>FOUR ICONS</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mdo"><span>BULLSHIT</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link-contact"><span>CALL ME</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <!-- Can use Jumbotron -->
+    <div class="hero d-flex justify-content-center">
+      <div class="jumbotron d-flex justify-content-around align-items-center flex-column word-white">
+        <h1 class="display-4 text-center mb-0">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+        <div>
+          <hr class="h-line">
+        </div>
+        <p class="text-center mb-0">Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+        <p class="lead">
+          <a class="btn btn-red btn-lg rounded-pill" href="#link-second" role="button">THIS BUTTON MAKES THE PAGE SCROLL</a>
+        </p>
+      </div>
+    </div>
     <!-- Second Section -->
-
+    <div class="second-section d-flex justify-content-center" id="link-second">
+      <div class="container container-second d-flex justify-content-center align-items-center flex-column">
+        <h3 class="word-white">Want to make an original website yourself?</h3>
+        <hr class="my-4 h-line h-line-white">
+        <p class="word-white">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+        <p class="lead">
+          <a class="btn btn-lg rounded-pill btn-white" href="https://lmgtfy.com/?q=bootstrap+template" target="_blank" role="button">GOOGLE THAT SHIT</a>
+        </p>
+      </div>
+    </div>
     <!-- Four icons -->
+    <div class="four-icons mt-4 mb-4" id="link-icons">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <h3>So Fucking Creative</h3>
+          </div>
+          <div class="col-sm-12">
+            <hr class="h-line">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex flex-column">
+              <i class="fas fa-globe-asia icon animate__animated animate__bounceIn"></i>
+              <h3 class="text-center">This Fucking Template</h3>
+              <p class="text-center">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex flex-column">
+              <i class="fas fa-paper-plane icon animate__animated animate__bounceIn"></i>
+              <h3 class="text-center">This Set of Four Icons</h3>
+              <p class="text-center">Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex flex-column">
+              <i class="fas fa-thumbs-up icon animate__animated animate__bounceIn"></i>
+              <h3 class="text-center">Lots of effort</h3>
+              <p class="text-center">We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+            </div>
+          </div> 
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex flex-column">
+              <i class="fas fa-heart icon animate__animated animate__bounceIn"></i>
+              <h3 class="text-center">Made with Love</h3>
+              <p class="text-center">Because nothing says hard work and talent like editing a few lines of text.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <!-- Four pictures with overlay etc -->
+    <div class="photos">
+      <div class="container-photos">
+        <div class="row">
+          <div class="photo col-lg-3">
+            <div class="photo-box">
+              <img src="./assets/images/1.jpg" alt="" class="image">
+            </div>
+          </div>
+          <div class="photo col-lg-3">
+            <div class="photo-box">
+              <img src="./assets/images/1.jpg" alt="" class="image">
+            </div>
+          </div>
+          <div class="photo col-lg-3">
+            <div class="photo-box">
+              <img src="./assets/images/1.jpg" alt="" class="image">
+            </div>
+          </div>
+          <div class="photo col-lg-3">
+            <div class="photo-box">
+              <img src="./assets/images/1.jpg" alt="" class="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- contact me container -->
+    <div class="template d-flex align-items-center">
+      <div class="container">
+        <div class="row d-flex flex-column">
+          <div class="col">
+            <h3 class="word-white text-center">Seriously, It's This Fucking Template !</h3>
+          </div>
+          <div class="col">
+            <p class="lead d-flex justify-content-center mt-2">
+              <a class="btn btn-lg rounded-pill btn-white animate__animated animate__swing" href="#" role="button">THAT'S AMAZING!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact d-flex align-items-center d-flex justify-content-center">
+      <div class="container-contact" id="link-contact">
+        <div class="row">
+          <div class="row text-center">
+            <div class="col-sm-12">
+              <h3>My Contact Information</h3>
+            </div>
+            <div class="col-sm-12">
+              <hr class="h-line">
+            </div>
+            <div class="col-sm-12">
+              <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+              <p>Honestly this template does look really nice, though.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-box">
+              <i class="fas fa-phone-alt contact-icon animate__animated animate__bounce"></i>
+              <p>+1-608-317-1888</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contact-box">
+              <i class="far fa-envelope contact-icon animate__animated animate__bounce"></i>
+              <p><a href="mailto:holy@shit.com" class="email-text">holy@shit.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
-
     <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
-
+      
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

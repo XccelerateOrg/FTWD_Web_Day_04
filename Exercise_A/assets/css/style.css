@@ -1,3 +1,182 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+html {
+    scroll-behavior: smooth;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+h3 {
+    font-size: 35px;
+}
+.btn {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
+}
+.btn-red {
+    background-color: #f05f40;
+    color: #fff;
+    border: none;
+}
+.btn-red:focus {
+    background-color:#f05f40;
+    border-color:#f05f40;
+}
+.btn-red:hover {
+    background-color:#f05f40;
+    border-color:#f05f40;
+    color: #fff;
+}
+.btn-white {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    border-color: none;
+}
+.word-white {
+    color: #fff;
+}
+.h-line {
+    width: 50px;
+    border: none;
+    height: 5px;
+    background-color: #f05f40;
+}
+.h-line-white {
+    background-color: #fff;
+}
+
+/*hero*/
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron {
+    height: 60%;
+    width: 900px;
+    background-color: transparent;
+    margin: auto;
+}
+.jumbotron h1 {
+    font-size: 65px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+/* nav bar */
+.navbar-brand span, .nav-link span {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color:rgba(255, 255, 255, 0.7);
+}
+.top-nav{
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.7);
+    border-bottom-width: 1px;
+}
+
+
+
+
+
+
+/*second section*/
+.second-section {
+    height: 48vh;
+    background-color: #f05f40;
+}
+.container-second {
+    width: 800px;
+    text-align: center;
+}
+
+/* icons */
+.icon {
+    color: #f05f40;
+    font-size: 50px;
+    text-align: center;
+}
+.animate__delay-0.5s {
+    --animate-duration: 0.5s;
+}
+.animate__delay-1s {
+    --animate-duration: 1s;
+}
+.animate__delay-1.5s {
+    --animate-duration: 1.5s;
+}
+
+
+
+/*photos*/
+.photo {
+    padding-left: 0;
+    padding-right: 0;
+}
+.photo-box {
+    width: 25vw;
+    padding-left: 0;
+    padding-right: 0;
+}
+.image {
+    width: 100%;
+}
+
+/* template */
+.template {
+    background-color: #000;
+    height: 20vh;
+}
+/* contact */
+.contact-icon {
+    font-size: 40px;
+}
+.email-text {
+    color: #f05f40;
+}
+.contact {
+    height: 50vh;
+    width: 100vw;
+}
+.container-contact {
+    width: 60vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 537px) {
+    /* hero */
+    .jumbotron {
+        width: 300px;
+    }
+    .jumbotron h1 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .jumbotron p {
+        margin-top: 10px;
+    }
+    /* second section */
+    .second-section {
+        height: 100vh;
+    }
+    .template {
+        height: 40vh;
+    }
+    .contact {
+        height: 100vh;
+    }
+    .container-contact {
+        margin-top: 20px;
+    }
+}
