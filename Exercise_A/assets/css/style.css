@@ -1,3 +1,179 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+p {
+    font-family: 'Merriweather', serif;;
+}
+
+.jumbotron {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 800;
+    background-color: transparent;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.my-4 {
+    border: 2px solid #f05f40;
+    width: 50px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #f05f40;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 15px 40px;
+}
+
+.display-4 {
+    font-weight: 800;
+    font-family: Open Sans', sans-serif;
+}
+
+.headerSection {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    border-bottom: 1px solid white;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.googleThat {
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 450px;
+    color: white;
+}
+
+.forgetThat {
+    font-family: 'Merriweather', serif;
+}
+
+.my-5 {
+    border: 2px solid white;
+    width: 50px;
+}
+
+.introContainer {
+    background-color: #f05f40;
+}
+
+i {
+    color: red;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.Icon {
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.soFuckingCreative {
+    padding-top: 50px;
+}
+
+.Gallery img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.Gallery {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    padding: 0;
+}
+
+.Images {
+    margin: 0; 
+    padding: 0;
+}
+
+.thisTemplate {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.842);
+    padding-bottom: 40px;
+}
+
+.thisFuckingTemplate {
+    color: white;
+    padding-top: 40px;
+}
+
+.thatsAmazing {
+    background-color: white;
+    color: black;
+    width: 300px;
+}
+
+.myContactInfo {
+    color: black;
+    padding-top: 40px;
+}
+
+.myContactInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 450px;
+    text-align: center;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.ContactInfo {
+    width: 800px;
+}
+
+.contactIcon {
+    color: black;
+    padding: 10px;
+    font-size: 35px;
+}

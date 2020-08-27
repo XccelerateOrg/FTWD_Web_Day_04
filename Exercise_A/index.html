@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solution for day 4 using Bootstrap v4</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 
+  <title>Solution for day 4 using Bootstrap v4</title>
+
+
+  <!-- 
       This is where we declare all of the external libraries our page uses
       
       You will need:
@@ -16,30 +18,178 @@
       FontAwesome
 
       Refer to the Practice directory
-    -->
-  </head>
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
-  <!-- Nav bar setup -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+  <script src="https://kit.fontawesome.com/281514d9dd.js" crossorigin="anonymous"></script>
 
-  <body data-spy="scroll" data-target=".navbar">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+
+</head>
+
+<!-- Nav bar setup -->
+<section class="headerSection">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <body data-spy="scroll" data-target=".navbar"></body>
+
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">FOUR ICONS</a>
+        <a class="nav-link" href="#">BULLSHIT</a>
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CALL ME</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+  <!-- Can use Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4">HEY LOOK, IT'S EVERY <br> BOOTSTRAP WEBSITE EVER</h1>
+    <hr class="my-4">
+    <p>Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the
+      same things as those pages!</p>
+    <p class="lead"></p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">THIS BUTTON MAKES THE PAGE SCROLL</a>
+  </div>
+</section>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+<!-- Second Section -->
+<section class="introContainer">
+  <div class="introSection">
+    <h2 class="makeWebsiteYourself">Want to make an original website yourself?</h2>
+    <hr class="my-5">
+    <p class = "forgetThat"> Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and
+      type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are
+      hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on
+      google, edit a few lines, and you're on your way! No one will notice!
+    </p>
+    <a class="btn btn-primary btn-lg googleThat" href="#" role="button">GOOGLE THAT SHIT</a>
+  </div>
+</section>
 
-    <!-- 
+<!-- Four icons -->
+
+<section class="iconSet">
+  <div class="soFuckingCreative">
+    <h2 class="makeWebsiteYourself">So Fucking Creative</h2>
+    <hr class="my-4">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-3 col-md-6 Icon">
+        <i class="fas fa-globe-americas"></i>
+        <h3>This Fucking Template</h3>
+        <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from
+          The Web™</p>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6 Icon">
+        <i class="fas fa-paper-plane"></i>
+        <h3>This Set of Four Icons</h3>
+        <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from
+          The Web™</p>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6 Icon">
+        <i class="fas fa-thumbs-up"></i>
+        <h3>Lots of effort</h3>
+        <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from
+          The Web™</p>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6 Icon">
+        <i class="fas fa-heart"></i>
+        <h3>Made with Love </h3>
+        <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from
+          The Web™</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Four pictures with overlay etc -->
+
+<section class = "gallery">
+  <div class = "container-fluid Images no-gutters">
+    <div class = "row">
+      <div class="col-sm-12 col-lg-3 col-md-6 Gallery">
+      <img alt ="imageOne" src ="assets/images/1.jpg">
+      <div class="overlay"></div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6 Gallery">
+      <img alt ="imageTwo" src = "assets/images/2.jpg">
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6 Gallery">
+      <img alt="imageThree" src ="assets/images/3.jpg">
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6 Gallery">
+      <img alt="imageFour" src ="assets/images/4.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class = "thisTemplate">
+  <h2 class = "thisFuckingTemplate">Seriously, it's This Fucking Template</h2>
+  <a class="btn btn-primary btn-lg animate__animated animate__swing" href="#" role="button">THAT'S AMAZING</a>
+</div>
+
+<!-- contact me container -->
+
+<section class = "contactMe">
+  <div class = "myContactInformation">
+  <h2 class = "myContactInfo">My Contact Information</h2>
+  <hr class="my-4">
+  <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills. 
+    <br> <br> Honestly this template does look really nice, though.</p>
+  </div>
+<!---->
+
+<div class = "container-fluid ContactInfo">
+  <div class = "row">
+    <div class = "col-md-6 col-sm-12 Contact">
+      <i class="fas fa-phone-alt contactIcon"></i>
+      <p>+-1608-317-1888</p>
+      </div>
+      <div class = "col-md-6 col-sm-12 Contact">
+        <i class="far fa-envelope contactIcon"></i>
+        <p><a href="mailto:holy@shit.com">holy@shit.com</a></p>
+      </div>
+  </div>
+</div>
+
+  
+<!------
+    <div class = "phoneNumber">
+      <i class="fas fa-phone-alt"></i>
+      <p>+-1608-317-1888</p>
+    <div class = "col-md-6">
+      <i class="far fa-envelope"></i>
+      <p><a href="mailto:holy@shit.com">holy@shit.com</a></p>
+
+
+<!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+
+<!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
 
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
-  </body>
+</body>
+
 </html>
