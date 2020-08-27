@@ -1,3 +1,302 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+.internalnavclass {
+    border-color: rgba(255,255,255,.3);
+    background-color: transparent;
+}
+
+
+
+.navbar.scroll {
+    background: white;
+    background-color: white;
+}
+
+
+.nav_item {
+}
+
+
+.nav-item:hover {
+    color: 	#f05f40;
+}
+
+
+
+
+
+section {
+    padding: 100px;
+}
+
+
+.header {
+    background-image: url(../images/header.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    padding: 100px;
+}
+
+
+#jumbo_content {
+    padding-top: 5%;
+}
+
+
+
+
+
+#button_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+#page_scroll_button {
+    color: white;
+    background-color: 	#f05f40;
+    border: 0;
+    border-radius: 300px;
+    padding: 15px 30px;
+    font-weight: 700
+}
+
+
+#page_scroll_button:hover {
+    background-color: 	#e45231;
+}
+
+
+
+
+
+.h_title {
+    font-size: 65px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+
+
+
+.h_text {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+    font-size: 18px;
+    color: white;    
+    color: rgba(255,255,255,.7);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#about {
+    background-color: #f05f40;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+#hr_light {
+    border-color: white;
+}
+
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+
+#google_button {
+    color: black;
+    background-color: 	white;
+    border: 0;
+    border-radius: 300px;
+    padding: 15px 30px;
+    font-weight: 700
+}
+
+
+#google_button:hover {
+    background-color: 	rgb(221, 221, 221);
+}
+
+
+
+
+#four-icons {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+
+
+.icon_text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.icon_image {
+    font-size: 40px;
+    color: #f05f40;
+}
+
+
+
+.service-box {
+    margin: 20px;
+    max-width: 400px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.img_box {
+    padding: 0px;
+}
+
+
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.img_box_highlight {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f05f40;
+    opacity: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_box_highlight:hover {
+    opacity: 80%;
+    transition: all .35s;
+}
+
+
+
+.img_box_text {
+    font-size: 22px;
+}
+
+
+
+
+#fourth_container {
+    padding: 40px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+
+#amazing_button {
+    color: black;
+    background-color: 	white;
+    border: 0;
+    border-radius: 300px;
+    padding: 15px 30px;
+    font-weight: 700
+}
+
+
+#amazing_button:hover {
+    background-color: 	rgb(221, 221, 221);
+}
+
+
+.call_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+
+.call_box2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.box2box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.icon_image2 {
+    font-size: 40px;
+}
+
+.animate__animated.animate__bounceIn {
+    --animate-duration: 2s;
+  }
+  
+
+
+
