@@ -1,3 +1,272 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+body{
+    font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-brand{
+    font-size: 14px;
+    color: #f05f40!important;
+    font-weight: 700;
+}
+
+.navbar{
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border-bottom: solid 1px #fff;
+}
+
+.nav-item>a{
+    padding: 15px;
+}
+
+a{
+    color: #222;
+
+}
+
+.changecolor{
+    background-color: transparent !important;
+}
+
+.changecolor.scrolled {
+    background-color: white !important;
+  }
+
+@media (min-width: 768px){
+.navbar-default.affix .navbar-header .navbar-brand {
+    font-size: 14px;
+    color: #f05f40;
+}
+}
+
+.header-content{
+    background-image: url(../images/header.jpg);
+    
+    background-position: center;
+}
+
+a:hover{
+    color: #a84731
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+ 
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+.header-content h1{
+    font-size: 55.75px;
+    font-weight: 700;
+
+}
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+    padding-bottom: 30px;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #f05f40;
+    transition: all .35s;
+}
+
+.jumbotron{
+    margin: 0px;
+    padding: 24vh;
+    border-radius: 0%;
+    display: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#about{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f05f40;
+    color: #fff
+
+}
+
+#about hr{
+    border-color: #fff;
+}
+
+#about a{
+    background-color: #fff;
+    color: #333;
+}
+
+#about h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+#services{
+    padding: 100px 0px;
+    color: #333;
+}
+
+.text-primary{
+    color: #f05f40!important;
+}
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+.h3heading{
+    padding-top: 20px;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    transition: all .35s;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.foto:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.foto {
+    padding: 0px;
+  }
+  
+.each_pic {
+    display: block;
+    max-width: 100%;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(240, 95, 64, 0.8);
+}
+
+.bg-dark{
+    background-color: #222!important;
+}
+.call-to-action{
+    padding: 100px 0;
+    color: #fff;
+
+}
+.call-to-action a{
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+}
+
+.call_me h2{
+    font-size: 30px;
+
+}
+
+.call_me{
+    padding: 100px 0;
+}
+
+.call_me p{
+    font-size: 16px;
+}
+
+
+.in_call_me {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 250px 100px 250px;
+  }
+  
+
+.icon_2 {
+    font-size: 3.4rem;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.mail_add{
+    color: #f05f40;
+}
