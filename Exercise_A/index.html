@@ -17,23 +17,139 @@
 
       Refer to the Practice directory
     -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/8ffaebcbae.js" crossorigin="anonymous"></script>
+  </head>
   </head>
 
   <!-- Nav bar setup -->
 
-  <body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar" class="text-center  ">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
     <!-- Can use Jumbotron -->
     <!-- Second Section -->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
 
     <!-- Four icons -->
+    <div class="container">
+      <div class="row">
+        <div class="col font-size-2">So Fucking Creative!
+          <hr class="primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 p-0" id="image1">
+          <i class="fas fa-globe-asia"></i>
+          <h4>This Fucking Template</h4>
+          <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+        </div>
+        <div class="col-lg-3 col-md-6 p-0" id="image2">
+          <i class="fas fa-paper-plane"></i>
+          <h4>This Set of Four Icons</h4>
+          <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 p-0" id="image3">
+          <i class="fas fa-thumbs-up"></i>
+          <h4>Lots of effort</h4>
+          <p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 p-0" id="image4">
+          <i class="fas fa-heart"></i>
+          <h4>Made with Love</h4>
+          <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+        </div>  
+      </div>
+    </div>
+
     <!-- Four pictures with overlay etc -->
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 p-0" id="image1"><img class="w-100" src="./assets/images/1.jpg" alt="image1"></div>
+        <div class="col-lg-3 col-md-6 p-0" id="image2"><img class="w-100" src="./assets/images/2.jpg" alt="image2"></div>
+        <div class="col-lg-3 col-md-6 p-0" id="image3"><img class="w-100" src="./assets/images/3.jpg" alt="image3"></div>
+        <div class="col-lg-3 col-md-6 p-0" id="image4"><img class="w-100" src="./assets/images/4.jpg" alt="image4"></div>  
+      </div>
+      <div class="container-fluid bg-dark py-5">
+        <div class="row text-white">
+          <div class="col font-size-2">Seriously, It's This Fucking Template !</div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <a class="btn bg-white btn-lg rounded-pill" href="#" role="button">That's Amazing!  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- contact me container -->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+    <script 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+      crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
