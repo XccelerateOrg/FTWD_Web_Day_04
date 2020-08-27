@@ -3,12 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/ca49b3ee9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+
+
+
+
 
     <title>Solution for day 4 using Bootstrap v4</title>
 
     <!-- 
       This is where we declare all of the external libraries our page uses
-      
+      --
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
       You will need:
       Animate CSS
       Bootstrap CSS
@@ -17,21 +40,200 @@
 
       Refer to the Practice directory
     -->
+    
   </head>
 
   <!-- Nav bar setup -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-faded" id= "my_navbar">
+    <a class="navbar-brand bar_text" href="#banner">THE ONLY BOOTSTRAP PAGE</a>
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <body data-spy="scroll" data-target=".navbar">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link bar_item_text" href="#about"
+            >ABOUT <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link bar_item_text" href="#f_icon"
+            >FOUR ICONS <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link bar_item_text" href="#bullshit"
+            >BULLSHIT <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link bar_item_text" href="#call_me"
+            >CALL ME <span class="sr-only">(current)</span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <body data-spy="scroll" data-target="#my_navbar" date-offset=0"">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
 
     <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+    <div class="jumbotron " id="banner">
+      <h1 class="display-4 banner_text">HEY LOOK, IT`S EVERY BOOTSTRAP WEBSITE EVER</h1>
+      <hr class="my-4" />
+      <p class="lead banner_lead_text">
+        Take a look around at the same fucking bootstrap page you`ve seen ten
+        million times before! Featuring all the same things as those pages!
+      </p>
 
+      <a class="btn or_btn" href="#about" role="button">THIS BUTTON MAKES THE PAGE SCROLL</a>
+    </div>
+    <!-- Second Section -->
+    <div class="about" id="about">
+          <div class="container-fluid in_about">
+            <h1 class="display-4 about_text">Want to make an original website yourself</h1>
+            <hr class="light" />
+            <p class="lead about_lead_text">
+              Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!
+            </p>
+
+             <a class="btn wh_btn_1" href="#" role="button">GOOGLE THAT SHIT</a>
+          </div>
+
+      </div>
+    </div>
     <!-- Four icons -->
+    <div class="f_icon" id="f_icon">
+      <div class="container-fluid in_f_icon">
+        <h1 class="display-4 f_icon_text">So Fucking Creative</h1>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <i class="fas fa-globe icon"></i>
+            <div class="each_icon">
+              <h class = "each_icon_header">This Fucking Template</h>
+              <p class = "each_icon_con">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <i class="far fa-paper-plane icon"></i>
+            <div class="each_icon">
+              <h class = "each_icon_header">This Set of Four Icons</h>
+              <p class = "each_icon_con">Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <i class="fas fa-thumbs-up icon"></i>
+            <div class="each_icon">
+              <h class = "each_icon_header">Lots of effort</h>
+              <p class = "each_icon_con">We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <i class="fas fa-heart-broken icon"></i>
+            <div class="each_icon">
+              <h class = "each_icon_header">Made with Love</h>
+              <p class = "each_icon_con">Because nothing says hard work and talent like editing a few lines of text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Four pictures with overlay etc -->
+    <div class = "bullshit" id="bullshit">
+      <div class="f_pic">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 in_row" >
+              <img src="./assets/images/1.jpg" class="each_pic">
+              <div class="overlay">
+                <div class ="text">
+                  <p class="pt_text_1">ONE THING</p>
+                  <p class="pt_text_2">Look</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-3 in_row">
+              <img src="./assets/images/2.jpg" class="each_pic">
+              <div class="overlay">
+                <div class ="text">
+                  <p class="pt_text_1">TWO THING</p>
+                  <p class="pt_text_2">At</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 in_row">
+              <img src="./assets/images/3.jpg" class="each_pic">
+              <div class="overlay">
+                <div class ="text">
+                  <p class="pt_text_1">THREE THING</p>
+                  <p class="pt_text_2">This</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 in_row">
+              <img src="./assets/images/4.jpg" class="each_pic">
+              <div class="overlay">
+                <div class="text">
+                  <p class="pt_text_1">FOUR THING</p>
+                  <p class="pt_text_2">Bullshit</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class= "amazing">
+            <div class="container-fluid in_amazing">
+              <h1 class="display-4 amazing_text">Want to make an original website yourself</h1>
+              
+               <a class="btn wh_btn_2" href="#" role="button">THAT`S AMAZING</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- contact me container -->
+    <div class="call_me" id="call_me">
+      <div class="in_call_me">
+        <h1 class="display-4 call_me_text">My Contact Information</h1>
+        <hr class="my-4" />
+        <p class="lead call_me_lead_text">
+          Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.
+        </p>
+        <p class="lead call_me_lead_text">
+          Honestly this template does look really nice, though.
+        </p>
+        <div class ="row">
+          <div class="col-md-6 ">
+            <i class="fas fa-mobile icon_2"></i>
+            <p class = "ph_num">+1-608-317-1888</p>
+          </div>
+          <div class="col-md-6 ">
+            <i class="fas fa-at icon_2"></i>
+            <p class = "mail_add">holy@shit.com</p>
+          </div>
+
+        </div>
+
+      </div>
+         
+    </div>
+      
+
+    </div>
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
@@ -41,5 +243,24 @@
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

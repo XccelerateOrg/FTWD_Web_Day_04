@@ -1,3 +1,298 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/***         hr        **********/
+
+.my-4 {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.light {
+  max-width: 50px;
+  border-color: white;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*****************************************************/
+
+/* scroll spy */
+
+/***********  Text   ************/
+
+.bar_text {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bar_item_text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.banner_text {
+  color: white;
+  font-weight: bold;
+  font-size: ;
+  font-size: 4rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner_lead_text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  margin: 40px 150px;
+}
+
+.about_text {
+  color: white;
+  font-size: 2rem;
+  margin: 80px 100px 20px 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about_lead_text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  margin: 20px 160px;
+}
+
+.f_icon_text {
+  color: black;
+  font-size: 2rem;
+  margin: 80px 100px 0px 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.each_icon_header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}
+
+.each_icon_con {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+}
+
+.amazing_text {
+  color: white;
+  font-size: 2rem;
+  margin: 50px 100px 20px 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.call_me_text {
+  color: black;
+  font-size: 2rem;
+  margin: 80px 100px 0px 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.call_me_lead_text {
+  color: black;
+  font-size: 1rem;
+  margin: 30px;
+  font-family: "Merriweather", serif;
+}
+
+.pt_text_1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.pt_text_2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+/******************************************************************************************************/
+
+/**   navbar   ****/
+
+.fixed-top {
+  border-bottom: 0.5px solid #e7e7e7;
+}
+
+.navbar-toggler {
+  background-color: tomato;
+}
+/******************************************************************************************************/
+
+/****   banner   ******/
+
+.jumbotron {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  min-height: auto;
+  border-radius: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 32px;
+  margin-bottom: 0;
+}
+
+.or_btn {
+  background-color: #f05f40;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+
+/******************************************************************************************************/
+
+/***   About     ***/
+
+.about {
+  background-color: #f05f40;
+  display: flex;
+}
+
+.in_about {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wh_btn_1 {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 30px;
+  color: black;
+  margin: 0px 80px 100px 80px;
+}
+
+/******************************************************************************************************/
+
+/***   four icon   ***/
+
+.f_icon {
+  display: flex;
+}
+
+.in_f_icon {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 80px 80px 80px;
+}
+
+.icon {
+  font-size: 3.4rem;
+  color: #f05f40;
+  padding: 20px;
+}
+
+/******************************************************************************************************/
+
+/***   four pic   ***/
+
+.in_row {
+  padding: 0px;
+}
+
+.each_pic {
+  display: block;
+  max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(240, 95, 64, 0.8);
+}
+
+.in_row:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/***   amazing  ***/
+
+.amazing {
+  background-color: #222;
+  display: flex;
+}
+
+.in_amazing {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wh_btn_2 {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 30px;
+  color: black;
+  margin: 0px 80px 50px 80px;
+}
+
+/******************************************************************************************************/
+
+/***   call me   ***/
+
+.in_call_me {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 250px 100px 250px;
+}
+
+.icon_2 {
+  font-size: 3.4rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
