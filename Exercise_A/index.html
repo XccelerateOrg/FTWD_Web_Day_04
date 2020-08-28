@@ -28,12 +28,12 @@
 
   <!-- Nav bar setup -->
 
-  <body data-spy="scroll" data-target=".navbar" class="text-center  ">
+  <body data-spy="scroll" data-target=".navbar" class="text-center">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top border-bottom border-light">
+      <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,63 +46,58 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
 
     <!-- Can use Jumbotron -->
-    <!-- Second Section -->
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+
+    <div class="jumbotron no-margin-y min-vh-100 bg-img-header color-white">
+      <h1 class="display-4">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p>Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!
+
+      </p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
 
+    <!-- Second Section -->
+    <div class="jumbotron no-margin-y min-vh-75 bg-color-coral color-white ">
+      <h1 class="display-4">Want to make an original website yourself?</h1>
+      <hr class="my-4">
+      <p class="lead">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p> 
+      <a class="btn btn-primary btn-lg" href="#" role="button">GOOGLE THAT SHIT</a>
+    </div>
+
     <!-- Four icons -->
-    <div class="container">
+    <div class="container min-vh-75 py-5">
       <div class="row">
         <div class="col font-size-2">So Fucking Creative!
-          <hr class="primary">
+          <hr class="primary color-coral">
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 p-0" id="image1">
-          <i class="fas fa-globe-asia"></i>
+          <i class="fas fa-globe-asia fa-3x color-coral"></i>
           <h4>This Fucking Template</h4>
           <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
         </div>
         <div class="col-lg-3 col-md-6 p-0" id="image2">
-          <i class="fas fa-paper-plane"></i>
+          <i class="fas fa-paper-plane fa-3x color-coral"></i>
           <h4>This Set of Four Icons</h4>
           <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
         </div>
         <div class="col-lg-3 col-md-6 p-0" id="image3">
-          <i class="fas fa-thumbs-up"></i>
+          <i class="fas fa-thumbs-up fa-3x color-coral"></i>
           <h4>Lots of effort</h4>
           <p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
         </div>
         <div class="col-lg-3 col-md-6 p-0" id="image4">
-          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart fa-3x color-coral" style="--fa-primary-color: red"></i>  
           <h4>Made with Love</h4>
           <p>Because nothing says hard work and talent like editing a few lines of text.</p>
         </div>  
@@ -110,7 +105,7 @@
     </div>
 
     <!-- Four pictures with overlay etc -->
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-dark min-vh-75">
       <div class="row">
         <div class="col-lg-3 col-md-6 p-0" id="image1"><img class="w-100" src="./assets/images/1.jpg" alt="image1"></div>
         <div class="col-lg-3 col-md-6 p-0" id="image2"><img class="w-100" src="./assets/images/2.jpg" alt="image2"></div>
@@ -130,12 +125,29 @@
     </div>
 
     <!-- contact me container -->
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <h4>My Contact Information</h4>
+          <hr>
+          <p>Here's my phone number and email address, because hey that's part
+             of the template and why would you not include that on your webpage? 
+             You'd be a fool not to! I can't wait for all the job offers to come 
+             pouring in from all the companies w  anting my insane website design skills.
+          </p>
+          <p>Honestly this template does look really nice, though.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6">
+          <i class="fas fa-heart"></i>
+          <p>09283092</p>
+        </div>
+        <div class="col-xl-6">
+          <i class="fas fa-heart"></i>
+          <p>sss@abc.com</p>
+        </div>
+      </div>
     </div>
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->

@@ -5,3 +5,25 @@ Add in your custom style such that you can develop the wonderful website within 
 .font-size-2 {
     font-size: 2rem;
 }
+
+.color-coral {
+    color: #ff7f50
+}
+
+.color-white {
+    color: white
+}
+.no-margin-y {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.bg-color-coral {
+    background-color: coral;
+}
+
+.bg-img-header {
+    background-image: url("../images/header.jpg");
+    background-size: 100%;
+}
+
