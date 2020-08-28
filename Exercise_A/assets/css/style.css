@@ -35,8 +35,8 @@ html {
 /***   animation    ****/
 
 :root {
-  --animate-duration: 1000ms;
-  --animate-delay: 2s;
+  --animate-duration: 2000ms;
+  --animate-delay: 10s;
 }
 
 /*****************************************************/
@@ -52,7 +52,7 @@ html {
 .bar_text {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 1000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -158,9 +158,11 @@ html {
   border-bottom: 0.5px solid #e7e7e7;
 }
 
-.navbar-toggler {
-  background-color: #000;
+.icon_3 {
+  font-size: 2rem;
+  padding: 5px 0px 0px 30px;
 }
+
 /******************************************************************************************************/
 
 /****   banner   ******/
@@ -326,4 +328,80 @@ html {
   font-size: 3.4rem;
   color: rgba(0, 0, 0, 0.8);
   padding: 10px;
+}
+
+/*********************************************************************************/
+
+@media screen and (max-width: 500px) {
+  .fixed-top {
+    padding: 8px 10px;
+  }
+
+  .bar_text {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .navbar-toggler {
+    max-height: 38px;
+    padding: 0;
+  }
+
+  .icon_3 {
+    max-width: ;
+    padding: 0px;
+  }
+
+  .navbar-toggler {
+    width: 60px;
+  }
+
+  .icom_3 {
+    padding: 0;
+  }
+
+  .banner_text {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 3rem;
+  }
+
+  .banner_lead_text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about_text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about_lead_text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .f_icon_text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .in_f_icon {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .amazing_text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .in_call_me {
+    padding: 0;
+    margin: 0;
+  }
 }
