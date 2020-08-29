@@ -70,94 +70,36 @@ aside {
     padding: 0;
 }
 .navbardefault {
-    border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     background-color: white;
+    z-index: 10;
+    transition: 500ms;
 }
-.navbardefault .navbarheader .navbarbrand {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: bolder;
-    color: #2a9d8f;
+.navbarbrand{
+    transition: 500ms;
 }
-.navbardefault .navbarheader .navbarbrand:hover,
-.navbardefault .navbarheader .navbarbrand:focus {
-    color: #2a9d8f;
+.active{
+    /* opacity: 1; */
+    transform: translateX(0);
 }
-.navbardefault .nav>li>a,
-.navbardefault .nav>li>a:focus {
-    font-size: 13px;
-    font-weight: 700;
-    color: black;
+.inactive{
+    /* opacity: 0; */
+    transform: translateX(-100vw);
 }
-.navbardefault .nav>li>a:hover,
-.navbardefault .nav>li>a:focus:hover {
-    color: #2a9d8f;
-}
-.navbardefault .nav>li.active>a,
-.navbardefault .nav>li.active>a:focus {
-    color: #2a9d8f;
-    background-color: transparent;
-}
-.navbardefault .nav>li.active>a:hover,
-.navbardefault .nav>li.active>a:focus:hover {
-    background-color: transparent;
-}
+
 @media(min-width:768px) {
     .navbardefault {
-        border-color: grey);
+        border-color: grey;
         background-color: transparent;
     }
 
-    .navbardefault .navbarheader .navbarbrand {
-        color: grey);
-    }
 
-    .navbardefault .navbarheader .navbarbrand:hover,
-    .navbardefault .navbarheader .navbarbrand:focus {
-        color: white;
-    }
-
-    .navbardefault .nav>li>a,
-    .navbardefault .nav>li>a:focus {
-        color: lightgray);
-    }
-
-    .navbardefault .nav>li>a:hover,
-    .navbardefault .nav>li>a:focus:hover {
-        color: white;
-    }
-
-    .navbardefault.affix {
-        border-color: rgba(34,34,34,.05);
-        background-color: white;
-    }
-
-    .navbardefault.affix .navbarheader .navbarbrand {
-        font-size: 14px;
-        color: #2a9d8f;
-    }
-
-    .navbardefault.affix .navbarheader .navbarbrand:hover,
-    .navbardefault.affix .navbarheader .navbarbrand:focus {
-        color: #2a9d8f;
-    }
-
-    .navbar-default.affix .nav>li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: black;
-    }
-
-    .navbardefault.affix .nav> i>a:hover,
-    .navbardefault.affix .nav>li>a:focus:hover {
-        color: #2a9d8f;
-    }
-}
 header{
     position: relative;
     display: flex;
     text-align: center;
     color: white;
-    background-image: url(/code/FTWD_Web_Day_04/Exercise_A/assets/images/header.jpg);
+    background-image: url('../images/header.jpg');
     background-size: cover;
     height: 1000px;
     justify-content: center;
@@ -208,7 +150,13 @@ header{
     border-radius: 70px;
     padding: 15px 30px 15px 30px;
     font-weight: bold;
+    transition: 500ms;
 }
+
+.btn:hover{
+    transform: scale(2);
+}
+
 .btn-white{
     background-color: white;
     color: black;
@@ -283,4 +231,7 @@ header{
 }
 .contacticons{
     float: left;
+}
+.servicebox{
+    transition: 1s ease-in-out;
 }

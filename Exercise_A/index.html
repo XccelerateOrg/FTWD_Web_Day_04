@@ -34,7 +34,7 @@
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-    <nav class="navbar navbar-expand-sm navbar-light navbardefault navbar-fixed-top affix-top">
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-light navbardefault fixed-top">
       <div class="container-fluid">
         <div class="navbarheader">
           <a class="navbarbrand" href="#pagetop">THE ONLY BOOTSTRAP PAGE</a>
@@ -101,7 +101,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="servicebox">
+            <div class="servicebox inactive">
               <i class="icons fas fa-4x fa-globe-asia animate__animated animate__bounceIn"></i>
               <h3>
                 This Fucking Template
@@ -112,7 +112,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center ">
-            <div class="servicebox">
+            <div class="servicebox inactive">
               <i class="icons fas fa-4x fa-paper-plane animate__animated animate__bounceIn"></i>
               <h3>
                 This Set of Four Icons
@@ -123,7 +123,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="servicebox">
+            <div class="servicebox inactive">
               <i class="icons fas fa-4x fa-thumbs-down animate__animated animate__bounceIn"></i>
               <h3>
                 Lots of Effort
@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="servicebox">
+            <div class="servicebox inactive">
               <i class="icons far fa-4x fa-kiss-wink-heart animate__animated animate__bounceIn"></i>
               <h3>
                 Made with Love
@@ -150,8 +150,8 @@
     </section>
     <section class="portfolio nopadding" id="bullshit">
       <div class="container-fluid flex-direction-row">
-        <div class="row no-gutter padding-0">
-          <div class="col-lg-3 col-sm-6 padding-0">
+        <div class="row no-gutter px-0">
+          <div class="col-lg-3 col-sm-6 px-0">
             <div class="portfolioBox">
               <img src="./assets/images/1.jpg" alt="1" class="img-responsive">
               <div class="portfolioBoxCaption">
@@ -166,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 padding-0">
+          <div class="col-lg-3 col-sm-6 px-0">
             <div class="portfolioBox">
               <img src="./assets/images/2.jpg" alt="2" class="img-responsive">
               <div class="portfolioBoxCaption">
@@ -181,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 padding-0">
+          <div class="col-lg-3 col-sm-6 px-0">
             <div class="portfolioBox">
               <img src="./assets/images/3.jpg" alt="3" class="img-responsive">
               <div class="portfolioBoxCaption">
@@ -196,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 padding-0">
+          <div class="col-lg-3 col-sm-6 px-0">
             <div class="portfolioBox">
               <img src="./assets/images/4.jpg" alt="4" class="img-responsive">
               <div class="portfolioBoxCaption">
@@ -213,23 +213,23 @@
           </div>
         </div>
       </div>
-    </section>
-    <aside class="bgdark">
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="asided">
-            <h2>
-            Seriously, It's This Fucking Template!
-            </h2>
-            <a href="" class="btn btn-white btn-xl animate__animated animate__tada animate__infinite">That's Amazing!</a>
+      <aside class="bgdark">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="asided">
+              <h2>
+              Seriously, It's This Fucking Template!
+              </h2>
+              <a href="" class="btn btn-white btn-xl animate__animated animate__tada animate__infinite">That's Amazing!</a>
+            </div>
           </div>
         </div>
-      </div>
-    </aside>
+      </aside>
+    </section>
     <section class="contact" id="callme">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-lg-offset-2 text-center contacttext">
+          <div class="col-lg-12 col-lg-offset-2 text-center contacttext">
             <h2 class="sectionheading">
               My Contact Information
             </h2>
@@ -241,13 +241,13 @@
               Honestly this template does look really nice, though.
             </p>
           </div>
-          <div class="col-lg-4 col-lg-offset-2 text-center contacticons">
+          <div class="col-lg-6 text-center contacticons">
             <i class="fas fa-phone animate__animated animate__fadeInDown" ></i>
             <p>
               +1-800-go-fuck-yourself
             </p>
           </div>
-          <div class="col-lg-4 col-lg-offset-2 text-center contacticons">
+          <div class="col-lg-6 text-center contacticons">
             <i class="fas fa-envelope-open-text animate__animated animate__fadeInDown"></i>
             <a href="mailto:test@testing.com">
               holy@shit.com
