@@ -1,3 +1,115 @@
-/* 
-Add in your custom style such that you can develop the wonderful website within the exercise. 
-*/
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll{
+    color: black;
+}
+
+.jumbotron {
+  background: url(../images/header.jpg);
+  margin: 0;
+}
+
+.divider {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+}
+
+header.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.jumbotron h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.jumbotron {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.jumbotron p {
+    font-size: 1.15rem;
+  }
+  header.jumbotron h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.jumbotron h1 {
+    font-size: 4rem;
+  }
+}
+
+.page-section {
+  padding: 8rem 0;
+}
+
+.portfolio-box {
+  position: relative;
+}
+
+.text1 {
+  color: white;
+  font-weight: 5;
+}
+
+.text2 {
+  color: white;
+  font-weight: 500;
+}
+
+.portfolio-box div {
+  text-align: center;
+}
+
+.portfolio-box img {
+  width: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #f05f40;
+  position: absolute;
+  opacity: 0;
+}
+
+.portfolio-box:hover .overlay {
+  opacity: 0.7;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.portfolio-box-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  #mainNav {
+    background-color: white;
+  }
+  #mainNav .navbar-brand{
+    color: #eb3812;
+  }
+  #mainNav .nav-link {
+    color: black;
+  }
+}
