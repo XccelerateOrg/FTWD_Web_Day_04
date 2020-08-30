@@ -29,14 +29,74 @@
       Please goto this website, and generate your own link:
       https://fontawesome.com/start
 
- -->
-    <!-- 
-   Link to custom stylesheet
-  -->
+      -->
+    <script src="https://kit.fontawesome.com/324b0077c5.js" crossorigin="anonymous"></script>
+    <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Navbar-item 01 is on the right.</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Navbar-item 02 is on the right.</a>
+          </li>
+        </ul>      
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div style="font-size:24px;font-weight:700">Hello Bootstrap!</div>
+      <p>I am a paragraph in the jumbotron.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
     <!-- 
       The links / CDNS to allow the usage of Bootstrap components with interactions (like modal/ navigation bar)
      -->

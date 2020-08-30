@@ -65,3 +65,5 @@ Method one:
 ## What is one thing that I learned from doing this project? :books:
 
 (Fill whatever you would like here)
+The expression of DOM in Javascript, and Animate CSS.
+Cloning a website from zero was a tough job.🥺
