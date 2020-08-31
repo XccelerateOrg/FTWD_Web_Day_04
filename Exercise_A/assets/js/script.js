@@ -33,6 +33,7 @@ console.log(navbar2)
 //     bgchange(y)
 // });
 
+// this one is for the navbar to scroll
 window.addEventListener('scroll', function() {
     let y = window.scrollY
 
@@ -45,6 +46,8 @@ window.addEventListener('scroll', function() {
         navbarBrand.style.fontSize = '1rem';
     }
 
+
+//this one is for the service box to slide in 
     for(let i = 0; i < serviceBoxes.length; i++){
         let screenHeight = window.innerHeight;
         let distanceToTopOfScreen = serviceBoxes[i].getBoundingClientRect().top;

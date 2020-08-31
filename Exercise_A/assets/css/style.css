@@ -38,7 +38,7 @@ a{
     color: #2a9d8f;
 }
 a:hover, a:focus{
-    color: #2a9d34;
+    color: black;
 }
 h1,h2{
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -230,7 +230,7 @@ header{
     text-align: center;
 }
 .contacticons{
-    float: left;
+   
 }
 .servicebox{
     transition: 1s ease-in-out;
