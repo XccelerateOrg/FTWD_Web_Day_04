@@ -39,7 +39,7 @@ window.addEventListener('scroll', function() {
 
     if( y >= 400){
         navbar1.style.backgroundColor = 'white';
-        navbarBrand.style.fontSize = '2rem';
+        navbarBrand.style.fontSize = '1.2rem';
 
     } else if (y <= 400){
         navbar1.style.backgroundColor = 'transparent';
@@ -48,6 +48,10 @@ window.addEventListener('scroll', function() {
 
 
 //this one is for the service box to slide in 
+//the for loop sets out the window height and the service boxes
+//the if function sets out that when the serviceboxes hit the halfway point on the screen, it removes the inactive class and adds the active class
+//the else function does it the opposite way around 
+//the bottom 'return' sets out the speed the service boxes come in. the - i makes sure the individual boxes come in, not all of them at once. 
     for(let i = 0; i < serviceBoxes.length; i++){
         let screenHeight = window.innerHeight;
         let distanceToTopOfScreen = serviceBoxes[i].getBoundingClientRect().top;
