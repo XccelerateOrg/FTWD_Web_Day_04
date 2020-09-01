@@ -1,3 +1,173 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+  }
+.h1,h2,h3,h4,h5,h6{ font-family: "Open Sans"; }
+
+/*...................................................................*/
+a {
+    color: #000000;
+  }
+
+.btn {
+    background-color: #f05f40;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.75rem 1.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+  }
+  
+  .navbar {
+    border-bottom: solid 1px #fff;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .solid {
+    background: #fff;
+    border-bottom: solid 1px #fff;
+    opacity: 1;
+    transition: 0.9s;
+  }
+  
+  .active {
+    color: #f05f40;
+    font-weight: bold;
+  }
+
+
+  .invert {
+    background: #f05f40;
+    color: #fff;
+  }
+  
+  .invert .btn {
+    background-color: #fff;
+    color: #000;
+  }
+/*...................................................................*/
+.section1 {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    padding: 30vh 15% 0;
+  }
+.section1 h1 {
+    color: #ffffff;
+    font-size: 50px;;
+    font-weight: bold;
+  }
+
+  .section1 p {
+    padding: 0 10% 1rem;
+    color: #ffffff99;
+  }
+
+/*...................................................................*/
+.section2{
+    background: #f05f40;
+    padding: 10% 20%;
+  }
+  
+  .section2 p {
+    color: #ffffff99;
+  }
+  
+  .section2 .btn {
+    background-color: #fff;
+    color: #000;
+  }
+
+/*...................................................................*/
+ 
+.section3 {
+    text-align: center;
+    padding: 8% 0;
+  }
+  
+  .section3 i.fa {
+    color: #f05f40;
+  }
+  
+  .section3 .row h4 {
+    margin: 1rem;
+  }
+  
+  .section3 p {
+    color: #00000099;
+  }
+/*...................................................................*/
+  
+.section4 {
+    background: #333;
+    padding: 0 0 3%;
+    height: 50vh;
+  }
+  
+  .section4 p {
+    color: #ffffff99;
+  }
+  
+  .section4 .container-fluid,
+  .section4 .row > div {
+    padding: 0;
+    position: relative;
+  }
+  
+  .section4 .row {
+    margin: 0;
+  }
+  
+  .section4 .pic {
+    opacity: 0;
+    transition: opacity 2s;
+    background: #f05f40e6;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff99;
+  }
+  
+  .section4.pic:hover {
+    opacity: 1;
+  }
+  
+  .section4 .pic span.word {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .section4 h6 {
+    margin: 1.5rem 0;
+    font-family: "Open Sans";
+  }
+/*...................................................................*/
+
+.section5 {
+    padding: 7% 10%;
+  }
+  
+  .section5 p {
+    padding: 0 20% 1rem;
+    color: #00000099;
+  }
+  
+  .section5 .contacts {
+    margin: 2rem 0;
+  }
+/*...................................................................*/
