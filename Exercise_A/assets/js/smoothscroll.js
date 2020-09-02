@@ -1,9 +1,10 @@
 /*! SmoothScroll v16.1.4 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global = global || self, global.SmoothScroll = factory());
-}(this, (function () { 'use strict';
+		typeof define === 'function' && define.amd ? define(factory) :
+		(global = global || self, global.SmoothScroll = factory());
+}(this, (function () {
+	'use strict';
 
 	//
 	// Default settings
@@ -234,7 +235,7 @@
 		if (clip) {
 			location = Math.min(location, getDocumentHeight() - window.innerHeight);
 		}
-			return location;
+		return location;
 	};
 
 	/**
@@ -269,8 +270,7 @@
 		hash = hash ? hash : '';
 
 		// Set a default history
-		history.replaceState(
-			{
+		history.replaceState({
 				smoothScroll: JSON.stringify(options),
 				anchor: hash ? hash : window.pageYOffset
 			},
@@ -295,8 +295,7 @@
 		if (!history.pushState || !options.updateURL) return;
 
 		// Update URL
-		history.pushState(
-			{
+		history.pushState({
 				smoothScroll: JSON.stringify(options),
 				anchor: anchor.id
 			},
@@ -329,7 +328,7 @@
 			anchor.focus();
 			anchor.style.outline = 'none';
 		}
-		window.scrollTo(0 , endLocation);
+		window.scrollTo(0, endLocation);
 
 	};
 
@@ -448,7 +447,9 @@
 			 * Loop scrolling animation
 			 */
 			var loopAnimateScroll = function (timestamp) {
-				if (!start) { start = timestamp; }
+				if (!start) {
+					start = timestamp;
+				}
 				timeLapsed += timestamp - start;
 				percentage = speed === 0 ? 0 : (timeLapsed / speed);
 				percentage = (percentage > 1) ? 1 : percentage;
@@ -513,7 +514,7 @@
 			var hash;
 			try {
 				hash = escapeCharacters(decodeURIComponent(toggle.hash));
-			} catch(e) {
+			} catch (e) {
 				hash = escapeCharacters(toggle.hash);
 			}
 
@@ -555,7 +556,9 @@
 			}
 
 			// Animate scroll to anchor link
-			smoothScroll.animateScroll(anchor, null, {updateURL: false});
+			smoothScroll.animateScroll(anchor, null, {
+				updateURL: false
+			});
 
 		};
 

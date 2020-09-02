@@ -1,12 +1,15 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
-
-body{
-    font-family: Merriweather, Arial, Helvetica, sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
-.sticky{
+body {
+    font-family: "Merriweather", Arial, Helvetica, sans-serif;
+}
+
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,51 +18,49 @@ body{
     height: 50px;
 }
 
-.navbar-brand{
-    font-size: 14px;
-    color: #f05f40!important;
-    font-weight: 700;
+.navbar-brand {
+    font-size: 15px;
+    color: #777 !important;
+    font-weight: 900;
 }
 
-.navbar{
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
-    font-size: 13px;
+.navbar {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900;
     border-bottom: solid 1px #fff;
 }
 
-.nav-item>a{
+.nav-item>a {
     padding: 15px;
+    font-size: 15px;
 }
 
-a{
-    color: #222;
+a {
+    color: #777;
 
 }
 
-.changecolor{
-    background-color: transparent !important;
+.customNav{
+    background-color: #fff;
 }
 
-.changecolor.scrolled {
-    background-color: white !important;
-  }
 
-@media (min-width: 768px){
-.navbar-default.affix .navbar-header .navbar-brand {
-    font-size: 14px;
-    color: #f05f40;
-}
+@media (min-width: 768px) {
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #f05f40;
+    }
 }
 
-.header-content{
+.header-content {
     background-image: url(../images/header.jpg);
-    
+
     background-position: center;
 }
 
-a:hover{
-    color: #a84731
+a:hover {
+    color: #a84731;
+    text-decoration-line: none;
 }
 
 header {
@@ -68,7 +69,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
- 
+
 }
 
 p {
@@ -80,7 +81,7 @@ p {
 
 
 
-.header-content h1{
+.header-content h1 {
     font-size: 55.75px;
     font-weight: 700;
 
@@ -101,7 +102,7 @@ hr {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.42857143;
@@ -113,13 +114,13 @@ hr {
     padding: 15px 30px;
 }
 
-.btn-primary{
+.btn-primary {
     color: #fff;
     background-color: #f05f40;
     transition: all .35s;
 }
 
-.jumbotron{
+.jumbotron {
     margin: 0px;
     padding: 24vh;
     border-radius: 0%;
@@ -128,42 +129,48 @@ hr {
     height: 100%;
 }
 
-#about{
+#about {
     text-align: center;
     vertical-align: middle;
     background-color: #f05f40;
-    color: #fff
+    color: #fff;
 
 }
 
-#about hr{
+#about hr {
     border-color: #fff;
 }
 
-#about a{
+#about a {
     background-color: #fff;
     color: #333;
 }
 
-#about h2{
+#about h2 {
     font-size: 30px;
     margin-bottom: 10px;
 
 }
 
-#services{
+#about p {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#services {
     padding: 100px 0px;
     color: #333;
 }
 
-.text-primary{
-    color: #f05f40!important;
-}
-.text-faded {
-    color: rgba(255,255,255,.7);
+.text-primary {
+    color: #f05f40 !important;
 }
 
-.h3heading{
+.text-faded {
+    color: rgba(255, 255, 255, .7);
+}
+
+.h3heading {
     padding-top: 20px;
 }
 
@@ -176,7 +183,7 @@ hr {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(240, 95, 64, .9);
     transition: all .35s;
 }
 
@@ -190,7 +197,7 @@ hr {
 .foto:hover .overlay {
     opacity: 1;
 }
-  
+
 .text {
     color: white;
     font-size: 20px;
@@ -205,13 +212,13 @@ hr {
 
 .foto {
     padding: 0px;
-  }
-  
+}
+
 .each_pic {
     display: block;
     max-width: 100%;
 }
-  
+
 .overlay {
     position: absolute;
     top: 0;
@@ -225,30 +232,38 @@ hr {
     background-color: rgba(240, 95, 64, 0.8);
 }
 
-.bg-dark{
-    background-color: #222!important;
+.bg-dark {
+    background-color: #222 !important;
 }
-.call-to-action{
+
+.navbar-toggler {
+    border: 0px;
+    color: #333;
+
+}
+
+.call-to-action {
     padding: 100px 0;
     color: #fff;
 
 }
-.call-to-action a{
+
+.call-to-action a {
     padding: 15px 30px;
     color: #000;
     background-color: #fff;
 }
 
-.call_me h2{
+.call_me h2 {
     font-size: 30px;
 
 }
 
-.call_me{
+.call_me {
     padding: 100px 0;
 }
 
-.call_me p{
+.call_me p {
     font-size: 16px;
 }
 
@@ -258,8 +273,8 @@ hr {
     justify-content: center;
     align-items: center;
     margin: 0px 250px 100px 250px;
-  }
-  
+}
+
 
 .icon_2 {
     font-size: 3.4rem;
@@ -267,6 +282,28 @@ hr {
     padding: 10px;
 }
 
-.mail_add{
+.mail_add {
     color: #f05f40;
+}
+
+.btn-primary:hover {
+    background-color: #ee3f18;
+}
+
+.btn-primary:active {
+    background-color: #ee3f18 !important;
+}
+
+
+
+.nav-colored {
+    background-color: #000;
+}
+
+.nav-transparent {
+    background-color: transparent;
+}
+
+.navbar-toggler{
+    back
 }
