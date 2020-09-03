@@ -1,3 +1,173 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+
+body {
+    font-family: Merriweather,'Helvetica Neue', Arial, sans-serif;
+    margin-top: 0px;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+    justify-items: center;
+}
+
+hr.light {
+    border-color: #fff; 
+}
+
+a {
+    color: #f05f40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #eb3812;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar {
+    border-bottom: solid 1px #ffffffb3;
+
+}
+
+.navbar a {
+    color: #473131b3;;
+
+}
+
+.jum {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    font-size: 65px;
+    margin-bottom: 0;
+}
+
+.jum h1 {
+    padding-top: 10%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 65px;
+    width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.lead {
+    font-family: Merriweather;
+    text-align: center;
+    margin: 0px 100px 50px;
+    width: 900px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffffb3;
+    line-height: 1.6;
+}
+
+
+#thisbtn {
+    padding: 15px 30px;
+    font-size: 14px;
+    background-color: #f05f40;
+    color: #f3eae8;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    border-color: #eb3812;
+    
+}
+
+#thisbtn a:hover {
+
+    color: #eb3812;
+    border-color: #eb3812;
+}
+
+.goog {
+    text-align: center;
+    position: relative;
+   
+    background-color: #f05f40;
+    color: #ffffff;
+}
+
+.goog .btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    background-color: #ffffff;
+    font-size: 14px;
+    padding: 15px 30px;
+}
+
+.icon {
+    color: #f05f40 !important;
+}
+
+.creative h3{
+    margin: 20px 0px 10px;
+    font-size: 20px;
+    
+}
+
+.ser hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#services {
+    margin-bottom: 60px;
+}
+
+.pic {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* scroll animate */
+
+.icon {
+    visibility: hidden !important;
+}

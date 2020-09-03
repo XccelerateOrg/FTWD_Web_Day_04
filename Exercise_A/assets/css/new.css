@@ -1,0 +1,159 @@
+/* 
+html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
+.cover {
+    background-image: url("../images/header.jpg");
+    background-size: cover; 
+    background-position: center;
+    position: relative;   
+    background-repeat: no-repeat;
+    height: 100%;    
+}
+
+/* navbar */
+.navbar {
+    border-bottom: solid 0.4px #ffffff;
+    
+}
+
+/* Jumbo */
+.jumbotron {
+    background-color: #ffffff00;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    
+}
+
+.container h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+hr {
+    border-color: #f05f40;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+.container p {
+    padding: 10px 70px;
+    
+    font-size: 18px;
+    color: #ffffffb3;
+}
+
+/* google section */
+
+.google {
+    background-color: #f05f40;
+    color: #ffffff;
+}
+
+.google hr{
+    border-color: #ffffff;
+}
+
+/* four icon */
+
+.fa {
+    color: #f05f40 !important;
+    Padding: 20px;
+}
+
+#fouricons {
+    margin-top: 70px;
+}
+
+.service-box {
+    width: auto;
+}
+
+.service-box p  {
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family: serif;
+}
+
+.service-box h3 {
+    font-size: 20px;
+
+}
+
+/* overlaypicture */
+
+.w-100 {
+    display: block;
+    height: auto;
+}
+  
+  
+.overlay  {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #082630;
+  }
+
+  .piccon:hover .overlay {
+    opacity: 1 ;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* contact */
+
+  .contact p {
+    color: black;
+  }
+
+  .contact h1 {
+      color: black;
+  }
+
+  .customnav .navbar-nav a.nav-link {
+    color: red;
+}
+
+
+  /* navbar color changes */
+.navcolorchange {
+    background-color: grey !important;
+}
+.brandcolorchange {
+    color: darkorange !important;
+}
+.linkscolorchange {
+    color: darkblue !important;
+}
+
