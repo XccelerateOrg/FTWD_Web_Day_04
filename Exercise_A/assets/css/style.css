@@ -1,3 +1,119 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+:root{
+    --primary-color: #f05f40;
+    --secondry-color: #f13b13;
+}
+*, .container{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+p{
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+header{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    /* min-height: 100vh; */
+    text-align: center;
+    color: #fff;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover; */
+}
+.banner{
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+}
+.line{
+    width: 50px;
+    border: var(--primary-color) solid 3px;
+}
+
+.btn-primary{
+    border-radius: 100px;
+    background-color: var(--primary-color) ;
+    border: none;
+    font-size: medium;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.btn-primary:hover{
+    background-color: var(--secondry-color);
+}
+.btn-primary::selection {
+    background: #222;
+}
+.section{
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+.sectionBlack{
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 40px 0;
+}
+.lead{
+    font: 2em sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.lineW{
+    width: 50px;
+    border: white solid 3px;
+}
+.btn-default{
+    background-color: white;
+    color: black;
+}
+.btn-default:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.primaryColor{
+    color: var(--primary-color);
+}
+.featureItem{
+    padding: 0px 30px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--primary-color);
+}
+.container:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.category{
+    color: white 0.5;
+}
+/* image{
+    background-size: cover;
+} */
