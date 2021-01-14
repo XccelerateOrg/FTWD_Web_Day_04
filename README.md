@@ -64,4 +64,5 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+Learnt more about different utilities of Bootstrap and more familiar with the grid concept.
+Practice makes perfect
