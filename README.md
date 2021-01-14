@@ -64,4 +64,5 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
+Css hover effect, Animate.css, css transition effect & applying navbar affix effect in bootstrap 4 through using js.
 (Fill whatever you would like here)
