@@ -1,28 +1,273 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
-html,
-body {
-    width: 100%;
-    height: 100%;
+html{
+    scroll-behavior: smooth;
 }
 
-body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+/* NAVBAR */
+.navbar-default{
+    transition: 300ms ease;
+    border-bottom: 1px solid rgb(141, 141, 141);
 }
 
+.navbar-default.scrolled{
+    background:#ffffff;
+  }
 
+#mainNav{
+color:white;
 
-header {
-    position: relative;
+}
+.navButton{
+    color: #888888;
+}
+
+.scrolled .navButton{
+    color: rgb(0, 0, 0);
+}
+
+.scrolled .navbar-brand{
+    color: rgb(240, 100, 62);
+}
+
+.navButton:hover{
+    color: #c4c4c4;
+}
+
+.navbar-toggler{
+    background-color: rgba(150, 150, 150, 0.8);
+    border: 2px solid #242630
+}
+
+/* HEADER ELEMENT */
+
+header{
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #fff;
-    background-image: url(//Exercise_A/assets/images/1.jpg);
+    background-image: url("../images/header.jpg");
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 120px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 65px;
+}
+
+@media (max-width:768px){ 
+    header .header-content .header-content-inner h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+}
+}
+
+header .header-content .header-content-inner hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 4px;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    color: rgba(255,255,255);
+}
+
+header .btn{
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 0.8px;
+padding: 8px 50px;
+border: none;
+border-radius: 40px;
+background-color: rgb(232, 94,56)
+}
+
+header .btn:hover{
+background-color: rgb(202, 68, 30);
+}
+
+header .btn:active{
+background-color: rgb(124, 45, 23);
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 664px;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 30px;
+    }
+}
+
+ /* About Section */
+#about{
+    background-color: #f05f40;
+    padding:100px 0px;
+}
+.aboutMe hr{
+max-width: 50px;
+border-color: #ffffff;
+border-width: 4px;
+}
+
+.aboutMe .btn{
+font-size: 18px;
+font-weight: 600;
+letter-spacing: 1px;
+padding: 8px 40px;
+border: none;
+border-radius: 40px;
+}
+
+/* 4 ICONS */
+.icon{
+    padding:100px 0px;
+}
+
+.icon hr{
+max-width: 50px;
+border-color: rgb(240, 100, 62);
+border-width: 3px; 
+}
+
+.icon h3{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.icon .fa-icon{
+    color:rgb(240, 100, 62);
+    margin: 20px;
+}
+
+/* PORTFOLIO BOX */
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+#portfolio .column{
+    padding: 0;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+.portfolio-description .container{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portfolio-description .btn{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+    letter-spacing: 0.8px;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffffff
+    }
+
+/* CONTACT INFO */
+#contact hr{
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 4px;
+}
+
+#contact .email{
+   color:rgba(240,95,64,.9); ; 
+}
+

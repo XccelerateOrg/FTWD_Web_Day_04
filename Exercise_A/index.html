@@ -21,18 +21,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="../Exercise_A/assets/css/style.css">
-  <script src="https://kit.fontawesome.com/4237d50c76.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href='../Exercise_A/assets/css/style.css'>
+  <link rel="stylesheet" href="./assets/css/animate.css">
+
+  <script src=" https://kit.fontawesome.com/4237d50c76.js" crossorigin="anonymous">
+  </script>
 </head>
 
 <!-- Nav bar setup -->
 
-<body data-spy="scroll" data-target=".navbar" id="page-top">
+<body data-spy="scroll" data-target="#navbar-nav" data-offset="50" id="page-top">
   <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
   <!--Allows us to track the progress of the scroll -->
   <!-- Nav bar items -->
-  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-default navbar-dark bg-dark" id='mainNav'>
-    <a class="navbar-brand font-weight-bold h5" href="#">The Only Bootstrap Page</a>
+
+  <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-default" id='mainNav'>
+    <a class="navbar-brand font-weight-bold h5 navButton" href="#">The Only Bootstrap Page</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -40,61 +44,64 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto font-weight-bold">
         <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT</a>
+          <a class="nav-link navButton" href="#about">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">FOUR ICONS</a>
+          <a class="nav-link navButton" href="#services">FOUR ICONS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">BULLSHIT</a>
+          <a class="nav-link navButton" href="#portfolio">BULLSHIT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CALL ME</a>
+          <a class="nav-link navButton" href="#contact">CALL ME</a>
         </li>
       </ul>
     </div>
   </nav>
+
   <!-- Can use Jumbotron -->
   <header>
     <div class="header-content">
-      <div class="header-content-inner">
-        <h1>Hey Look, It's Every Bootstrap Website Ever</h1>
+      <div class="header-content-inner text-white">
+        <h1>Hey Look, I copied a fucking Bootstrap Webpage!</h1>
         <hr>
-        <p>Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the
-          same things as those pages!</p>
-        <a href="#about" class="btn btn-primary btn-xl page-scroll">This button makes the page scroll</a>
+        <p>Styling a website takes shit loads of time!</p>
+        <a href="#about" class="btn btn-primary btn-xl page-scroll">Scroll Me!</a>
       </div>
     </div>
   </header>
 
   <!-- Second Section -->
-  <section class="bg-primary" id="about">
+  <section class="aboutMe" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h2 class="section-heading">Want to make an original website yourself?</h2>
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <h2 class="section-heading text-white font-weight-light">Why CSS when you have Bootstrap? lmao</h2>
           <hr class="light">
-          <p class="text-faded">Forget that! Who would ever want to put in all of that effort for a website? Just open
-            up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and
-            you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact
-            template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
-          <a href="http://lmgtfy.com/?q=bootstrap+template" target="_blank" class="btn btn-default btn-xl">Google That
-            Shit</a>
+          <p class="text-faded text-white text-justify">This paragraph was a waste of time and space. If you
+            had not
+            read
+            this and I
+            had not typed this you and I could’ve done something more productive than reading this mindlessly and
+            carelessly as if you did not have anything else to do in life. Life is so precious because it is short and
+            you are being so careless that you do not realize it until now since this void paragraph mentions that you
+            are doing something so mindless, so stupid, so careless that you realize that you are not using your time
+            wisely. You could’ve been playing with your dog, or eating your cat, but no.</p>
+          <a href="http://lmgtfy.com/?q=bootstrap+template" target="_blank"
+            class="btn btn-default btn-xl bg-white">Google That Shit</a>
         </div>
       </div>
     </div>
   </section>
 
 
-
-
   <!-- Four icons -->
 
-  <section id="services">
+  <section class="icon" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">So Fucking Creative</h2>
+          <h2 class="section-heading font-weight-light">4 ICONS HERE YOU GO</h2>
           <hr class="primary">
         </div>
       </div>
@@ -103,136 +110,140 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="service-box">
-            <i class="fa fa-4x fa-globe wow bounceIn text-primary"></i>
-            <h3>This Fucking Template</h3>
-            <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses,
-              downloaded straight from The Web&#0153;</p>
+            <i class="fa fa-4x fa-globe wow animate__bounceIn animate__slower fa-icon"></i>
+            <h3>This is not a Globe</h3>
+            <p class="text-muted">Do I get a certificate? Why am I reading this pointless and barren paragraph? How does
+              this essay know what I’m thinking about?</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="service-box">
-            <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-            <h3>This Set of Four Icons</h3>
-            <p class="text-muted">Look at this cool set of four icons describing different things about us! We use four,
-              because it's the default.</p>
+            <i class="fa fa-4x fa-paper-plane wow animate__bounceIn animate__slower fa-icon" data-wow-delay=".1s"></i>
+            <h3>This is just a Paper</h3>
+            <p class="text-muted">Then finally, you feel relaxed and accomplished because the essay said finally to make
+              you hyped up that you accomplished reading a nearly 2 paged essay then the paragraph creates a plot twist.
+            </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="service-box">
-            <i class="fa fa-4x fa-thumbs-up wow bounceIn text-primary" data-wow-delay=".2s"></i>
-            <h3>Lots of effort</h3>
-            <p class="text-muted">We even changed some of the icons! We take the extra effort to make our designs truly
-              original.</p>
+            <i class="fa fa-4x fa-thumbs-up wow animate__bounceIn animate__slower fa-icon" data-wow-delay=".2s"></i>
+            <h3>I don't Like</h3>
+            <p class="text-muted">You’re no where near the ending. Your insides wince a little while you’re reading this
+              endless paragraph.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="service-box">
-            <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-            <h3>Made with Love</h3>
-            <p class="text-muted">Because nothing says hard work and talent like editing a few lines of text.</p>
+            <i class="fa fa-4x fa-heart wow animate__bounceIn animate__slower fa-icon" data-wow-delay=".3s"></i>
+            <h3>No Love to CSS</h3>
+            <p class="text-muted">Wondering if this will ever end. Then you start getting nervous that it’s almost time
+              for bed, then you wonder what you ate for breakfast on June the 9th.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- Four pictures with overlay etc -->
+
   <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-      <div class="row no-gutter">
-        <div class="col-lg-4 col-sm-6">
-          <div class="portfolio-box">
-            <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  One Thing
-                </div>
-                <div class="project-name">
-                  Look
-                </div>
+    <!-- <div class="container-fluid"> -->
+    <div class="row no-gutter">
+      <div class="col-lg-3 col-sm-6 column">
+        <div class=" portfolio-box">
+          <img src="./assets/images/1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded mx-0 px-0">
+                One Thing
+              </div>
+              <div class="project-name mx-0 px-0">
+                Look
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="portfolio-box">
-            <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Two Thing
-                </div>
-                <div class="project-name">
-                  At
-                </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 column">
+        <div class="portfolio-box">
+          <img src="./assets/images/2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded mx-0 px-0">
+                Two Thing
+              </div>
+              <div class="project-name mx-0 px-0">
+                At
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="portfolio-box">
-            <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Three Thing
-                </div>
-                <div class="project-name">
-                  This
-                </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 column">
+        <div class="portfolio-box">
+          <img src="./assets/images/3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded mx-0 px-0">
+                Three Thing
+              </div>
+              <div class="project-name mx-0 px-0">
+                This
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="portfolio-box">
-            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Four Thing
-                </div>
-                <div class="project-name">
-                  Bullshit
-                </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 column">
+        <div class="portfolio-box">
+          <img src="./assets/images/4.jpg" class="img-fluid" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded mx-0 px-0">
+                Four Thing
+              </div>
+              <div class="project-name mx-0 px-0">
+                Bullshit
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
 
-  <aside class="bg-dark">
+  <aside class="bg-dark portfolio-description">
     <div class="container text-center">
       <div class="call-to-action">
-        <h2>Seriously, It's This Fucking Template !</h2>
-        <a href="#" class="btn btn-default btn-xl wow tada">That's Amazing!</a>
+        <h2 class="text-white font-weight-light">Seriously, Analyzing Other's Code Takes More Time !</h2>
+        <a href="#" class="btn btn-default btn-xl wow animate__tada">Time Consuming!</a>
       </div>
     </div>
   </aside>
 
-
   <!-- contact me container -->
 
   <section id="contact">
-    <div class="container">
+    <div class="container my-5">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h2 class="section-heading">My Contact Information</h2>
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <h2 class="section-heading font-weight-light">My Contact Information</h2>
           <hr class="primary">
-          <p>Here's my phone number and email address, because hey that's part of the template and why would you not
-            include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in
-            from all the companies wanting my insane website design skills.</p>
-          <p>Honestly this template does look really nice, though.</p>
+          <p>Imagine the things you could’ve eaten ; sushi, sharks, dogs, snakes, cats, fish, humans, dogs, dogs, and
+            many more wonders of this world. Then when you are reading this, you realize that there is no long a wall of
+            text, you realize that you think you’ve made it to the ending and I congratulate you on your epic journey
+            across the wall of text. </p>
+          <p class="display-4">Yet you have not yet realized, that you wasted a full 5 minutes on this paragraph
+            that feels endless yet it has been ceased.</p>
         </div>
-        <div class="col-lg-4 col-lg-offset-2 text-center">
-          <i class="fa fa-phone fa-3x wow bounceIn"></i>
-          <p>+1-608-317-1888</p>
+        <div class="col-lg-4 offset-lg-2 text-center">
+          <i class="fa fa-phone fa-3x wow animate__bounceIn"></i>
+          <p class="my-3">+852 7777-7777</p>
         </div>
         <div class="col-lg-4 text-center">
-          <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-          <p><a href="mailto:tab@report.ly">holy@shit.com</a></p>
+          <i class="fa fa-envelope-o fa-3x wow animate__bounceIn" data-wow-delay=".1s"></i>
+          <p class="my-3"><a class="email font-weight-bold" href="mailto:tab@report.ly">Oscar@Chan.com</a></p>
         </div>
       </div>
     </div>
@@ -245,6 +256,10 @@
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+  <script>
+    new WOW().init();
+  </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -254,7 +269,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
-
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="./assets/js/smooth-scroll.js"></script>
 </body>
 
 </html>

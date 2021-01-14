@@ -64,4 +64,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+Time is gold. Treasure it. It is truly intensive cloning a website within a day.
