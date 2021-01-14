@@ -17,22 +17,160 @@
 
       Refer to the Practice directory
     -->
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/19e781afb7.js" crossorigin="anonymous"></script>
   </head>
 
   <!-- Nav bar setup -->
 
-  <body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" id="page-top">
+
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
 
+    <nav class="navbar navbar-default navbar-expand-md fixed-top navbar-dark">
+      <a class="navbar-brand" href="#page-top">THE ONLY BOOTSTRAP PAGE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto my-7">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fouricons">FOUR ICONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bullshit">BULLSHIT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#callme">CALL ME</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Can use Jumbotron -->
+    <div class="jumbotron-fluid text-center" id="banner">
+      <h1 class="banner-heading display-4">HEY LOOK, IT'S EVERY <br>BOOTSTRAP WEBSITE EVER</h1>
+      <div class="dash"></div>
+      <p class="banner-content">Take a look around at the same fucking bootstrap page you've seen ten million times<br>
+      before! Featuring all the same things as those pages!</p>
+      <a type="button" id="scroll-down" href="#about">THIS BUTTON MAKES THE PAGE SCROLL</a>
+    </div>
     <!-- Second Section -->
-
+    <div id="about" class="container-fluid text-center">
+      <div class="row justify-content-center">
+        <div class="col-6">
+      <h3 class="about-heading">Want to make an original website yourself?</h3>
+      <div class="about-dash"></div>
+      <p class="about-content">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser 
+        and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! 
+        There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, 
+        edit a few lines, and you're on your way! No one will notice!</p>
+        <a href="http://lmgtfy.com/?q=bootstrap+template" target="_blank" class="btn btn-default btn-xl">Google That Shit</a>
+      </div>
+      </div>
+    </div>
     <!-- Four icons -->
+    <div id="fouricons" class="icons container-fluid text-center">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h3 class="fouricons-heading">So Fucking Creative</h3>
+          <div class="dash"></div>
+          <div class="row">
+            <div class="icon-block col-xl-3 col-lg-6 col-md-12">
+              <i class="fas fa-globe-americas animate__animated animate__bounceInLeft"></i>
+              <div class="icon-title h4">This Fucking Template</div>
+              <div class="icon-text text-muted col-sm-8 offset-sm-2">Guaranteed to use the same fucking template that every other bootstrap website uses,
+              downloaded straight from The Web™
+              </div>
+            </div>
+            <div class="icon-block col-xl-3 col-lg-6 col-md-12">
+              <i class="fas fa-paper-plane animate__animated animate__bounceInLeft"></i>
+              <div class="icon-title h4">This Set of Four Icons</div>
+              <div class="icon-text text-muted col-sm-8 offset-sm-2">Look at this cool set of four icons describing different things about us! We use four, because it's the default.
+              </div>
+            </div>
+            <div class="icon-block col-xl-3 col-lg-6 col-md-12">
+              <i class="fas fa-thumbs-up animate__animated animate__bounceInLeft"></i>
+              <div class="icon-title h4">Lots of effort</div>
+              <div class="icon-text text-muted col-sm-8 offset-sm-2">We even changed some of the icons! We take the extra effort to make our designs truly original.
+              </div>
+            </div>
+            <div class="icon-block col-xl-3 col-lg-6 col-md-12">
+              <i class="fas fa-heart animate__animated animate__bounceInLeft"></i>
+              <div class="icon-title h4">Made with Love</div>
+              <div class="icon-text text-muted col-sm-8 offset-sm-2">Because nothing says hard work and talent like editing a few lines of text.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Four pictures with overlay etc -->
+    <div id="bullshit" class="container-fluid text-center">
+      <div class="row">
+        <div class="bullpic col-xl-3 col-lg-6 col-md-6">
+          <img src="assets/images/1.jpg" alt="">
+          <div class="overlay">
+            <p class="pic-name">ONE THING<br>Look</p>
+          </div>
+        </div>
+        <div class="bullpic col-xl-3 col-lg-6 col-md-6">
+          <img src="assets/images/2.jpg" alt="">
+          <div class="overlay">
+            <p class="pic-name">TWO THING<br>At</p>
+          </div>
+        </div>
+        <div class="bullpic col-xl-3 col-lg-6 col-md-6">
+          <img src="assets/images/3.jpg" alt="">
+          <div class="overlay">
+            <p class="pic-name">THREE THING<br>This</p>
+          </div>
+        </div>
+        <div class="bullpic col-xl-3 col-lg-6 col-md-6">
+          <img src="assets/images/4.jpg" alt="">
+          <div class="overlay">
+            <p class="pic-name">FOUR THING<br>Bullshit</p>
+          </div>
+        </div>
+      </div>
+      <div class="bullshit-content">
+        <h3>Seriously, It's This Fucking Template !</h3>
+        <a href="#page-top" class="btn btn-default btn-xl animate__animated animate__tada">That's Amazing!</a>
+      </div>
+    </div>
     <!-- contact me container -->
-
+    <div id="callme" class="container-fluid text-center">
+      <h3 class="callme-heading">My Contact Information</h3>
+      <div class="dash"></div>
+      <p class="callme-content col-8 offset-lg-2 offset-sm-2">Here's my phone number and email address, because hey that's part of the template and why would you not 
+            include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all 
+            the companies wanting my insane website design skills.<br><br>
+            Honestly this template does look really nice, though.
+      </p>
+      <div class="callme-items row">
+        <div class="callme-item col-lg-2 offset-lg-4">
+          <i class="fas fa-phone-alt animate__animated animate__jello"></i>
+          <p class="item-content">+1-608-317-1888</p>
+        </div>
+        <div class="callme-item col-lg-2">
+          <i class="far fa-envelope animate__animated animate__jello"></i><br>
+          <a href="mailto:holy@shit.com">holy@shit.com</a>
+        </div>
+      </div>
+    </div>
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
     <!-- 
@@ -41,5 +179,10 @@
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+     
+     <!--bootstrap CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
