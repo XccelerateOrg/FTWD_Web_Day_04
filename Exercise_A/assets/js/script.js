@@ -26,3 +26,21 @@ $(document).ready(function () {
     toggleAffix(ele, $(window), wrapper);
   });
 });
+
+$(".navbar-brand").hover(
+  function () {
+    $(this).addClass("animate__animated animate__rubberBand");
+  },
+  function () {
+    $(this).removeClass("animate__animated animate__rubberBand");
+  }
+);
+
+$(".btn").hover(
+  function () {
+    $(this).addClass("animate__animated animate__pulse");
+  },
+  function () {
+    $(this).removeClass("animate__animated animate__pulse");
+  }
+);

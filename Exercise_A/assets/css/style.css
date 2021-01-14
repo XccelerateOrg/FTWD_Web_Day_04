@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Fraunces", serif;
   /* background-color: #dc3545; */
 }
 
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -65,17 +65,17 @@ section {
   transition: padding 0.3s linear;
   background-color: #dc3545 !important;
   transition: font-size 0.3s linear;
-  font-size: 0.95em;
+  font-size: 18px;
 }
 
 .navbar-brand {
   background-color: transparent !important;
   transition: font-size 0.3s linear;
 }
-.navbar-brand:hover {
+/* .navbar-brand:hover {
   font-size: 22px;
   transition: font-size 0.3s linear;
-}
+} */
 
 @media (max-width: 768px) {
   .navbar {
@@ -83,10 +83,6 @@ section {
   }
 }
 
-#head {
-  position: relative;
-  top: 29%;
-}
 #topwrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/Exercise_A/assets/images/anthony-fomin-Z49Dre1Mf5M-unsplash.jpg);
@@ -97,11 +93,19 @@ section {
   background-repeat: no-repeat;
 }
 header {
-  height: 100vh;
   text-align: center;
   color: #fff;
   background-position: center;
   background-size: cover;
+  padding: 70px 20px;
+  position: relative;
+  top: 1vh;
+}
+
+@media (min-width: 979px) {
+  header {
+    height: 90vh;
+  }
 }
 
 .service-box {
@@ -139,7 +143,7 @@ header {
 .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .project-name {
   padding: 0 15px;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .portfolio-box
@@ -187,7 +191,7 @@ header {
   border: 0;
   border-radius: 300px;
   text-transform: uppercase;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
