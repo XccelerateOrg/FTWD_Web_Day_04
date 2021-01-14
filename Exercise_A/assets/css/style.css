@@ -1,3 +1,204 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+  /* background-color: #dc3545; */
+}
+
+hr {
+  max-width: 50px;
+  border-color: #dc3545;
+  border-width: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section {
+  padding: 100px 50px;
+}
+
+#dish {
+  padding: 20px 0px;
+}
+
+#contact {
+  padding: 100px 50px;
+  height: 80vh;
+}
+.navbar {
+  -webkit-transition: padding 0.3s ease;
+  -moz-transition: padding 0.3s ease;
+  -o-transition: padding 0.3s ease;
+  transition: padding 0.3s ease;
+  transition: font-size 0.3s linear;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.affix {
+  padding-top: 0.3em !important;
+  padding-bottom: 0.3em !important;
+  -webkit-transition: padding 0.3s linear;
+  -moz-transition: padding 0.3s linear;
+  -o-transition: padding 0.3s linear;
+  transition: padding 0.3s linear;
+  background-color: #dc3545 !important;
+  transition: font-size 0.3s linear;
+  font-size: 0.95em;
+}
+
+.navbar-brand {
+  background-color: transparent !important;
+  transition: font-size 0.3s linear;
+}
+.navbar-brand:hover {
+  font-size: 22px;
+  transition: font-size 0.3s linear;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #dc3545;
+  }
+}
+
+#head {
+  position: relative;
+  top: 29%;
+}
+#topwrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/Exercise_A/assets/images/anthony-fomin-Z49Dre1Mf5M-unsplash.jpg);
+  /* background-color: black; */
+  background-position: center;
+  background-size: none;
+  padding-top: 56px;
+  background-repeat: no-repeat;
+}
+header {
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-box {
+  padding: 25px;
+}
+
+.portfolio-box {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.portfolio-box .portfolio-box-caption {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  background: #dc3545;
+  transition: all 0.35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.portfolio-box-caption .portfolio-box-caption-content .project-category,
+.project-name {
+  padding: 0 15px;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-category {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .portfolio-box
+    .portfolio-box-caption
+    .portfolio-box-caption-content
+    .project-category {
+    font-size: 16px;
+  }
+
+  .portfolio-box
+    .portfolio-box-caption
+    .portfolio-box-caption-content
+    .project-name {
+    font-size: 22px;
+  }
+}
+
+.nogut > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn {
+  border: 0;
+  border-radius: 300px;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}
+
+.logo {
+  width: 25px;
+}
+
+.fa {
+  color: red;
+}

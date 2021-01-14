@@ -17,22 +17,290 @@
 
       Refer to the Practice directory
     -->
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/19d5dd39c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/Exercise_A/assets/css/style.css"
+      type="text/css"
+    />
   </head>
-
   <!-- Nav bar setup -->
-
-  <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
+  <body data-spy="scroll" data-target="#navbarNav">
     <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
-
-    <!-- Can use Jumbotron -->
+    <div id="topwrapper">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top border-bottom"
+        data-toggle="affix"
+      >
+        <a class="navbar-brand affix" href="#"
+          ><img
+            class="img-fluid logo"
+            src="/Exercise_A/assets/images/logo.png"
+          /><span class="ml-2 font-weight-bold">Classico Italiano</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#motto">Motto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dish">Signiture Dishes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Can use Jumbotron -->
+      <header>
+        <div id="head">
+          <h1 style="font-size: 45.5833px; font-weight: 900">
+            Classic Italian Cuisine with a Modern Twist
+          </h1>
+          <hr />
+          <p class="lead text-white" style="font-size: 20px">
+            We aim to revitalize classic Italian cuisine and give them a modern
+            update when needed. <br />
+            It is our mission to provide our customer with the finest ingredient
+            from Italy.
+          </p>
+          <a href="#dish" class="btn btn-xl page-scroll bg-danger text-light"
+            >Try Our Signiture Dish</a
+          >
+        </div>
+      </header>
+    </div>
     <!-- Second Section -->
-
+    <section class="bg-warning" id="about">
+      <div class="container-fluid px-4">
+        <div class="row px-4">
+          <div
+            class="col-lg text-center align-content-center align-items-center"
+          >
+            <h1>Our History</h1>
+            <hr />
+            <p class="lead">
+              Establish in 1997,Classico Italiano is among the most authentic
+              Italian resturant in Hong Kong. With our Aberdeen resturant opened
+              in 2013, Classico Italiano continues to be one of the most sought
+              after resturant in Hong Kong.
+            </p>
+            <a
+              href="http://lmgtfy.com/?q=bootstrap+template"
+              target="_blank"
+              class="btn btn-danger btn-xl mt-3"
+              >Visit our Openrice page</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Four icons -->
+    <section id="motto">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">So Fucking Creative</h2>
+            <hr class="primary" />
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-globe mb-3 animate__animated animate__bounceIn"
+              ></i>
+              <h3>ThisTemplate</h3>
+              <p class="lead pt-4">
+                Guaranteed to use the same fucking template that every other
+                bootstrap website uses.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-paper-plane mb-3 animate__animated animate__bounceIn"
+              ></i>
+              <h3>These Four Icons</h3>
+              <p class="lead pt-4">
+                Look at this cool set of four icons describing different things
+                about us! We use four, because it's the default.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-thumbs-up mb-3 animate__animated animate__bounceIn"
+              ></i>
+              <h3>Lots of effort</h3>
+              <p class="lead pt-4">
+                We even changed some of the icons! We take the extra effort to
+                make our designs truly original.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-heart mb-3 animate__animated animate__bounceIn"
+              ></i>
+              <h3>Made with Love</h3>
+              <p class="lead pt-4">
+                Because nothing says hard work and talent like editing a few
+                lines of text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Four pictures with overlay etc -->
+    <section id="dish">
+      <div class="container-fluid" style="background-color: black">
+        <div class="row nogut text-center" style="background-color: black">
+          <div class="col-lg-3 col-md-6">
+            <div class="portfolio-box">
+              <img
+                src="/Exercise_A/assets/images/33.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category">Traditional Recipe</div>
+                  <div class="project-name">Lasagna</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="portfolio-box">
+              <img
+                src="/Exercise_A/assets/images/32.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category">With Italian Cheese</div>
+                  <div class="project-name">Pizza</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="portfolio-box">
+              <img
+                src="/Exercise_A/assets/images/31.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category">Organic Ingredient</div>
+                  <div class="project-name">Meatball Bolognese</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="portfolio-box">
+              <img
+                src="/Exercise_A/assets/images/34.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category">Made by Hand</div>
+                  <div class="project-name">Four Cheese Ravioli</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center p-5 bg-dark">
+        <div class="p-5">
+          <h2 class="text-white p-4">
+            Seriously, It's This Fucking Template !
+          </h2>
+          <a
+            href="#"
+            class="btn btn-danger btn-xl animate__animated animate__tada"
+            >That's Amazing!</a
+          >
+        </div>
+      </div>
+    </section>
     <!-- contact me container -->
-
+    <section id="contact">
+      <div class="container-fluid pt-4">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Find Us</h2>
+            <hr />
+            <p class="lead p-2">
+              Honestly this template does look really nice, though.
+            </p>
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-sm-6 text-center">
+            <i
+              class="fa fa-phone fa-3x animate__animated animate__bounceIn"
+            ></i>
+            <p>+1-608-317-1888</p>
+          </div>
+          <div class="col-sm-6 text-center">
+            <i
+              class="fa fa-envelope-o fa-3x animate__animated animate__bounceIn"
+            ></i>
+            <p><a href="mailto:tab@report.ly">holy@shit.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
     <!-- 
@@ -41,5 +309,21 @@
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Exercise_A/assets/js/script.js"></script>
   </body>
 </html>
