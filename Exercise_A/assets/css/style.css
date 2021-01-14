@@ -11,14 +11,6 @@ html{
     border-bottom: 1px solid rgb(141, 141, 141);
 }
 
-.navbar-default.scrolled{
-    background:#ffffff;
-  }
-
-#mainNav{
-color:white;
-
-}
 .navButton{
     color: #888888;
 }
@@ -35,8 +27,29 @@ color:white;
     color: #c4c4c4;
 }
 
+@media (max-width:991px){
+    .navbar-default{
+        background-color:#ffffff;
+    }
+    .navbar-brand{
+        color:rgb(240, 100, 62) ;
+    }
+    .nav-link{
+        color: #000000;
+    }
+}
+
+.navbar-default.scrolled{
+    background:#ffffff;
+  }
+
+#mainNav{
+color:white;
+
+}
+
 .navbar-toggler{
-    background-color: rgba(150, 150, 150, 0.8);
+    background-color: rgba(207, 207, 207, 0.8);
     border: 2px solid #242630
 }
 
