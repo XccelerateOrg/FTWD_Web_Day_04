@@ -1,3 +1,270 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+html {
+    scroll-behavior: smooth;
+  }
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+
+
+section {
+    padding: 100px 0;
+}
+
+section:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -55px;
+    height: 55px;
+    visibility: hidden; 
+  }
+
+aside {
+    padding: 50px 0;
+}
+
+
+body{min-height:200vh;}
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+
+
+
+
+
+.navbar {
+    border-color: rgba(34,34,34,.05);
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color:transparent;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+
+.navbar-default.scrolled{
+    background:#fff;
+  }
+
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+header .container{
+padding-top: 15%;
+padding-bottom: 15%;
+
+}
+header h1{
+    font-weight: 900 !important;
+
+}
+
+
+
+
+/* animate-bouncein */
+
+
+
+#about{
+    background-color: #f05f40;
+}
+
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+/* #service:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -55px;
+    height: 55px;
+    visibility: hidden; 
+  } */
+#service h2{
+    font-size: 50px;
+}
+
+.creative-shit{
+    font-size: 6em;
+    margin: 3rem;
+}
+
+.fa-facebook {
+color: #4267b2;
+}
+
+
+
+/*  */
+
+
+
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+.bg-dark {
+    color: #fff;
+    background-color: #222;
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+}
+
+.icon {
+    color: #f05f40;
+}
+
+.icon h3{
+    color: black;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+
+
+.email-link {
+    color: #f05f40 !important;
+}
+
+
+
+
