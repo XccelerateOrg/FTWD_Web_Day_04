@@ -131,7 +131,7 @@ const MutationObserver =
 
     static notSupported = true;
 
-    observe() {}
+    observe() { }
   };
 
 // getComputedStyle shim, from http://stackoverflow.com/a/21797294
