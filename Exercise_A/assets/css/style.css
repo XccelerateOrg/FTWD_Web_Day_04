@@ -1,3 +1,238 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navbar{
+    border-bottom: solid 1px #fff;
+    color: #000000;
+    font-weight: bold;
+}
+.navbar-brandActive {
+    color: #f05f40 !important;
+    font-size: 1.3rem;
+  }
+.whiteNav {
+    color: #fff !important;
+}
+.BlackNav {
+    color: black !important;
+}
+.navbar-brand {
+    color: #fff !important;
+}
+.nav-link {
+    color: white;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.solid {
+    background: #fff;
+    border-bottom: solid 1px #fff;
+    opacity: 1;
+    transition: 0.9s;
+}
+
+#section0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./images/header.jpg);
+    height: 580px;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#section0 h1{
+    width: 80%;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+}
+
+
+#section0 button{
+    background-color: #f05f40;
+    padding: 14px 50px;
+    border-radius: 30px;
+}
+#section0 p{
+    width:70%;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f05f40 !important;
+    height: 420px;
+}
+
+#section1 h1{
+    width: 80%;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+}
+
+#section1 p{
+    width:90%;
+    text-align: center;
+    color: white;
+    font-size: 95%;
+}
+
+h1::after,
+h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70px;
+  margin: 1.5rem auto;
+  background-color: #f05f40;
+}
+#section1 h1::after,{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70px;
+  margin: 1.5rem auto;
+  background-color:white;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white !important;
+    height: 740px;
+}
+
+#section2 h1{
+    width: 100%;
+    color:black;
+    font-size: 300%;
+    text-align: center;
+}
+
+.Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 40%;
+}
+.box i {
+    color: #f05f40;
+    padding-bottom: 20px;
+}
+.box h3{
+    text-align: center;
+
+}
+.box p{
+    width: 70%;
+    text-align: center;
+}
+
+#section3 {
+    background: rgb(29, 29, 29);
+    padding: 0 0 3%;
+    height: 50vh;
+}
+  
+  #section3 p {
+    color: #ffffff99;
+}
+  
+  #section3 .container-fluid,
+  #section3 .row > div {
+    padding: 0;
+    position: relative;
+}
+#section3 .row {
+    margin: 0;
+}
+  
+  #section3 .hint {
+    opacity: 0;
+    transition: opacity 2s;
+    background: #f05f40e6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff99;
+}
+  
+#section3 .hint:hover {
+    opacity: 1;
+}
+  
+#section3 .hint span.word {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+.sec3text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section4 {
+    height: 600px;
+    background-color:white !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.final {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+#section4 h1,
+#section4 p {
+    color: black;
+}
+
+
