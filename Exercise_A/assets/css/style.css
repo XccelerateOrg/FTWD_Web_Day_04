@@ -1,3 +1,117 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+.body {
+  text-align: center;
+  position: relative;
+}
+/*--------------------------------------------Navbar--------------------------------------------------*/
+.navbar {
+  color: aliceblue;
+  border-bottom: solid 2px rgb(243, 247, 243);
+  /* background: rgb(58, 53, 53); */
+  font-weight: bolder;
+}
+
+.navbar-brand {
+  color: rgb(240, 233, 233) !important;
+}
+
+.whiteNav {
+  color: rgb(242, 245, 247) !important;
+}
+/*--------------Jumbo----------------------------------------------------------------------------------*/
+
+.jumbobig {
+  padding-top: 100px;
+  background-image: url(../images/header.jpg);
+  background-size: cover; /*specifies the size of the background images. cover = resize to fit entire container*/
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
+
+.jumbobig h1 {
+  color: aliceblue;
+  font-size: 60px;
+  font-style: italic;
+}
+
+.jumbobig p {
+  color: rgb(182, 199, 214);
+  font-style: 40px;
+  font-style: inherit;
+  font-size: 30px;
+}
+
+.jumbobig .btn {
+  border-radius: 80px;
+  background-color: red;
+}
+
+/*--------------------------------------------Below the jumbo-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+.belowjumbo {
+  text-align: center;
+  background-color: rgb(197, 74, 66);
+  height: 80vh;
+  padding-top: 100px;
+}
+.belowjumbo h2 {
+  color: rgb(215, 235, 218);
+}
+.belowjumbo p {
+  color: rgb(146, 160, 173);
+  font-size: 20px;
+  text-align: center;
+}
+.belowjumbo .btn {
+  background-color: rgb(155, 128, 128);
+  color: rgb(17, 11, 11);
+  border-radius: 25px;
+}
+
+/*---------------------------------------------The four Icons-------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.iconic {
+  text-align: center;
+}
+
+.iconic h2 {
+  padding-top: 55px;
+}
+
+/* ------------------------------------------------4 photos in row--------------------------- */
+.photosbot {
+  text-align: center;
+  background-color: rgb(10, 10, 10);
+  padding-bottom: 40px;
+}
+
+.photosbot h2 {
+  text-align: center;
+  color: hsl(0, 36%, 95%);
+  padding: 40px 5px;
+}
+
+.photosbot .btn {
+  border-radius: 80px;
+  background-color: rgb(248, 241, 241);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/*--------------------------------Contact Me--------------------------------------------------------------*/
+.contact {
+  text-align: center;
+  padding: 30px 200px;
+}
+
+.contact h2 {
+  font-size: 30px;
+}
+.contact p {
+  font-size: 20px;
+}
