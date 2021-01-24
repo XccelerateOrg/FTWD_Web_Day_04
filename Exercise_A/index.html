@@ -10,36 +10,208 @@
       This is where we declare all of the external libraries our page uses
       
       You will need:
-      Animate CSS
+      Animat
       Bootstrap CSS
-      You own custom stylesheet
       FontAwesome
 
       Refer to the Practice directory
     -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/981992d341.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    var $links = $(".navbar-link")
+    var $navbrand = $(".navbar-brand")
+    $nav.toggleClass('scrolled', $(this).scrollTop() > 70);
+    $links.toggleClass('scrolled', $(this).scrollTop() > 70);
+    $navbrand.toggleClass('scrolled', $(this).scrollTop() > 70);
+	});
+});
+
+  $(window).on('resize', function() {
+  var win = $(this);
+  if (win.width() < 800) {
+
+    $('.navbar').addClass('sticky-top');
+    $('.navbar').removeClass('fixed-top');
+  }
+  else $('.navbar').removeClass('sticky-top');
+    $('.navbar').addClass('fixed-top');
+});
+
+
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 0) {
+        $('section').each(function(i) {
+            if ($(this).position().top <= windscroll+600) {
+                $('nav a.active').removeClass('active');
+                $('nav a').eq(i).addClass('active');
+            }
+        });
+
+    } else {
+        $('nav a.active').removeClass('active');
+    }
+
+}).scroll();  
+</script>
+
   </head>
 
   <!-- Nav bar setup -->
 
-  <body data-spy="scroll" data-target=".navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto" >
+        <li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#four-icons">FOUR ICONS</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#bullshit">BULLSHIT</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#callme">CALL ME</a></li>
+      </ul>
+      </div>
+      </div>
+
+        
+    </nav>
 
     <!-- Can use Jumbotron -->
+    <header class="d-flex justify-content-center align-items-center">
+      <div class="head-text d-flex flex-column justify-content-center align-self-center">
+        <h1 class="display-3">HEY LOOKS, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+      <hr>
+      <p class="lead">Take a look around at the same fuckong bootstrap page you've seen teen milljon times before! Featuring all the same things as those pages!</p>
+      <a href="#about" class="btn">THIS BUTTON MAKES THE PAGE SCROLL</a>
+      </div>
+    </header>
     <!-- Second Section -->
-
+    <section id="about" class="googleThatS d-flex align-items-center justify-content-center flex-column" >
+      <div class="googleThatinner">
+        <h2 class="display-6">Want to make an original website yourself?</h2>
+        <hr>
+        <p class="google-text">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+        <a target="blank" href="https://lmgtfy.app/?q=bootstrap+template" class="btn">GOOGLE THAT SHIT</a>
+      </div>
+     
+    </section>
     <!-- Four icons -->
+    <section id="four-icons" class="icons-section container-fluid d-flex justify-content-center align-items-center">
+      <div class="iconsInner">
+      <h2>So Fucking Creative</h2>
+      <hr>
+      <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <i class="wow animate__animated animate__bounceIn animate__slow	 fas fa-globe-americas fa-3x"></i>
+        <h3>This Fucking Template</h3>
+        <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <i class="wow animate__animated animate__bounceIn animate__slow	 fas fa-paper-plane fa-3x"></i>
+        <h3>This Set of Four Icons</h3>
+        <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <i class="wow animate__animated animate__bounceIn animate__slow	 fas fa-thumbs-up fa-3x"></i>
+        <h3>Lots of effort</h3>
+        <p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <i class="wow animate__animated animate__bounceIn animate__slow	 fas fa-heart fa-3x"></i>
+        <h3>Made with Love</h3>
+        <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+      </div>
+      </div>
+    </section>
     <!-- Four pictures with overlay etc -->
+    <section id="bullshit" class="photo-section container-fluid">
+      <div class="row g-0 container-fluid">
+      <div class="col-lg-3 col-md-6 img-container">
+          <div class="overlay">
+            <h6>ONE THING</h6>
+            <p>Look</p>
+          </div>
+          <img class="img-fluid" src="assets/images/1.jpg" alt="first image">
+        </div>
+    
+      <div class="col-lg-3 col-md-6 img-container">
+        <div class="overlay">
+          <h6>TWO THING</h6>
+          <p>At</p>
+        </div>
+        <img class="img-fluid" src="./assets/images/2.jpg" alt="second image">
+      </div>
+      <div class="col-lg-3 col-md-6 img-container">
+        <div class="overlay">
+          <h6>THREE THING</h6>
+          <p>This</p>
+        </div>
+        <img class="img-fluid" src="./assets/images/3.jpg" alt="third image">
+      </div>
+      <div class="col-lg-3 col-md-6 img-container">
+        <div class="overlay">
+          <h6>FOUR THING</h6>
+          <p>Bullshit</p>
+        </div>
+        <img class="img-fluid" src="./assets/images/4.jpg" alt="fourth image">
+      </div>
+      </div>
+        <div class="amazing">
+          <h2>Seriously, It's This Fucking Template!</h2>
+          <a href="#" class="wow btn animate__animated animate__tada">THAT'S AMAZING!</a>
+        </div>
+      
+    </section>
     <!-- contact me container -->
+    <section id="callme" class="contact-info d-flex justify-content-center align-items-center flex-column">
+      <div class="class-info">
+      <h2>My Contact Information</h2>
+      <hr>
+      <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+      <p>Honestly, this template does look really nice, though.</p>
+    </div>
+      <div class="row container-fluid">
+        <div class="col-md-6 d-flex flex-column">
+          <i class="wow animate__animated animate__bounceIn animate__slow fas fa-phone-alt fa-3x"></i>
+          <p>+1-608-317-1888</p>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+          <i class="wow animate__animated animate__bounceIn animate__slow far fa-envelope fa-3x"></i>
+          <p class="email">holy@shit.com</p>
+        </div>
+        
+      </div>
+      
+    </section>
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
-
     <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
-
+      
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+              <script>
+              new WOW().init();
+              </script>
+          
   </body>
 </html>

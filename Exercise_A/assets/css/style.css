@@ -1,3 +1,273 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body{
+    position: relative;
+}
+
+/* Navbar */
+nav{
+    border-bottom:1px solid rgba(119, 136, 153, 0.8);
+}
+.navbar-brand{
+    font-weight:bold;
+    font-size: 1.2em;
+    color:rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-brand.scrolled{
+    color:rgb(255, 69, 0) !important;
+    transition: 400ms linear;
+    font-size: 0.9em;
+}
+.navbar-brand:hover{
+    color:rgb(255, 255, 255) !important ;
+}
+.navbar-brand.scrolled:hover{
+    color:rgb(255, 69, 0) !important;
+}
+.navbar-item{
+    margin: 0 15px;
+    padding:0;
+}
+.navbar-link{
+    font-size: 0.75em;
+    font-weight: bolder;
+    text-decoration: none;
+    color:rgb(119, 136, 153);
+}
+.navbar-link:visited{
+    text-decoration:none;
+}
+.navbar-link:hover{
+    color:rgb(255, 255, 255);
+}
+
+.navbar.scrolled {
+    background-color: rgb(255, 255, 255) !important;
+    transition: background-color 200ms linear;
+  }
+  .navbar-link.scrolled{
+      color:rgb(0, 0, 0);
+      transition: background-color 200ms linear;
+  }
+  .navbar-link.scrolled:hover{
+      color:rgb(255, 69, 0);
+  }
+
+  @media(max-width:800px){
+    .navbar-brand{
+        color:rgb(255, 69, 0) !important;
+    }
+    .navbar-link:hover{
+        color:rgb(255, 69, 0) !important ;
+    }
+     .navbar-brand:hover{
+            color:rgb(255, 69, 0) !important;
+}
+}
+/* Jumbotron */
+
+header {
+height:720px;
+  width:100%;
+  background-image:url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-img{
+position: absolute;
+width:100%;
+
+}
+.head-text{
+    width: 66%;
+    text-align:center;
+    z-index: 1;
+    color:white;
+}
+.display-3{
+    font-weight: bolder;
+}
+hr{
+    width:55px;
+    margin:20px auto;
+    height:3px;
+    border: solid 1.5px rgb(255, 69, 0);
+    color:rgb(255, 69, 0);
+    opacity: 1;
+}
+.lead{
+    width:80%;
+    margin:auto;
+    color:rgb(203, 199, 199);
+}
+
+.btn{
+    border-radius: 30px;
+    color:rgb(255, 255, 255);
+    padding:15px;
+    width:35%;
+    margin: 50px auto;
+    font-size: 0.8em;
+    font-weight:bolder;
+    background-color: rgb(255, 69, 0);
+    opacity:0.8;
+    border:none;
+    min-width: 200px;
+}
+
+.btn:hover{
+    opacity:0.9;
+    color:rgb(255, 255, 255);
+}
+
+/* google That Shit */
+
+.googleThatS{
+    background-color:rgb(255, 69, 0);
+    opacity:0.9;
+    color:rgb(255, 255, 255);
+}
+.googleThatinner{
+    width:60%;
+    text-align:center;
+    margin: 100px;
+
+}
+
+.googleThatinner hr{
+    color:rgb(255, 255, 255);
+    border: solid 1.5px rgb(255, 255, 255);
+}
+
+.google-text{
+    color: rgb(255, 255, 255);
+    width:80%;
+    margin:auto;
+    text-align: justify center;
+}
+
+.googleThatS .btn{
+    background-color: rgb(255, 255, 255);
+    opacity:1;
+    color:rgb(0, 0, 0);  
+    width:22%;
+    font-size: 0.85em;
+    margin-top:20px;
+}
+
+/* Icons Section */
+
+i{
+    color: rgb(255, 69, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons-section{
+    text-align:center;
+
+}
+
+.iconsInner{
+    width:80%;
+    margin:100px;
+}
+.row{
+    margin-top: 20px;
+}
+
+h3{
+    font-weight:300;
+}
+.row p{
+    margin-top: 10px;
+    color:rgb(119, 136, 153);
+    width:80%;
+    margin:auto;
+}
+
+/* Photos section */
+
+.photo-section{
+    padding:0;
+}
+.img-container{
+    position: relative;
+}
+.amazing{
+    text-align:center;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.9;
+    padding:40px;
+    color:rgb(255, 255, 255);
+
+}
+
+.amazing h2{
+    font-weight: 350;
+}
+
+.amazing .btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 15%;
+    margin-top: 10px;
+    opacity:1;
+    margin-bottom: 0;
+}
+
+/* Overlay Style */
+
+.overlay {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 69, 0);
+    text-align: center;
+    
+  }
+  .overlay:hover{
+      opacity:0.7;
+  }
+  h6{
+      position:relative;
+      top: 35%;
+      margin:auto;
+      font-weight: bold;
+      
+  }
+  .overlay p{
+    position:relative;
+    top: 35%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+  }
+
+/* Contact Info */
+.contact-info{
+    width: 50%;
+    margin: 70px auto;
+    text-align: center
+}
+
+.contact-info i{
+    color:rgb(0, 0, 0);
+}
+
+.email{
+    color:rgb(255, 69, 0) !important;
+    opacity: 0.7;
+}
+
+.email:hover{
+    text-decoration: underline;
+    opacity:1;
+}
+
+.active{
+    color:rgb(255, 69, 0) !important;
+}
