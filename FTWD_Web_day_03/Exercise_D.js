@@ -25,6 +25,7 @@ function multiplyNumber(number) {
   while (number < 1000000) {
     number *= 10;
   }
+  console.log(number);
 
   return number;
 }
