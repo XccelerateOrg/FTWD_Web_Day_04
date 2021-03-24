@@ -19,13 +19,9 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://dl.dropbox.com/s/hk7c6wqd8cgm8i4/officialstyles.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="global.css" />
     <style>
       svg {
         margin: 20px;
@@ -34,12 +30,49 @@
   </head>
 
   <body class="font4">
+    <nav
+      class="navbar navbar-light blue lighten-4"
+      style="background-color: #e3f2fd"
+    >
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="scroll.html">Scroll</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="smoothScroll.html"
+            >Smooth Scroll</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fontawesome.html"
+            >Font Awesome</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hover.html">Hover</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dommanipulation.html"
+            >DOM Manipulation</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forms.html">Forms</a>
+        </li>
+      </ul>
+    </nav>
     <!-- Registry Beginning -->
     <div id="one">
       <!-- Beg Row -->
       <div class="row">
         <div class="col-2">
           <p id="top">
+            <!-- Button with hashtag bottom here  -->
             <a href="#bottom"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +277,9 @@
     <!-- Beg Row -->
     <div class="row">
       <div class="col-2">
+        <!-- Id bottom is here  -->
         <p id="bottom">
+          <!-- Hashtag to the top  -->
           <a href="#top"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -267,8 +302,11 @@
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div class="container"></div>
 
+    <!-- Smooth Scroll Tag -->
+
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
+    <!-- Smooth Scroll Tag End -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -286,8 +324,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/wow.js"></script>
-    <script>
+    <!-- All anchors that contain the # in href -->
+    <script type="text/javascript" async defer>
       new WOW().init();
+
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
   </body>
