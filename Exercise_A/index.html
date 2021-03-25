@@ -36,33 +36,29 @@
 
   <!-- Nav bar setup -->
   <!-- As a link -->
-  <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">BOOTSTRAP WEBSITE</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavAltMarkup"
-      >
-        <div class="navbar-nav">
-          <a class="nav-link page-scroll" href="#about">ABOUT</a>
-          <a class="nav-link page-scroll" href="#">FOUR ICONS</a>
-          <a class="nav-link page-scroll" href="#">BULLSHIT</a>
-          <a class="nav-link page-scroll" href="#">CALL ME</a>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top navbar-fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BOOTSTRAP WEBSITE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link page-scroll" href="#about">ABOUT</a>
+            <a class="nav-link page-scroll" href="#features">FOUR ICONS</a>
+            <a class="nav-link page-scroll" href="#bullshit">BULLSHIT</a>
+            <a class="nav-link page-scroll" href="#callme">CALL ME</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  
+  
   <body data-spy="scroll" data-target=".navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
@@ -117,7 +113,7 @@
     </section>
 
     <!-- Four icons -->
-    <section class="features">
+    <section id="features">
       <div class="col-lg-12 text-center">
         <h2>So Fucking Creative</h2>
         <hr />
@@ -162,6 +158,7 @@
       </div>
     </section>
     <!-- Four pictures with overlay etc -->
+    <section id="bullshit">
       <div class="container-fluid">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
           <div class="col">
@@ -202,6 +199,7 @@
           </div>
         </div>
       </div>
+    </section>
       
     <aside class="bg-dark">
       <div class="container text-center">
@@ -214,7 +212,7 @@
       </div>
     </aside>
     <!-- contact me container -->
-    <section>
+    <section id="callme">
       <div class="col-lg-12 text-center mt-5">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -242,6 +240,8 @@ Honestly this template does look really nice, though.
     </section>
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+
+
     <script
     src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="

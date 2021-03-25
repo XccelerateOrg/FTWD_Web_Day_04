@@ -9,18 +9,19 @@ body{
 
 /* navbar */
 .navbar-brand{
-    color: white;
+    color: #f05f40;
 }
 .nav-link{
-    color: white;
+    color: #f05f40;
 }
 .nav-link:hover{
     color: grey;
 }
 
-.scrolling-active{
-    background-color: white;
-}
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
 
 /* jumbotron */
 

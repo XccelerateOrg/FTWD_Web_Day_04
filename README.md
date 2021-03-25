@@ -40,14 +40,14 @@ Method one:
 
 ## Practice Questions :telescope:
 
-- [ ] Practice: Bootstrap Practice
+- [x] Practice: Bootstrap Practice
 
 ## Exercises Due :athletic_shoe:
 
-- [ ] Answer two questions on the references sheet: https://docs.google.com/spreadsheets/d/1U-7M4mSmCkHH8ZqaqFr19QFDI0loksGRr7yKHNbdqwM/edit#gid=153157363 :)
-- [ ] Exercise A: Create a clone of this website: http://www.dagusa.com/ OR implement two animate.css widgets, wow.js, font awesome, smooth scroll and a form on your page
+- [x] Answer two questions on the references sheet: https://docs.google.com/spreadsheets/d/1U-7M4mSmCkHH8ZqaqFr19QFDI0loksGRr7yKHNbdqwM/edit#gid=153157363 :)
+- [x] Exercise A: Create a clone of this website: http://www.dagusa.com/ OR implement two animate.css widgets, wow.js, font awesome, smooth scroll and a form on your page
 
-* [ ] Finish the 'What is one thing that I learned from doing this project?' in the readme
+* [x] Finish the 'What is one thing that I learned from doing this project?' in the readme
 
 ### Tips :tipping_hand_woman:
 
@@ -63,4 +63,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+Animate Css and WOW Js
