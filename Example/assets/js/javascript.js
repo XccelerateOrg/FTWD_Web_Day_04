@@ -1,4 +1,5 @@
 console.log("hey");
+
 /**********************************************
  * Changing Styles
  * ==================================
@@ -35,8 +36,8 @@ allHighlightClass.forEach((eachElement) => {
  ***********************************************/
 console.log("yo");
 // Newer method
-let removeElement = document.getElementById("remove");
-removeElement.remove(); //REMOVE IT!
+// let removeElement = document.getElementById("remove");
+// removeElement.remove(); //REMOVE IT!
 
 /**********************************************
  * Add Tags

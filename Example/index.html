@@ -61,10 +61,10 @@
     <br />
     <div class="container">
       <!-- ABOUT.HTML -->
-      <h1>About page</h1>
+      <h1>Animate page</h1>
       <h5>How to use:</h5>
       <ul>
-        <li>Add the cdn to your file</li>
+        <li>Add the cdn to your file (animate.css)</li>
         <li>Add the class animate__animated</li>
         <li>
           Add any of the animation names, with the animate__
@@ -73,6 +73,10 @@
         <li>
           Can also delay classes by typing in
           animate__delay-2s
+        </li>
+        <li>
+          For wow: copy the assets/js/wow.js file and then
+          import it as a script tag
         </li>
       </ul>
       <div class="row">
@@ -148,6 +152,61 @@
       </div>
 
       <!-- SECOND ROW -->
+      <!-- Wow.js allows you to activate the animation upon scrolling -->
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="row">
+        <div class="col-6">
+          <div
+            class="hero__item wow animate__animated animate__zoomIn"
+          >
+            <h2 class="hero__item-title">
+              “Hope” is the thing with feathers
+            </h2>
+            <p class="hero__item-sub-title">
+              “Hope” is the thing with feathers –<br />
+              That perches in the soul –<br />
+              And sings the tune without the words –<br />
+              And never stops – at all –<br />
+
+              And sweetest – in the Gale – is heard –<br />
+              And sore must be the storm –<br />
+              That could abash the little Bird<br />
+              That kept so many warm –<br />
+
+              I’ve heard it in the chillest land –<br />
+              And on the strangest Sea –<br />
+              Yet – never – in Extremity,<br />
+              It asked a crumb – of me.<br />
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <h5 class="animate__animated animate__bounce">
+            Two roads diverged in a yellow wood, <br />And
+            sorry I could not travel both <br />And be one
+            traveler, long I stood <br />And looked down one
+            as far as I could <br />To where it bent in the
+            undergrowth; <br />Then took the other, as just
+            as fair, <br />And having perhaps the better
+            claim, <br />Because it was grassy and wanted
+            wear;<br />
+            Though as for that the passing there <br />Had
+            worn them really about the same, <br />And both
+            that morning equally lay <br />In leaves no step
+            had trodden black. <br />Oh, I kept the first
+            for another day! <br />Yet knowing how way leads
+            on to way, <br />I doubted if I should ever come
+            back. <br />I shall be telling this with a sigh
+            <br />Somewhere ages and ages hence: <br />Two
+            roads diverged in a wood, and I— <br />I took
+            the one less traveled by, <br />And that has
+            made all the difference.
+          </h5>
+        </div>
+      </div>
+      <!-- ABOUT.HTML -->
+      <!-- SECOND ROW -->
     </div>
 
     <script
@@ -168,6 +227,7 @@
     ></script>
     <script src="assets/js/wow.js"></script>
     <script>
+      // Initialize wow
       new WOW().init();
     </script>
   </body>
