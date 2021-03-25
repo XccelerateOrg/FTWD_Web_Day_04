@@ -1,3 +1,161 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+body{
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+
+/* navbar */
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: grey;
+}
+
+.scrolling-active{
+    background-color: white;
+}
+
+/* jumbotron */
+
+.heading-text{
+    font-size: 48px;
+}
+
+.card{
+    background-image: url(/Exercise_A/assets/images/header.jpg);
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px;
+    background-position: center;
+    -webkit-background-size: cover;
+}
+hr{
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+
+.btn-primary{
+    background-color: #f05f40;
+    border: none;
+    padding: 20px 20px;
+    font-weight: 700;
+}
+
+.btn-primary:hover{
+    background-color: #c5472b;
+    border: none;
+    padding: 20px 20px;
+    font-weight: 700;
+}
+
+.button-text{
+    color: white;
+    text-decoration: none;
+}
+
+.button-text:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.about-section{
+    background-color: #f05f40;
+    padding: 100px;
+}
+
+.light{
+    border-color: #fff;
+}
+
+.text-faded{
+    color: rgba(255,255,255,.7);
+}
+
+.heading-title{
+    color: white;
+}
+
+.features{
+    padding: 100px 0;
+}
+
+.icons{
+   color: #f05f40;
+}
+
+.email-links{
+    color: #f05f40;
+}
+/* image overlay */
+
+
+.image{
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    width: 100%;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(240,95,64,.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+
+.image__title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* cta section */
+aside{
+    padding: 100px 0;
+}
+
+.cta-heading{
+    color: white;
+}
+
+@media only screen and (max-width: 767px){
+    .image{
+        position: relative;
+        width: 350px;
+    }
+}
