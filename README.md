@@ -3,7 +3,6 @@
 ### Main Topics :zap:
 
 - Bootstrap Practice
-- Russian Doll Rule
 
 ### Directions :flashlight:
 
