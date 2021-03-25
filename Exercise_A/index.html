@@ -6,6 +6,21 @@
 
     <title>Solution for day 4 using Bootstrap v4</title>
 
+    <script src="https://kit.fontawesome.com/b48d14861a.js" crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="global.css" />
+    
+
     <!-- 
       This is where we declare all of the external libraries our page uses
       
@@ -25,13 +40,138 @@
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#ABOUT">ABOUT <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="#FOURICONS">FOUR ICONS</a>
+          <a class="nav-item nav-link active" href="#BULLSHIT">BULLSHIT</a>
+          <a class="nav-item nav-link active" href="#CALLME">CALL ME</a>
+        </div>
+      </div>
+    </nav>
     <!-- Can use Jumbotron -->
+    <div id="LANDING">
+      <div class="jumbotron text-center mb-0 bg-light" style="padding-top: 20%; padding-bottom: 20%;">
+        <h1 class="display-3 animate__animated animate__bounce wow">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+        <hr class="my-4">
+        <p>Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+        <a class="btn btn-primary btn-lg" href="#ABOUT" role="button">THIS BUTTON MAKES THE PAGE SCROLL</a>
+      </div>
+    </div>
     <!-- Second Section -->
+    <div id="ABOUT">
+      <div class="jumbotron text-center">
+        <h1 class="display-4  animate__animated animate__zoomIn wow">Want to make an original website yourself?</h1>
+        <hr class="my-4">
+        <p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+        <a class="btn btn-primary btn-lg" href="http://lmgtfy.com/?q=bootstrap+template" target="_blank" role="button">GOOGLE THAT SHIT</a>
+      </div>
+    </div>
 
     <!-- Four icons -->
+    <div id="FOURICONS">
+      <div class="container mt-3 mb-3">
+        <div class="row">
+          <div class="col-lg-12 text-center animate__animated animate__zoomIn wow">
+            <h2>So Fucking Creative</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <span style="font-size: 48px; color: Dodgerblue;">
+              <i class="fas fa-smile-wink animate__animated animate__heartBeat wow"></i>
+            </span>
+            <h3 class="animate__animated animate__wobble wow">This is an icon</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <span style="font-size: 48px; color: Dodgerblue;">
+              <i class="fas fa-smile-wink animate__animated animate__heartBeat wow"></i>
+            </span>
+            <h3 class="animate__animated animate__wobble wow">This is an icon</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <span style="font-size: 48px; color: Dodgerblue;">
+              <i class="fas fa-smile-wink animate__animated animate__heartBeat wow"></i>
+            </span>
+            <h3 class="animate__animated animate__wobble wow">This is an icon</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <span style="font-size: 48px; color: Dodgerblue;">
+              <i class="fas fa-smile-wink animate__animated animate__heartBeat wow"></i>
+            </span>
+            <h3 class="animate__animated animate__wobble wow">This is an icon</h3>            
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Four pictures with overlay etc -->
+    <div id="BULLSHIT">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 pt-4 pb-4 d-flex justify-content-center">
+            <img src="http://via.placeholder.com/640x360" style="width:100%">
+          </div>
+          <div class="col-lg-3 col-md-6 pt-4 pb-4 d-flex justify-content-center">
+            <img src="http://via.placeholder.com/640x360" style="width:100%">
+          </div>
+          <div class="col-lg-3 col-md-6 pt-4 pb-4 d-flex justify-content-center">
+            <img src="http://via.placeholder.com/640x360" style="width:100%">
+          </div>
+          <div class="col-lg-3 col-md-6 pt-4 pb-4 d-flex justify-content-center">
+            <img src="http://via.placeholder.com/640x360" style="width:100%">
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center mb-0">
+      <h1 class="display-4">Seriously, It's This Fucking Template !</h1>
+      <hr class="my-4">
+      <a class="btn btn-primary btn-lg" href="#" role="button">THAT'S AMAZING!</a>
+    </div>
+
+
     <!-- contact me container -->
+    <div id="CALLME">
+      <div class="jumbotron text-center mb-0 bg-light">
+        <h3>My Contact Information</h3>
+        <hr class="my-4">
+        <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+        <p>Honestly this template does look really nice, though.
+        <div style="font-size: 48px; color: Dodgerblue;">
+          <i class="fas fa-smile-wink"></i>
+        </div>
+        <h5>+1-608-317-1888</h5>
+        <div style="font-size: 48px; color: Dodgerblue;">
+          <i class="fas fa-smile-wink"></i>
+        </div>
+        <h5><a href="mailto:tab@report.ly">holy@shit.com</a></h5>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-5 center">
+          <div class="contact-clean m-3 p-3">
+              <form action="https://formspree.io/mjvaegbw" method="POST">
+                  <h3 class="heading text-center">Get In Touch</h2>
+                  <div class="heading-underline"></div>
+                  <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+                  <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                  <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+                  <div class="form-group"><button class="btn btn-primary" type="submit" value="Send">send </button></div>
+              </form>
+          </div>
+        </div>
+      </div>
+
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
@@ -41,5 +181,39 @@
       You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+     
+
+   <script
+     src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+     crossorigin="anonymous"
+   ></script>
+
+   <script
+     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+     crossorigin="anonymous"
+   ></script>
+
+   <script
+     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+     crossorigin="anonymous"
+   ></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+
+   <script src="assets/js/wow.js"></script>
+
+   <script>
+     // Initialize wow
+     new WOW().init();
+   </script>
+   
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+   
   </body>
 </html>

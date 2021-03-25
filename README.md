@@ -64,3 +64,4 @@ Method one:
 ## What is one thing that I learned from doing this project? :books:
 
 (Fill whatever you would like here)
+I learn how to take advantage of bootstrap classes to quickly format the website without creating custom css.
