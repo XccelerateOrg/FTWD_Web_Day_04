@@ -24,9 +24,18 @@
 }
 
 .nav-active {
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
 }
 
+.newlogo {
+    color: #f05f40!important;
+    font-size: 15px;
+
+}
+
+.newlink {
+    color: black!important;
+}
 
 .container-fluid {
     width: 100%;
@@ -239,7 +248,6 @@ i {
     margin-right: 50px;
     margin-left: 50px;
 }
-
 
 
 @media only screen and (max-width: 900px) {

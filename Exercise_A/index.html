@@ -15,16 +15,16 @@
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="jcnav">
-        <a class="navbar-brand page-scroll" id="jclogo">THE ONLY BOOTSTRAP PAGE</a>
+        <a class="navbar-brand page-scroll"  id="jclogo">THE ONLY BOOTSTRAP PAGE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#two">ABOUT</a>
-            <a class="nav-link" href="#three">FOUR ICONS</a>
-            <a class="nav-link" href="#four">BULLSHIT</a>
-            <a class="nav-link" href="#five">CALL ME</a>
+            <a class="nav-link" id="jclink" href="#two">ABOUT</a>
+            <a class="nav-link" id="jclink" href="#three">FOUR ICONS</a>
+            <a class="nav-link" id="jclink" href="#four">BULLSHIT</a>
+            <a class="nav-link" id="jclink" href="#five">CALL ME</a>
           </div>
         </div>
     </nav>
@@ -118,16 +118,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const navbar = document.querySelector('#jcnav');
-      window.onscroll = () => {
-      if (window.scrollY > 300) {
-        navbar.classList.add('nav-active');
-      } else {
-        navbar.classList.remove('nav-active');
-      }
-    };
-    </script>
     <script src="https://kit.fontawesome.com/99a6113203.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="./assets/js/wow.js"></script>
@@ -136,5 +126,6 @@
       // Initialize wow
       new WOW().init();
     </script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
