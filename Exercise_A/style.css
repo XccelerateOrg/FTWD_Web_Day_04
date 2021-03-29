@@ -1,0 +1,55 @@
+body {
+    background-color: #ffffff;
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    size
+    
+}
+
+.divider {
+    margin: 0 auto;
+}
+
+.whiteText {
+    color: white;
+}
+
+.mainImage {
+    background-image: url('../Exercise_A/assets/images/1.jpg'); 
+    background-repeat: no-repeat; background-size: cover; 
+    height: 80vh; 
+    border: 1px white solid; 
+}
+
+#middle {
+    background-color: #ccffbd;
+    padding: 20px 30px 20px 30px;
+}
+
+.row {
+    background-color: #ffffff;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    Height: 20%;
+    padding: 5px;
+}
+
+
+.lower-page {
+  background-color: black;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 10px; 
+}
+
+.container-bottom {
+    
+}
