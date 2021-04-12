@@ -1,3 +1,230 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+h1, h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.navbar-default {
+   background-color: none;
+    /* border-color: #ddd; */
+}
+
+.header {
+    background-image:url("/Exercise_A/assets/images/header.jpg") ;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.headingFont {
+    color: white;
+    margin-top: px;
+    position: relative;
+
+}
+.containerSize {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.btn {
+    font-size: 12PX;
+    font-weight: 700;
+    border-radius: 300px !important;
+}
+
+.btn-primary {
+    background-color: #f05f40 !important;
+    border-color: #f05f40 !important;
+    padding: 1rem;
+    
+}
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40 !important;
+    border-width: 3px;
+    height: 0;
+    border-top: 1px solid #eee;
+   
+}
+
+.lead {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7)
+}
+
+.ContainerSizeInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.section2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.halfContainerOrange {
+    height: 50vh;
+    background-color: #f05f40 !important;
+}
+
+.halfContainerWhite {
+    height: 50vh;
+    background-color: white !important;
+}
+
+.halfContainerBlack {
+    background-color: #222;
+    height: 50vh;
+}
+
+/* ****************section 2************** */
+.containerWidth {
+padding:30px;
+margin: 60px;
+}
+
+
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+
+}
+
+.button2 {
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/************section3**************/
+.section {
+    padding: 100;
+    display: block;
+}
+
+.section3Title {
+    margin: 50px auto 0;
+    max-width: 400px;
+    
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+div{
+    display: block;
+}
+
+.service-box {
+    margin: 50px auto 0;
+}
+.text-center {
+text-align: center;
+}
+
+/* *********section4******* */
+
+.section4 {
+    padding: 0% !important;
+    margin: 0%;
+    
+}
+
+.porfolio-box {
+   
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.img-responsive {
+    /* display: flex; */
+    margin: 0%;
+    padding: 0%;
+    height: 250px;
+    width: auto;
+}
+
+/* *********section5*********** */
+.button3 {
+    border-radius: 300%;
+}
+
+.container-fluid {
+padding-right: 0% !important;
+padding-left: 0% !important;
+    
+}
+.quarterContainerBlack {
+    background-color: #222;
+    height: 30vh;
+    margin: 0% !important;
+    padding: 0% !important;
+    width: 100%;
+}
+
+.section5 {
+    color: #eee;
+}
+.blackMargin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 60px;
+
+margin-right: -15px;
+margin-left: -15px;
+
+}
+
+/* **********Contact me********* */
+h3 {
+font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.row-margin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 60px;
+
+margin-right: -15px;
+margin-left: -15px;
+}
+.contactMeContainer {
+height: 80vh;
+padding: 100px 0;
+
+}

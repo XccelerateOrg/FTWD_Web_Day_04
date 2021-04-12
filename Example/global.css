@@ -6,3 +6,7 @@ body {
 a:hover {
   color: white;
 }
+
+.animate {
+  animate__pulse
+}
