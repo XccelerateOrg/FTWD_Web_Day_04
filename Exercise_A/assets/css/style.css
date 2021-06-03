@@ -1,3 +1,195 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(59, 50, 50, 0.7), rgba(63, 53, 53, 0.7)), url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.home {
+    width: 90%;
+    color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.home p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: lightgray;
+}
+
+
+
+.first-line {
+    color:red;
+    opacity: 1;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3px;
+}
+
+#navColor{
+    color: lightgray;
+}
+
+#navLine{
+    border-bottom: grey 1px solid;
+}
+
+#page2hr {
+    color:white;
+    opacity: 1;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3px;
+}
+
+
+
+.page2 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: rgb(240, 95, 64);
+    color: white;
+}
+
+.page2Text{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.page3 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.page3Text{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#page3hr {
+    color:red;
+    opacity: 1;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3px;
+}
+
+#globeIcon{
+    font-size: 50px;
+    color: rgb(240, 95, 64);
+    padding-bottom: 20px ;
+}
+#planeIcon{
+    font-size: 50px;
+    color: rgb(240, 95, 64);
+    padding-bottom: 20px ;
+}
+#likeIcon{
+    font-size: 50px;
+    color: rgb(240, 95, 64);
+    padding-bottom: 20px ;
+}
+#heartIcon{
+    font-size: 50px;
+    color: rgb(240, 95, 64);
+    padding-bottom: 20px ;
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+.thisTemplate{
+
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background: black;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+
+.thisTemplate h2{
+    padding-bottom: 20px;
+}
+
+.contact {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    color: black;
+    padding-top: 100px;
+}
+
+.contacthr{
+        color:red;
+        opacity: 1;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3px;
+}
+
+.contactInfo{
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#phoneIcon{
+    font-size: 40px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#emailIcon{
+    font-size: 40px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.phone{
+    font-size: 25px;
+}
+
+.email{
+    font-size: 25px;
+    color: red;
+}
