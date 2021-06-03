@@ -64,3 +64,5 @@ Method one:
 ## What is one thing that I learned from doing this project? :books:
 
 (Fill whatever you would like here)
+
+I learned much more about CSS as well as events such as scrolling and transitions. There is a little bit of dead code in my web page, but I think I've made strides today in getting to grips with designing a fully fledged webpage. The only thing I'm still shaky on is implementing JS and Jquery into webpages. Everything else I'm pretty solid on.

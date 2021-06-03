@@ -6,17 +6,12 @@
 
     <title>Solution for day 4 using Bootstrap v4</title>
 
-    <!-- 
-      This is where we declare all of the external libraries our page uses
-      
-      You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/35e4601671.js" crossorigin="anonymous"></script>
 
-      Refer to the Practice directory
-    -->
   </head>
 
   <!-- Nav bar setup -->
@@ -24,14 +19,203 @@
   <body data-spy="scroll" data-target=".navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between
+    fixed-top">
+      <a class="navbar-brand" href="#">
+          <p>THE ONLY BOOTSTRAP PAGE</p>
+      </a>
+    
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+              <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#fourIcons">Four Icons</a>
+          </li>
+      </ul>
+  </nav>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
+   <!-- Jumbotron main picture-->
+    <div class="jumbotron" style="background-image: url(./assets/images/header.jpg)">
+
+      <div class="d-flex justify-content-center align-content-center whiteText" id="headerText">
+        <h1 id="headerTitle">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+      </div>
+      <hr id="orangeHR">
+      <div class="d-flex justify-content-center align-content-center whiteText">
+        <p>Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+      </div>
+
+
+      <div class="d-flex justify-content-center align-content-center">
+        <a href="#about" class="btn btn-lg" style="color:white; background-color: #f05f40" href="#" role="button" id="learnMore">This button makes the page scroll</a>
+      </div>
+   </div>
+   <!-- First orange div section-->
+   <div class="container-fluid firstOrangeDiv">
+     <div class="d-flex justify-content-center align-content-center whiteText">
+       <h3 id="about">Want to make an original website for yourself?</h3>
+     </div>
+     <hr id="whiteHR">
+     <div class="d-flex justify-content-center align-content-center whiteText" >
+        <p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser
+          and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way!
+          There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google,
+          edit a few lines, and you're on your way! No one will notice!</p>
+     </div>
+     <div class="d-flex justify-content-center align-content-center">
+      <a href="http://lmgtfy.com/?q=bootstrap+template" target="_blank" class="btn btn-lg" style="background-color: white" href="#" role="button" id="learnMore">GOOGLE THAT SHIT</a>
+    </div>
+    </div>
+
+
+
+    <!--Four icons div-->
+    <div class="container-fluid" id="fourIconsDiv">
+
+          <div id="fourIcons" class="d-flex justify-content-center align-content-center">
+            <h3>So Fucking Creative</h3>
+          </div>
+      </div>
+      <hr id="orangeHR">
+      <div class="row">
+      
+            <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="iconFlex">
+              <div class="secondBox">
+              <i class="fas fa-globe-americas fa-3x" style="color: #f05f40"></i>
+              <h3>This Fucking Template</h3>
+              <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+            </div>
+      
+            <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="iconFlex">
+              <div class="secondBox">
+              <i class="fas fa-paper-plane fa-3x" style="color: #f05f40"></i>
+              <h3>This Set of Four Icons</h3>
+              <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+            </div>
+          </div>
+      
+            <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="iconFlex">
+              <div class="secondBox">
+              <i class="fas fa-thumbs-up fa-3x" style="color: #f05f40"></i>
+              <h3>Lots of effort</h3>
+              <p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+            </div>
+          </div>
+      
+            <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="iconFlex">
+              <div class="secondBox">
+              <i class="fas fa-heart fa-3x" style="color: #f05f40"></i>
+              <h3>Made with Love</h3>
+              <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+            </div>
+          </div>
+      
+          </div>
+      
+        </div>
+
+
+
+
+
+
+
+        <!-- Four pictures with overlay etc -->
+  <div class="container-fluid" id="fourIconsDiv">
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="fourIconsDiv">
+      <div class="adjustedPicture">
+        <img src="./assets/images/1.jpg">
+        <div class="overlay">
+          <div class="text"><span style="color: rgb(255, 251, 251, 0.8);">ONE THING </span><br> Look</div>
+        </div> 
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="fourIconsDiv">
+      <div class="adjustedPicture">
+        <img src="./assets/images/2.jpg">
+        <div class="overlay">
+          <div class="text"><span style="color: rgb(255, 251, 251, 0.8);">TWO THING </span><br> At</div>
+        </div> 
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="fourIconsDiv">
+      <div class="adjustedPicture">
+        <img src="./assets/images/3.jpg">
+        <div class="overlay">
+          <div class="text"><span style="color: rgb(255, 251, 251, 0.8);">THREE THING </span><br> This</div>
+        </div> 
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3" id="fourIconsDiv">
+      <div class="adjustedPicture">
+        <img src="./assets/images/4.jpg">
+        <div class="overlay">
+          <div class="text"><span style="color: rgb(255, 251, 251, 0.8);">FOUR THING </span><br> Bullshit</div>
+        </div> 
+    </div>
+    </div>
+
+    </div>
+  </div>
+
+
+  <!-- Grey div before contact me section-->
+
+  <div class="container-fluid" id="fourIconsDiv" style="background-color:rgb(58, 58, 58)">
+      <div class="d-flex justify-content-center align-content-center whiteText">
+      <h3>Seriously, it's this fucking template!</h3>
+      </div>
+      <div class="d-flex justify-content-center align-content-center">
+        <a href="#" class="btn btn-lg" style="background-color: white" href="#" role="button" id="learnMore">THAT'S AMAZING!</a>
+      </div>
+  </div>
+
+
     <!-- contact me container -->
+
+    <div class="container-fluid" id="fourIconsDiv footerContainer">
+      <div class="d-flex justify-content-center align-content-center">
+        <h3 id="contactInfo">My Contact Information</h3>
+      </div>
+      <hr id="orangeHR">
+      <div class="d-flex justify-content-center align-content-center">
+        <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? 
+          You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design 
+          skills. <br> <br>
+          Honestly this template does look really nice, though.</p>
+      </div>
+      </div>
+
+
+      <!--phone and email-->
+      <div class="container-fluid" id="fourIconsDiv">
+        <div class="row">
+        
+              <div class="col-xs-12 col-sm-12 col-md-12 col-xl-6" id="contactIcons">
+              <div class="secondBox">
+                <i class="fas fa-phone-alt fa-3x"></i> 
+                <p>+852-6271-7044</p>
+              </div>
+              </div>
+        
+              <div class="col-xs-12 col-sm-12 col-md-12 col-xl-6" id="contactIcons">
+              <div class="secondBox">
+                <i class="far fa-envelope fa-3x"></i>
+                <p>tommynam1994@gmail.com</p>
+                </div>
+              </div>
+
+
+
+
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
@@ -41,5 +225,31 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+     <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <script
+     src="assets/js/smoothscroll.js"></script>
+
+     <script>
+      $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 1080);
+      });
+     </script>
+  
   </body>
 </html>
