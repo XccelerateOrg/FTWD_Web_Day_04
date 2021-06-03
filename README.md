@@ -63,4 +63,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+(learn more about bootstrap and animate css but unable to use wow yet)

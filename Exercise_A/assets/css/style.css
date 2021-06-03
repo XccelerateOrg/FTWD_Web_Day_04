@@ -1,3 +1,76 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: #fff;
+  background-image: url(../images/header.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.header-content {
+  position: relative;
+  width: 100%;
+  padding: 100px 15px;
+  text-align: center;
+}
+
+.header-content .header-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+
+.header-content .header-content-inner p {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255,255,255,.7);
+}
+
+.bodybutton {
+  color: #fff;
+  font-size: 30px;
+  height: 50px;
+  width: 170px;
+  border: none;
+  background-color: #ffbb00;
+  border-radius: 20px;
+}
+.about{
+  height: 500px;
+}
+.i{
+  scale:500px;
+}
+.Fouriconshead{
+  height: 500px;
+  background-color: white;
+  text-align: center;
+}
+.Fouricons{
+  width: 250px;
+  text-align: center;
+}
+.card-img-overlay{
+  opacity: 0;
+  text-align: center;
+  justify-content: center;
+}
+.card-img-overlay:hover{
+  opacity: 1;
+}
