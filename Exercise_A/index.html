@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Solution for day 4 using Bootstrap v4</title>
-
+    
     <!-- 
       This is where we declare all of the external libraries our page uses
       
@@ -17,6 +17,16 @@
 
       Refer to the Practice directory
     -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/c1667b7eee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <!-- Nav bar setup -->
@@ -25,6 +35,135 @@
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+    <div>
+      <div class = 'pageone'>
+        <div id = 'topbar'>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-between">
+            <h1 class = 'navbar-brand' id = 'header'>THE ONLY BOOTSTRAP PAGE</h1>
+          
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#pagetwo">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagethree">FOUR ICONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagefour">BULLSHIT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagefive">CALL ME</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id ='mid'> 
+          <p id = 'midtop'><strong>HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</strong></p>
+          <hr id='hrone'>
+          <p id = 'midmid'>
+            Take a look around at the same fucking bootstrap page you've seen ten million times before! 
+            Featuring all the same things as those pages!
+          </p>         
+          <button href="#pagetwo"  id = 'firstbtn' type = 'button' class='btn'><strong>THIS BUTTON MAKES THE PAGE SCROLL</strong></button>
+        </div>        
+      </div>
+
+      <div id='pagetwo'>
+        <div id='midtwo'>
+          <p id = 'midtoptwo'>Want to make an original website yourself?</p>
+          <hr id="hrtwo">
+          <p id = 'midbottomtwo'>
+            Forget that! Who would ever want to put in all of that effort for a webiste? Just open up your web browser
+            and type "boostrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There
+            are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google,
+            edit a few lines, and you're on your way! No one will notice!
+          </p>
+          <button href=""  id = 'secondbtn' type = 'button' class='btn'><strong>GOOGLE THAT SHIT</strong></button>
+        </div>
+      </div>
+
+      <div id='pagethree'>
+        <div>
+          <p id='midtopthree'>So Fucking Creative</p>
+          <hr id='hrthree'>
+          <div class='container' id='containerone'>
+            <div class = 'row'>
+              <div class = 'col hi'>
+                <i class="fas fa-globe-americas"></i>
+                <h4> This Fucking Template</h4>
+                <p>Guaranteed to use the same fucking template
+                  that every other bootstrap website uses,
+                  downloaded straight from the Web™
+                </p>
+              </div>
+              <div class = 'col hi'>
+                <i class="fas fa-paper-plane"></i>
+                <h4>This Set of Four Icons</h4>
+                <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.
+                </p>
+              </div>
+              <div class = 'col hi'>
+                <i class="fas fa-thumbs-up"></i>
+                <h4>Lots of effort</h4>
+                <p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+              </div>
+              <div class = 'col hi'>
+                <i class="fas fa-heart"></i>
+                <h4>Made with Love</h4>
+                <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='pagefour'>
+        
+          <div class="row g-0">
+            <div class="col" ><img src="./assets/images/1.jpg" alt=""></div>
+            <div class="col" ><img src="./assets/images/2.jpg" alt=""></div>
+            <div class="col" ><img src="./assets/images/3.jpg" alt=""></div>
+            <div class="col"><img src="./assets/images/4.jpg" alt=""></div>
+          </div>
+      </div>
+      <div id='pagefive'>
+        <div id = 'midfive'>
+          <p>Seriously, It's This Fucking Template !</p>
+          <button href=""  id = 'thirdbtn' type = 'button' class='btn'><strong>THAT'S AMAZING!</strong></button>
+        </div>
+      </div>
+      <div id='pagesix'>
+        <div id='midsix'>
+          <p id = 'midtopsix'>My Contact Information</p>
+          <hr id="hrsix">
+          <p id = 'midbottomsix'>
+            Here's my phone number and email address, because hey that's part of the template and why would you not 
+            include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring 
+            in from all the companies wanting my insane website design skills.
+          </p>
+            <hr id='space'>
+          <p>
+            Honestly this template does look really nice, though.
+          </p>
+          <div class='container containertwo'>
+            <div class="row g-0">
+              <div class="col bye" >
+                <i class="bottomi fas fa-phone-alt"></i>
+                <p>+1-608-317-1888</p>
+              </div>
+              <div class="col bye" >
+                <i class="bottomi far fa-envelope"></i>
+                <br>
+                <a href="mailto:tab@report.ly">holy@shit.com</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+
 
     <!-- Can use Jumbotron -->
     <!-- Second Section -->
@@ -41,5 +180,10 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+     <script
+     src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+     crossorigin="anonymous"
+   ></script>
   </body>
 </html>
