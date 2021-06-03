@@ -1,3 +1,72 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#logo {
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.jumbotron {
+    background-image: url("../images/header.jpg");
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.font-weight-bold{
+    font-weight: bolder;
+}
+
+hr{
+    color: #f05f40;
+    border-width: 7px;
+    width: 5%;
+    margin: auto;
+    padding: 2px;
+    opacity: 1;
+}
+
+#lighthr {
+    color: #ffff;
+}
+
+#about {
+    background-color: #f05f40;
+    color: #f05f40;
+}
+
+#template {
+    background-color: #222;
+    color: #222;
+}
+
+.card {
+    border-width: 0px;
+}
+
+i {
+    color: #f05f40;
+}
+
+.card-img-overlay {
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.card-img-overlay:hover {
+    opacity: 80%;
+}
