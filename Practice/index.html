@@ -4,68 +4,261 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap test</title>
-    <!-- 
-      Link to animate CSS (downloaded from https://github.com/animate-css/animate.css) 
-      This link activates the usage of animated classes within this project. 
-    -->
-    <link rel="stylesheet" href="./assets/css/animate.css" />
-
-    <!-- CDN to bootstrap CDN to allow usage of bootstrap classes to style your elements -->
+    <!-- animate CSSCDN -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- bootstrap CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <!--  Custom stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- 
-      To get fontAwesome to work within your applications you will need to create an account such that you can generate the CDN below: 
-
+    <!-- fontAwesome -->
     <script
-      src="https://kit.fontawesome.com/324b0077c5.js" // You will need to generate your OWN kit
+      src="https://kit.fontawesome.com/94078ed503.js"
       crossorigin="anonymous"
     ></script>
-
-      Please goto this website, and generate your own link:
-      https://fontawesome.com/start
-
- -->
-    <!-- 
-   Link to custom stylesheet
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <body>
-    <!-- 
-      The links / CDNS to allow the usage of Bootstrap components with interactions (like modal/ navigation bar)
-     -->
+  <body id="top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark fixed-top border-bottom text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">THE ONLY BOOTSTRAP PAGE</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fourIcons">FOUR ICONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bullshit">BULLSHIT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="callMe">CALL ME</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="card text-white">
+      <img
+        class="card-img"
+        src="./assets/image/header.jpg"
+        alt="Header image"
+      />
+      <div
+        class="
+          card-img-overlay
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <h1 class="card-title display-3 font-weight-bold">
+          Hey Look, It's Every Bootstrap Website Ever
+        </h1>
+        <hr class="border px-5 py-1" />
+        <p card="card-text">
+          Take a look around at the same fucking bootstrap page you've seen ten
+          million times before! Featuring all the same things as those pages!
+        </p>
+        <a
+          class="button rounded-pill bg-primary p-3"
+          card="card-text"
+          href="#aboutMe"
+          >This button makes the page scroll</a
+        >
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+      <div class="container-fluid text-center bg-primary p-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-8 d-flex flex-column align-items-center text-white">
+            <h2 class="fs-1">Want to make an original website yourself?</h2>
+            <hr class="px-5 py-1" />
+            <p class="fs-5">
+              Forget that! Who would ever want to put in all of that effort for
+              a website? Just open up your web browser and type "bootstrap
+              template" into your favorite search engine, like Yahoo! or Bing,
+              and you're on your way! There are hundreds of templates to choose
+              from, but go ahead and pick this same exact template from the
+              first result on google, edit a few lines, and you're on your way!
+              No one will notice!
+            </p>
+            <a class="btn p-3 bg-secondary rounded-pill">Google that shit!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A set of four icons -->
+    <section id="fourIcons">
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <h2>So fucking creative</h2>
+            <hr class="px-5 py-1" />
+          </div>
+        </div>
+        <div class="row text-center">
+          <div
+            class="
+              col-lg-3 col-md-6 col-sm-12
+              p-2
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <i class="fas fa-globe-africa fa-4x text-primary"></i>
+            <h3 class="py-3">This Fucking Template</h3>
+            <p>
+              Guaranteed to use the same fucking template that every other
+              bootstrap website uses, downloaded straight from The Web™
+            </p>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-6 col-sm-12
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <i class="far fa-paper-plane fa-4x text-primary"></i>
+            <h3 class="py-3">This Set of Four Icons</h3>
+            <p>
+              Look at this cool set of four icons describing different things
+              about us! We use four, because it's the default.
+            </p>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-6 col-sm-12
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <i class="far fa-thumbs-up fa-4x text-primary"></i>
+            <h3 class="py-3">Lots of effort</h3>
+            <p>
+              We even changed some of the icons! We take the extra effort to
+              make our designs truly original.
+            </p>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-6 col-sm-12
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <i class="far fa-heart fa-4x text-primary"></i>
+            <h3 class="py-3">Made with Love</h3>
+            <p>
+              Because nothing says hard work and talent like editing a few lines
+              of text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bullshit -->
+    <section id="bullshit">
+      <div class="container-fluid">
+        <div class="row">
+          <img
+            class="col-xl-3 col-lg-6 col-md-12 gx-0"
+            src="./assets/image/1.jpg"
+          />
+          <img
+            class="col-xl-3 col-lg-6 col-md-12 gx-0"
+            src="./assets/image/2.jpg"
+          />
+          <img
+            class="col-xl-3 col-lg-6 col-md-12 gx-0"
+            src="./assets/image/3.jpg"
+          />
+          <img
+            class="col-xl-3 col-lg-6 col-md-12 gx-0"
+            src="./assets/image/4.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- some section -->
+    <div
+      class="
+        container-fluid
+        d-inline-flex
+        flex-column
+        align-items-center
+        text-white
+        bg-dark
+        p-3
+      "
+    >
+      <h2 class="p-4">Seriously, It's This Fucking Template !</h2>
+      <a class="p-2 my-4 btn rounded-pill bg-white" href="#top"
+        >That's amazing</a
+      >
+    </div>
+    <!-- call me -->
+
+    <section id="callMe">
+      <div class="container-fluid py-5">
+        <div class="row d-flex justify-content-center">
+          <div
+            class="col-8 d-flex flex-column align-items-center text-center py-5"
+          >
+            <h2>My Contact Information</h2>
+            <hr class="py-1 px-5" />
+            <p>
+              Here's my phone number and email address, because hey that's part
+              of the template and why would you not include that on your
+              webpage? You'd be a fool not to! I can't wait for all the job
+              offers to come pouring in from all the companies wanting my insane
+              website design skills.<br />Honestly this template does look
+              really nice, though.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-sm-6 col-md-4">
+            <i class="fas fa-globe-africa fa-4x text-primary"></i>
+            <a href="tel:+1-608-317-1888">+1-608-317-1888</a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <i class="fas fa-globe-africa fa-4x text-primary"></i>
+            <a href="mailto:holy@shit.com">holy@shit.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Bundle JS CDN-->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- 
-       use CSS to achieve smooth scroll  OR  CDN to smooth scroll, allows you to activate smooth scroll within the application, from this github repo
-      https://github.com/cferdinandi/smooth-scroll 
-     -->
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <!-- 
-      Script to custom JavaScript
-     -->
+    <!-- Custom JS -->
     <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
