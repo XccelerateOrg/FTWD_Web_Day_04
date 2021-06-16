@@ -1,5 +1,7 @@
 # Full Stack Software Engineering: Web Development Day 4 :rocket:
 
+The exercise repos come with come boilerplate code, if you're confident and do not wish to follow these guidelines feel free to remove them!
+
 ### Main Topics :zap:
 
 - Bootstrap Practice
