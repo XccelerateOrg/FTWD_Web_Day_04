@@ -1,45 +1,187 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Bootstrap test</title>
+    <!-- 
+      Link to animate CSS (downloaded from https://github.com/animate-css/animate.css) 
+      This link activates the usage of animated classes within this project. 
+    -->
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
-    <title>Solution for day 4 using Bootstrap v4</title>
+    <!-- CDN to bootstrap CDN to allow usage of bootstrap classes to style your elements -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- 
+      To get fontAwesome to work within your applications you will need to create an account such that you can generate the CDN below: 
+    -->
+    <script src="https://kit.fontawesome.com/949873c8bc.js" crossorigin="anonymous"></script>
+<!--  <script
+      src="https://kit.fontawesome.com/324b0077c5.js" // You will need to generate your OWN kit
+      crossorigin="anonymous"
+    ></script>
+      Please goto this website, and generate your own link:
+      https://fontawesome.com/start
+-->
 
     <!-- 
-      This is where we declare all of the external libraries our page uses
-      
-      You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+   Link to custom stylesheet
+  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 
-      Refer to the Practice directory
-    -->
+    <!--WoW.js-->
+    <script src="./assets/javascript/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+    <!--JQuery-->
+    <script src="./assets/javascript/jquery-3.6.0.min.js"></script>
+    <script src="./assets/javascript/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/javascript/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css">
   </head>
 
-  <!-- Nav bar setup -->
+  <body id="home">
 
-  <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
-    <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
+    <nav id="nav_menu" class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+      <a class="navbar-brand" href="#home"><h4>THE ONLY BOOTSTRAP PAGE</h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#home"><h5>home</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#about"><h5>about</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact"><h5>CALL ME</h5></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- 
+      The links / CDNS to allow the usage of Bootstrap components with interactions (like modal/ navigation bar)
+     -->
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+     <header class="jumbotron">
+      <div class="header-content">
+          <div class="header-content-inner">
+            
+              <h1 class="animate__animated animate__rubberBand">Hey Look, It's Every<br> Bootstrap Website Ever</h1>
+              <hr>
+              <p class="animate__animated animate__slideInRight">Take a look around at the same fucking bootstrap page you've seen ten million times <br>before! Featuring all the same things as those pages!</p>
+              <a href="#about" class="buton page-scroll">This button makes the page scroll</a>
+          </div>
+      </div>
+    </header>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+<section class="danger" id="about">
+  <div class="about-content">
+  <h2 class="wow shake">Want to make an original website yourself?</h2>
+  <hr class="light">
+  <p class="wow bounceInUp">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+  <br>
+  <a href="https://zh.lmgtfy.app/?q=bootstrap+template" class="buton lit">GOOGLE THAT SHIT</a>
+  </div>
+</section>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+<section class="plain" id="contact">
+  <div class="contact-content">
+  <h2 class="wow shake">My Contact Information</h2>
+  <hr>
+  <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.
+  <br>
+  Honestly this template does look really nice, though.</p>
+  <div class = "container">
+  <div class = "container-s">
+  <div class="icon">
+    <i class="fas fa-phone-square-alt"></i>
+  </div>
+  <p>+1-608-317-1888</p>
+  </div>
+  <div class = "container-s">
+  <div class="icon">
+    <i class="fas fa-envelope-open-text" type="button" id="btn"></i>
+  </div>
+  <p>Email Form</p>
+</div>
+</div>
+  <br>
+  <a href="#home" class="buton page-scroll">Back to Home</a>
+</div>
+</section>
+
+<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+  <form action="mailto:maklokyi2022@gmail.com"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailForm">
+      Name:<br>
+      <input type="text" size="19" name="Contact-Name"><br><br>
+      Email:<br>
+      <input type="email" name="Contact-Email"><br><br> 
+      Message:<br> 
+      <textarea name="Contact-Message" rows="6″ cols="20″>
+      </textarea><br><br> 
+      <button type="submit" value="Submit">Send</button>
+  </form>
+</div>
+
+<script>
+$(function(){
+
+$('#btn').button(); //通过jQuery UI设置按钮格式
+
+$('#popupLogin').dialog({  //创建dialog，并设置为非自启动
+        autoOpen: false,    
+    });
+
+$('#btn').click(function(){   //通过按钮的点击事件打开dialog
+    $('#popupLogin').dialog('open');
+});
+
+});
+</script> 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- 
-      All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
-
-      If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
-      Your custom JavaScript
+       use CSS to achieve smooth scroll  OR  CDN to smooth scroll, allows you to activate smooth scroll within the application, from this github repo
+      https://github.com/cferdinandi/smooth-scroll 
      -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- 
+      Script to custom JavaScript
+     -->
+    <script src="./assets/javascript/script.js"></script>
+
+
   </body>
 </html>

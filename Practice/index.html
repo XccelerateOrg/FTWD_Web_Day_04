@@ -1,71 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Solution for day 4 using Bootstrap v4</title>
+
     <!-- 
-      Link to animate CSS (downloaded from https://github.com/animate-css/animate.css) 
-      This link activates the usage of animated classes within this project. 
+      This is where we declare all of the external libraries our page uses
+      
+      You will need:
+      Animate CSS
+      Bootstrap CSS
+      You own custom stylesheet
+      FontAwesome
+
+      Refer to the Practice directory
     -->
-    <link rel="stylesheet" href="./assets/css/animate.css" />
-
-    <!-- CDN to bootstrap CDN to allow usage of bootstrap classes to style your elements -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-
-    <!-- 
-      To get fontAwesome to work within your applications you will need to create an account such that you can generate the CDN below: 
-
-    <script
-      src="https://kit.fontawesome.com/324b0077c5.js" // You will need to generate your OWN kit
-      crossorigin="anonymous"
-    ></script>
-
-      Please goto this website, and generate your own link:
-      https://fontawesome.com/start
-
- -->
-    <!-- 
-   Link to custom stylesheet
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <body>
-    <!-- 
-      The links / CDNS to allow the usage of Bootstrap components with interactions (like modal/ navigation bar)
-     -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Nav bar setup -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
+    <!--Allows us to track the progress of the scroll -->
+    <!-- Nav bar items -->
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Can use Jumbotron -->
+    <!-- Second Section -->
+
+    <!-- Four icons -->
+    <!-- Four pictures with overlay etc -->
+    <!-- contact me container -->
+
+    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
     <!-- 
-       use CSS to achieve smooth scroll  OR  CDN to smooth scroll, allows you to activate smooth scroll within the application, from this github repo
-      https://github.com/cferdinandi/smooth-scroll 
+      All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
+
+      If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
+      Your custom JavaScript
      -->
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <!-- 
-      Script to custom JavaScript
-     -->
-    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
