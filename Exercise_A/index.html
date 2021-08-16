@@ -6,40 +6,242 @@
 
     <title>Solution for day 4 using Bootstrap v4</title>
 
-    <!-- 
+<!--     
       This is where we declare all of the external libraries our page uses
       
-      You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+      You will need: -->
+      <!-- Animate CSS -->
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <!-- You own custom stylesheet -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- FontAwesome -->
 
-      Refer to the Practice directory
-    -->
+      <!-- Refer to the Practice directory -->
+   
   </head>
 
   <!-- Nav bar setup -->
-
-  <body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-
+    <nav class="navbar navbar-expand-md fixed-top navbar-light py-2 mb-5 border-bottom border-1 menu " >
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#home"><span class="orange"> THE ONLY BOOTSTRAP PAGE</span></a>
+        <button class="navbar-toggler dropdown " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon font" ></span>
+        </button>
+        <div class="collapse navbar-collapse dropdown-content" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link font" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font" href="#four-icon">FOUR ICONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font" href="#bs">BULLSHIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font" href="#call-me">CALL ME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <!-- Can use Jumbotron -->
+<section class="hero">
+  
+  <div class="heading">
+
+    <h1 class="fw-bold display-4 text-white my-4">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+    <svg viewBox="0 0 100 1" xmlns="http://www.w3.org/2000/svg">
+      <line x1="48" y1="0" x2="52" y2="0" stroke="#F05F40" />
+    
+      <!-- If you do not specify the stroke
+           color the line will not be visible -->
+    </svg>
+    <p class="text-white my-4" style="opacity: 0.7;">Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+    <br>
+    <a class=" btn rounded-pill fs-6 bg-color text-white px-4 py-3 button" href="#about" id="about-btn">THIS BUTTONS MAKES THE PAGE SCROLL</a>
+  </div>
+    
+
+</section>
     <!-- Second Section -->
+    <section class=" text-center bg-color text-white" id="about">
+      <div class="container py-4">
 
+        <div class="row d-flex justify-content-center my-4">
+          <div class="col">
+          <h2 class="display-6 my-4">Want to make an original website yourself?</h2>
+          <svg viewBox="0 0 100 1" xmlns="http://www.w3.org/2000/svg">
+            <line x1="48" y1="0" x2="52" y2="0" stroke="white" />
+          
+            <!-- If you do not specify the stroke
+                 color the line will not be visible -->
+          </svg>
+          <p class="my-4">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+          <button class="btn btn-light rounded-pill button px-4 py-3 my-4" onclick="window.open('https://zh.lmgtfy.app/?q=bootstrap+template')">GOOGLE THAT SHIT</button>
+        </div>
+        </div>
+      </div>
+    </section>
     <!-- Four icons -->
+    <div class="container py-4 my-4" id="four-icon">
+      <div class="row text-center justify-content-center ">
+        <div class="col col-12">
+          <h2 class="fw-light">So Fucking Creative</h2>
+          <svg viewBox="0 0 100 1" xmlns="http://www.w3.org/2000/svg">
+            <line x1="48" y1="0" x2="52" y2="0" stroke="#F05F40" />
+          
+            <!-- If you do not specify the stroke
+                 color the line will not be visible -->
+          </svg>
+          </div>
+        <div class="col col-xl-3 col-lg-6 col-12">
+          <i class="fas fa-globe-americas fa-4x wow animate__bounceIn color" data-wow-duration="0.5s" ></i>
+          <h3 class="fw-light py-3">This Fucking Template</h3>
+          <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+        </div>
+
+
+          <div class="col col-xl-3 col-lg-6 col-12 px-4">
+            <i class="fab fa-telegram-plane fa-4x wow animate__bounceIn color" data-wow-duration="1s"></i>
+            <h3 class="fw-light py-3">This Set of Four Icons</h3>
+            <p class="text-muted">Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+            
+          </div>
+     
+
+            <div class="col col-xl-3 col-lg-6 col-12">
+              <i class="fas fa-thumbs-up fa-4x wow animate__bounceIn  color" data-wow-duration="1.5s"></i>
+              <h3 class="fw-light py-3">Lots of effort</h3>
+              <p class="text-muted">We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+            </div>
+            <div class="col col-xl-3 col-lg-6 col-12">
+              <i class="fas fa-heart fa-4x wow animate__bounceIn  color" data-wow-duration="2s"></i>
+              <h3 class="fw-light py-3">Made with Love</h3>
+              <p class="text-muted">Because nothing says hard work and talent like editing a few lines of text.</p>
+            </div>
+          
+      </div>
+    </div>
     <!-- Four pictures with overlay etc -->
+    
+      <div class="row row-cols-xl-4 g-0 text-center" id="bs">
+        <div class="col col-md-6 col-12 position-relative flex-box ">
+          <img class="img" src="./assets/images/1.jpg" alt="">
+          <div class="overlay">
+            <div class="text-overlay">
+            <h4 >ONE THING</h4>
+            <p >Look</p>
+          </div>
+          </div>
+
+        </div>
+        <div class="col col-md-6 col-12 position-relative flex-box">
+          <img class="img" src="./assets/images/2.jpg" alt="">
+          <div class="overlay">
+            <div class="text-overlay">
+              <h4 >TWO THING</h4>
+              <p >At</p>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col col-md-6 col-12 position-relative flex-box">
+          <img class="img" src="./assets/images/3.jpg" alt="">
+          <div class="overlay">
+            
+            <div class="text-overlay">
+              <h4 >THREE THING</h4>
+              <p >This</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-12 position-relative flex-box">
+          <img class="img" src="./assets/images/4.jpg" alt="">
+          <div class="overlay">
+            <div class="text-overlay">
+              <h4 >FOUR THING</h4>
+              <p >Bullshit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    <div class="bg-dark">
+
+      <div class="container py-4">
+        <div class="row text-center justify-content-center">
+          <div class="col ">
+            <h3 class="display-6 text-white py-4">Seriously, It's This Fucking Template!</h3>
+            <div class="">
+
+              <a class=" wow animate__tada px-4 py-3 my-3 fw-bold btn btn-light rounded-pill" href="#" data-wow-duration="1s">THAT'S AMAZING!</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- contact me container -->
+<div class="container my-5  " id="call-me">
+  <div class="row text-center justify-content-center  py-3">
+    <div class="col col-lg-8 col-12 ">
+      <h1>My Contact Information</h1>
+      <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+      <br>
+      <p>Honestly this template does look really nice, though</p>
+    </div>
+    <div class="row text-center justify-content-center py-3">
 
+      <div class="col col-xl-4  col-12">
+        <i class="fas fa-phone-alt fa-2x wow animate__bounceIn"></i>
+        <p>+1-608-317-1888</p>
+      </div>
+      <div class="col col-xl-4 col-md-8 col-12">
+        <i class="far fa-envelope fa-2x wow animate__bounceIn"></i>
+        <a class="d-block color " href="mailto:tab@report.ly">holy@shit.com</a>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
 
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+<script src="https://kit.fontawesome.com/3248d77ee6.js" crossorigin="anonymous"></script>
     <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
 
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+     <script src="./assets/js/script.js"></script>
+     <script src="./assets/js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
   </body>
 </html>
