@@ -64,4 +64,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+(I learned how to apply Font awesome and animate css in the website. Also I am more familiar with applying bootstrap function to the website.)
