@@ -1,3 +1,243 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+/* Global
+---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Navbar
+---------------------------------- */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.15rem;
+  color: #cfcbcb;
+}
+
+.nav-item {
+  font-size: 0.85rem;
+}
+
+.nav-item a {
+  color: #cfcbcb;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
+
+.page-top {
+  position: relative;
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Header-content
+---------------------------------- */
+.header-content {
+  padding: 100px 0;
+}
+
+.header-title {
+  color: #fff;
+  margin: 25px auto;
+}
+
+.hr-1 {
+  max-width: 50px;
+  border: 2px solid #f05f40;
+  opacity: 1;
+}
+
+.header-paragraph {
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.15rem;
+  color: #dedada;
+  padding-bottom: 5vh;
+}
+
+.header-btn {
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: #f05f40;
+  border: 0;
+  padding: 15px 30px;
+}
+
+.header-btn:hover {
+  background-color: #eb3812;
+  border: 0;
+}
+
+/* Second-content
+---------------------------------- */
+#about {
+  background-color: #f05f40;
+  color: #fff;
+  height: auto;
+}
+
+.title-1 {
+  padding-top: 10vh;
+  color: #fff;
+}
+
+.hr-2 {
+  margin: 30px auto;
+  max-width: 50px;
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+.second-paragraph {
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+  color: #ffc5b4;
+}
+
+.second-btn {
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: #fff;
+  color: black;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 10vh;
+  padding: 15px 30px;
+}
+
+.second-btn:hover {
+  background-color: #cfcbcb;
+  border: 0;
+  color: black;
+}
+
+/* Four Icons
+---------------------------------- */
+#four-icon {
+  height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title-2 {
+  font-size: 2rem;
+  padding-top: 15vh;
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  margin-top: 5vh;
+}
+
+.box p {
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  color: #818181;
+  margin-bottom: 10vh;
+}
+
+.icon {
+  color: #eb3812;
+}
+
+/* Four pictures with overlay etc
+---------------------------------- */
+.captionbox {
+  position: relative;
+}
+
+.image-img {
+  width: 100%;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 95, 64, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-description {
+  opacity: 1;
+}
+
+/* Small Box
+---------------------------------- */
+#smallbox {
+  height: auto;
+}
+
+/* Contact Me
+---------------------------------- */
+#contact {
+  height: auto;
+}
+
+.contact-paragraph,
+.contact-phone,
+.contact-email {
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+}
+
+.contact-email {
+  margin-bottom: 20vh;
+}
+
+.contact-email a {
+  color: #f05f40;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+/* Fixed navbar */
+header.navbar {
+  width: 100%;
+  position: fixed;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-active {
+  background-color: #fff;
+  box-shadow: 5px -1px 12px -5px grey;
+}
+
+.nav-color {
+  color: #f05f40 !important;
+}
+
+.nav-s-color {
+  color: black !important;
+}
+
+.nav-link.active {
+  color: #f05f40 !important;
+}
