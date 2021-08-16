@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Solution for day 4 using Bootstrap v4</title>
 
     <!-- 
@@ -17,29 +16,195 @@
 
       Refer to the Practice directory
     -->
+    <!-- CDN Animate.CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CDN Bootstrap.CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- CDN Font Awesome -->
+    <script src="https://kit.fontawesome.com/3a853d7f81.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   </head>
 
-  <!-- Nav bar setup -->
-
-  <body data-spy="scroll" data-target=".navbar">
+    <!-- Nav bar setup -->
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
-    <!--Allows us to track the progress of the scroll -->
+    <!-- Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-
+    <header id="page-top">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark text-white-50 bg-transparent fw-bolder" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navbarbrand" href="#page-top">THE ONLY BOOTSTRAP PAGE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#section-2">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#four-icons">FOUR ICONS</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="#bullshit">BULLSHIT</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="#call-me">CALL ME</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- Can use Jumbotron -->
+      <section class="hero-banner d-flex flex-column justify-content-center">
+        <div class="hero-banner-text container d-flex flex-column align-items-center">
+          <h1 class="hero-banner-title fw-bolder text-center text-white">
+            HEY LOOK, IT'S EVERY <br> BOOSTRAP WEBSITE EVER
+          </h1>
+          <hr id="hero-banner-hr">
+          <h5 class="hero-banner-msg text-center fw-light py-2">
+            Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!
+          </h5>
+          <a href="#section-2"><button type="button" class="hero-banner-button btn btn-primary fw-bolder px-4 py-3 my-4">
+            THIS BUTTON MAKES THE PAGE SCROLL
+          </button></a>
+        </div>
+      </section>
+    </header>
     <!-- Second Section -->
-
+    <section id="section-2">
+      <div class="section-2-text container d-flex flex-column justify-content-center align-items-center">
+        <h2 class="section-2-title text-white text-center fw-normal">Want to make an original website yourself?</h2>
+          <hr id="section-2-hr">
+          <p class="section-2-para text-center">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+        <a href="https://zh.lmgtfy.app/?q=bootstrap+template" target="_blank""><button type="button" class="white-button btn btn-light fw-bolder my-1">GOOGLE THAT SHIT</button></a>
+      </div>
+    </section>
     <!-- Four icons -->
+    <section id="four-icons">
+      <div class="four-icons-text container d-flex flex-column justify-content-center align-items-center mx-auto row">
+        <div class="four-icons-title col-12">  
+          <h3 class="four-icons-header text-center fw-normal">So Fucking Creative</h3>
+          <hr id="four-icons-hr">
+        </div>
+        <div class="four-icons-cards row">
+          <div class="mx-auto mt-3 col-xl-3 col-lg-6 col-md-6">
+            <div class="four-icons-content d-flex flex-column align-items-center">
+              <i class="fas fa-globe-americas animate__animated animate__bounceIn wow mb-3"></i>
+              <h3 class="four-icons-title fw-normal text-center">This Fucking Template</h3>
+              <p class="four-icons-para text-center text-black-50">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto mt-3 col-xl-3 col-lg-6 col-md-6">
+            <div class="four-icons-content d-flex flex-column align-items-center">
+              <i class="fas fa-paper-plane animate__animated animate__bounceIn wow mb-3"></i>
+              <h3 class="four-icons-title fw-normal text-center">This Set of Four Icons</h3>
+              <p class="four-icons-para text-center text-black-50">Look at this cool set of four icons describing different things about us! We use four, because it's the default.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto mt-3 col-xl-3 col-lg-6 col-md-6">
+            <div class="four-icons-content d-flex flex-column align-items-center">
+              <i class="fas fa-thumbs-up animate__animated animate__bounceIn wow mb-3"></i>
+              <h3 class="four-icons-title fw-normal text-center">Lots of effort</h3>
+              <p class="four-icons-para text-center text-black-50">We even changed some of the icons! We take the extra effort to make our designs truly original.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto mt-3 col-xl-3 col-lg-6 col-md-6">
+            <div class="four-icons-content d-flex flex-column align-items-center">
+              <i class="fas fa-heart animate__animated animate__bounceIn wow mb-3"></i>
+              <h3 class="four-icons-title fw-normal text-center">Made with Love</h3>
+              <p class="four-icons-para text-center text-black-50">Because nothing says hard work and talent like editing a few lines of text.
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
     <!-- Four pictures with overlay etc -->
+    <section class="bg-body"id="bullshit">
+      <div class="bullshit-photos-container container-fluid row px-0 mx-0">
+          <div class="bullshit-photos-div d-flex justify-content-center px-0 col-xl-3 col-lg-6 col-md-6 g-0">  
+            <img class="bullshit-photos-img img-fluid" src="assets/images/1.jpg">
+              <div class="bullshit-photos-div-overlay d-flex flex-column justify-content-center">
+                <p class="bullshit-photos-div-overlay-title text-center fw-bolder">ONE THING</p>
+                <p class="bullshit-photos-div-overylay-text text-center">Look</p>
+              </div>
+          </div>
+          <div class="bullshit-photos-div d-flex justify-content-center px-0 col-xl-3 col-lg-6 col-md-6 g-0">
+            <img class="bullshit-photos-img img-fluid" src="assets/images/2.jpg">
+              <div class="bullshit-photos-div-overlay d-flex flex-column justify-content-center">
+                <p class="bullshit-photos-div-overlay-title text-center fw-bolder">TWO THING</p>
+                <p class="bullshit-photos-div-overylay-text text-center">At</p>
+              </div>
+          </div>
+          <div class="bullshit-photos-div d-flex justify-content-center px-0 col-xl-3 col-lg-6 col-md-6 g-0">
+            <img class="bullshit-photos-img img-fluid" src="assets/images/3.jpg">
+              <div class="bullshit-photos-div-overlay d-flex flex-column justify-content-center">
+                <p class="bullshit-photos-div-overlay-title text-center fw-bolder">THREE THING</p>
+                <p class="bullshit-photos-div-overylay-text text-center">This</p>
+              </div>
+          </div>
+          <div class="bullshit-photos-div d-flex justify-content-center px-0 col-xl-3 col-lg-6 col-md-6 g-0">
+            <img class="bullshit-photos-img img-fluid" src="assets/images/4.jpg">
+              <div class="bullshit-photos-div-overlay d-flex flex-column justify-content-center">
+                <p class="bullshit-photos-div-overlay-title text-center fw-bolder">FOUR THING</p>
+                <p class="bullshit-photos-div-overylay-text text-center">Bullshit</p>
+              </div>
+          </div>
+      </div>
+      <div class="bullshit-text d-flex flex-column align-items-center justify-content-center mx-auto">
+          <h3 class="bullshit-text-title fw-normal text-center text-white">Seriously, It's This Fucking Template !</h3>
+          <a href="#page-top"><button type="button" class="white-button btn btn-light fw-bolder animate__animated animate__tada wow my-4">THAT'S AMAZING</button></a>
+      </div> 
+    </section>
     <!-- contact me container -->
+    <section id="call-me">
+        <div class="call-me-div">  
+          <div class="call-me-text container">
+            <h3 class="call-me-information text-center">
+              My Contact Information
+            </h3>
+            <hr id="my-contact-hr">
+            <p class="my-contact-para text-center">
+              Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.
+            </p>
+            <p class="my-contact-para text-center">Honestly this template does look really nice, though.</p>
+          </div>
+          <div class="contact-icon container row mx-auto">
+            <div class="contact-icon-content d-flex flex-column align-items-center col-lg-6">
+              <i class="fas fa-phone-alt animate__animated animate__bounceIn wow"></i>
+              <p class="my-contact-para text-center">+1-608-317-1888</p>
+            </div>
+            <div class="contact-icon-card d-flex flex-column align-items-center col-lg-6">
+              <i class="far fa-envelope animate__animated animate__bounceIn wow"></i>
+              <a class="email-link my-contact-para text-center" href="mailto:shermanxcc@gmail.com">holy@shit.com</a>
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
-
     <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
 
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
-     -->
+    -->
+    <!-- CDN Boostrap.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- WOW.JS -->
+    <script src="./assets/js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

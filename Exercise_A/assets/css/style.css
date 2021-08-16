@@ -1,3 +1,274 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+html {
+  scroll-padding-top: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+header#page-top {
+  background-image: url(../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+header > nav {
+  background-color: transparent;
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255 0.7);
+  transition: 0.3s;
+}
+
+header > nav > div > a.navbar-brand {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.4s;
+}
+
+header > nav > div > div > ul > li.nav-item {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.4s;
+}
+
+/* * * * * NavBar Transform JS * * * * */
+.navtransform-bg {
+  background-color: #ffffff !important;
+  transition: background-color 200ms linear;
+}
+
+.navtransform-brand {
+  color: #f05f40 !important;
+  font-size: 14px !important;
+  transition: 0.4s;
+}
+
+.navtransform-navlink {
+  color: #000000 !important;
+  transition: 0.4s;
+}
+
+.navtransform-brand:hover {
+  color: #e75535 !important;
+}
+
+.navtransform-navlink:hover {
+  color: #f05f40 !important;
+}
+
+.nav-link.active {
+  color: #e75535 !important;
+}
+/* * * * * NavBar Transform JS * * * * */
+
+header > section.hero-banner {
+  height: 95%;
+}
+
+header > section > div > h1.hero-banner-title {
+  font-size: 70px;
+}
+
+header > section > div > h5.hero-banner-msg {
+  font-family: "Merriweather", serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  max-width: 60%;
+}
+
+#hero-banner-hr {
+  width: 50px;
+  border: 2px solid #f05f40;
+  opacity: 1;
+  margin: 30px auto;
+}
+
+.hero-banner-button {
+  border-radius: 30px;
+  background-color: #f05f40;
+  border-color: #f05f40;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.hero-banner-button:hover {
+  background-color: #e75535;
+  border-color: #e75535;
+}
+
+#section-2 {
+  background-color: #f05f40;
+  height: 50vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+div.section-2-text {
+  height: 100%;
+  width: 760px;
+}
+
+.section-2-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+.section-2-para {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+
+#section-2-hr {
+  width: 50px;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  margin: 30px auto;
+}
+
+.white-button {
+  border: 0;
+  border-radius: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 15px 30px;
+}
+
+.white-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.section-2-para {
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#four-icons {
+  background-color: #ffffff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#four-icons-hr {
+  width: 50px;
+  border: 3px solid #f05f40;
+  opacity: 1;
+  margin: 25px auto;
+}
+
+i {
+  font-size: 50px;
+  color: #f05f40;
+}
+
+.four-icons-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+.four-icons-content {
+  width: 100%;
+}
+
+.four-icons-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.four-icons-para {
+  font-family: "Merriweather", serif;
+}
+
+.bullshit-photos-container {
+  background-color: #ffffff;
+}
+
+.bullshit-photos-div {
+  position: relative;
+}
+
+.bullshit-photos-div-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f05f40;
+  opacity: 0;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.bullshit-photos-div-overlay-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bullshit-photos-div-overylay-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.bullshit-photos-div-overlay:hover {
+  opacity: 0.8;
+}
+
+.bullshit-photos-img {
+  object-fit: cover;
+}
+
+.bullshit-text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bullshit-text-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+#call-me {
+  background-color: #ffffff;
+  height: 50vh;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.call-me-div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#my-contact-hr {
+  width: 50px;
+  border: 3px solid #f05f40;
+  opacity: 1;
+  margin: 25px auto;
+}
+
+h3.call-me-information {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+.my-contact-para {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+
+i.fa-phone-alt,
+i.fa-envelope {
+  color: #000000;
+  font-size: 37px;
+}
+
+.email-link {
+  color: #f05f40;
+}
