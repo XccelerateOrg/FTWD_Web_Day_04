@@ -1,3 +1,104 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+*{
+    margin: 0;
+    padding: 0;
+}
+.html{
+    scroll-behavior: smooth;
+}
+.color{
+    color: #F05F40;
+}
+.bg-color{
+    background-color: #F05F40;
+}
+.hero {
+    background: center url(../images/header.jpg);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.opacity{
+    color:white;
+    --bs-bg-opacity:0;
+}
+.heading {
+    z-index: 5;
+    text-align: center;
+    font-family: sans-serif;
+    width: 800px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.font{
+    font-size: 15px;
+    color: rgba(240, 235, 235, 0.781);
+}
+
+.overlay{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #F05F40;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.flex-box:hover .overlay{
+    opacity: 0.75;
+}
+.button{
+    font-size: 15px !important;
+    font-weight: bold;
+}
+.text-overlay{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+}
+
+.nav-link.active{
+    color: #F05F40 !important ;
+}
+
+
+.orange{
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+.menu{
+    transition: 0.5s;
+}
+ 
+@media only screen and (max-width:768px) 
+{
+  
+    .menu{ 
+        background-color: white !important;
+        opacity: 1;
+    }
+    .orange{
+        color: #F05F40 !important;
+        font-size: 15px;
+    }
+    .font{
+        color: black !important;
+    }
+   
+}
