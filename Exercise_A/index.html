@@ -5,6 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Solution for day 4 using Bootstrap v4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css/style.css" />
+    <style>
+      .container1 {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container .navbar {
+        margin: 0 auto;
+      }
+      body {
+        background-image: url("./assets/images/header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        margin: 0auto;
+        width: 100%;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .container {
+        text-align: center;
+        width: 60%;
+      }
+      .container button {
+        margin: 50px;
+      }
+      .container h1 {
+        font-size: 50px;
+        color: white;
+        margin: 50px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      .container p {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        padding-bottom: 3px;
+        margin: 0 auto;
+      }
+      .inner {
+        background-color: #fd7e14;
+        height: 500px;
+      }
+      .inner .inner2 {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .inner2 h2 {
+        text-align: center;
+        color: white;
+        margin: 50px;
+        margin-top: 100px;
+        padding-top: 100px;
+      }
+      .inner p {
+        text-align: center;
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+      }
+      .inner button {
+        border-radius: 28px;
+        text-align: center;
+        margin-top: 40px;
+        padding: 10px 25px 10px 25px;
+      }
+      .inner3 {
+        background-color: white;
+      }
+      .inner3 h2 {
+        text-align: center;
+        padding-top: 90px;
+      }
+      .inner3 .row {
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+      }
+      .row svg {
+        margin-bottom: 25px;
+      }
+      .inner3 p {
+        width: 270px;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+      .inner4 img {
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+      }
+      .inner5 {
+        background-color: rgb(37, 36, 36);
+        height: 200px;
+      }
+      .inner5 .main {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .inner5 .main h2 {
+        color: white;
+        padding-top: 50px;
+      }
+      .inner5 .main button {
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 180px;
+      }
+      .inner5 .main span {
+        font-size: 10px;
+        padding: 55px 20px 55px 20px;
+        font-weight: 900;
+      }
+      .footer .main2 {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .footer .main2 h2 {
+        margin-top: 90px;
+        margin-bottom: 30px;
+      }
+      .footer .main2 p {
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 18px;
+        color: rgb(78, 75, 75);
+      }
+      .footer2{
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 90px;
+
+      }
+      
+    </style>
 
     <!-- 
       This is where we declare all of the external libraries our page uses
@@ -22,6 +182,220 @@
   <!-- Nav bar setup -->
 
   <body data-spy="scroll" data-target=".navbar">
+    <div class="container1">
+      <div class="container">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">The only Bootstrap Page</a>
+          </div>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <h1>HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+        <p>
+          Take a look around at the same fucking bootstrap page you've seen ten
+          million times before! Featuring all the same things as those pages!
+        </p>
+        <div class="btn">
+          <button type="button" class="btn btn-outline-warning text-warming">
+            THe button make the page scroll
+          </button>
+        </div>
+      </div>
+
+      <div class="inner">
+        <div class="inner2">
+          <div class="inner3h2">
+            <h2>Want to make an original website yourself?</h2>
+          </div>
+          <p>
+            Forget that! Who would ever want to put in all of that effort for a
+            website? Just open up your web browser and type "bootstrap template"
+            into your favorite search engine, like Yahoo! or Bing, and you're on
+            your way! There are hundreds of templates to choose from, but go
+            ahead and pick this same exact template from the first result on
+            google, edit a few lines, and you're on your way! No one will
+            notice!
+          </p>
+          <button type="button" class="btn btn-light">Google that shit</button>
+        </div>
+      </div>
+      <div class="inner3">
+        <h2>So Fucking Creative</h2>
+        <div class="row">
+          <div class="col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              fill="currentColor"
+              class="bi bi-cursor-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"
+              />
+            </svg>
+
+            <h3>This Fucking Template</h3>
+            <p>
+              Guaranteed to use the same fucking template that every other
+              bootstrap website uses, downloaded straight from The Web™
+            </p>
+          </div>
+          <div class="col order-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              fill="currentColor"
+              class="bi bi-globe"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+              />
+            </svg>
+
+            <h3>This Set of Four Icons</h3>
+            <p>
+              Look at this cool set of four icons describing different things
+              about us! We use four, because it's the default.
+            </p>
+          </div>
+          <div class="col order-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              fill="currentColor"
+              class="bi bi-hand-thumbs-up-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"
+              />
+            </svg>
+            <h3>Lots of effort</h3>
+            <p>
+              We even changed some of the icons! We take the extra effort to
+              make our designs truly original.
+            </p>
+          </div>
+          <div class="col order-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              fill="currentColor"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+              />
+            </svg>
+            <h3>Made with Love</h3>
+            <p>
+              Because nothing says hard work and talent like editing a few lines
+              of text.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="inner4">
+        <div class="row">
+          <div class="col-3">
+            <img src="assets/images/1.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="assets/images/2.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="assets/images/3.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="assets/images/4.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="inner5">
+        <div class="main">
+          <h2>Seriously, It's This Fucking Template !</h2>
+          <button
+            type="button"
+            class="btn btn-light animate__animated animate__jello"
+          >
+            <span>THAT'S AMAZING !</span>
+          </button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="main2">
+          <h2>My Contact Information</h2>
+          <p>
+            Here's my phone number and email address, because hey that's part of
+            the template and why would you not include that on your webpage?
+            You'd be a fool not to! I can't wait for all the job offers to come
+            pouring in from all the companies wanting my insane website design
+            skills./p>
+          </p>
+          <p>Honestly this template does look really nice, though.</p>
+        <div class='footer2'>
+        <div class="tele">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-telephone-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            />
+          </svg>
+          <div><p>+1-608-317-1888</p></div>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-envelope-open"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z"
+            />
+          </svg>
+          <p>holy@shit.com</p>
+        </div>
+      </div>
+    </div>
+
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
@@ -41,5 +415,10 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
