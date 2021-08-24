@@ -63,5 +63,4 @@ Method one:
   - [ ] Go slow. Do one thing at a time. You got this :muscle:
 
 ## What is one thing that I learned from doing this project? :books:
-
-(Fill whatever you would like here)
+Have a deeper understand using CSS and Bootstrap to style HTML Page. e.g. Using template in Bootstrap and further style it in CSS. 

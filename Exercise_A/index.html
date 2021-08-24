@@ -1,45 +1,142 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Solution for day 4 using Bootstrap v4</title>
-
-    <!-- 
-      This is where we declare all of the external libraries our page uses
-      
-      You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
-
-      Refer to the Practice directory
-    -->
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>Day 4 Daily Exercises with Bootstrap v5.0</title>
+    
+      <!--Bootstrap, Font Awesome, Google Font, AnimateStyle, External CSS-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="assets/css/animate.css"></a>
+      <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <!-- Nav bar setup -->
-
+  <!--Enables bootstrap navigation active bars.-->
   <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
-    <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <a class="navbar-brand ms-4 navbartext" href="#" id="LeftonNavbar">THE ONLY BOOTSTRAP PAGE</a>
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+          <!-- Nav bar items -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav me-4">
+                  <a class="nav-item nav-link active " href="#About">About<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#FourIcons">Four Icons</a>
+                  <a class="nav-item nav-link" href="#Pictures">Pictures</a>
+                  <a class="nav-item nav-link" href="#CallMe">Call Me</a>
+                  <a class="nav-item nav-link" href="#">New</a>
+              </div>
+          </div>
+      </nav>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Hey Look, It's Every Bootstrap Website Ever</h1>
+        <hr>
+        <p>Take a look around at the same wonderful bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+        <a class="btn" href="#" role="button">This button makes the page scroll</a>   
+    </div>
 
-    <!-- 
-      All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
+    <!-- 2nd Section -->
+    <div class="div-2" id="About">
+        <h2>Want to make an original website yourself?</h2>
+        <p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way!There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+        <button type="button" class="btn btn-light">Google</button>
+    </div>
 
-      If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
-      Your custom JavaScript
-     -->
-  </body>
+    <!-- Icons -->
+    <div class="container four-icons" id="FourIcons">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa fa-globe fa-4x animate__animated animate__bounce animate__infinite animate__slow"></i>
+                <h4>This wonderful Template</h4>
+                <p>Guaranteed to use the same wonderful template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa fa-paper-plane fa-4x animate__animated animate__hinge animate__infinite animate__slow"></i>
+                <h4>This set of four Icons</h4>
+                <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa fa-thumbs-up fa-4x animate__animated animate__rotateIn animate__infinite animate__slow"></i>
+                <h4>Lots of Effort</h4>
+                <p>We even changed some of the icons! We take the extra effort to make our designs truly original.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa fa-heart fa-4x animate__animated animate__rotateOut animate__infinite animate__slow"></i>
+                <h4>Made with Love</h4>
+                <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pics with overlays -->
+    <div class="Pics" id="Pictures">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="assets/images/1.jpg" alt="Image1" class="OverlayImage img-fluid">
+                    <div class="Overlay">
+                        <div class="OverlayText">One thing<span class="OverlayText_">Look</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="assets/images/2.jpg" alt="Image2" class="OverlayImage img-fluid">
+                    <div class="Overlay">
+                        <div class="OverlayText">Two thing<span class="OverlayText_">at</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="assets/images/3.jpg" alt="Image3" class="OverlayImage img-fluid">
+                    <div class="Overlay">
+                        <div class="OverlayText">Three thing<span class="OverlayText_">this</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="assets/images/4.jpg" alt="Image4" class="OverlayImage img-fluid">
+                    <div class="Overlay">
+                        <div class="OverlayText">Four thing<span class="OverlayText_">fourPics</span></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Seriously, It's This wonderful Template !</h2>
+            <a href="#about" class="btn btn-lg">That's amazing</a>
+        </div>
+    </div>
+
+    <!-- contact Me -->
+    <div class="contact" id="CallMe">
+        <h3>My Contact Information</h3>
+        <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+        <p>Honestly this template does look really nice, though.</p>
+    </div>
+
+    <div class="container">
+        <div class="row align-item-center">
+            <div class="col">
+                <i class="fa fa-phone fa-3x animate__animated animate__jello animate__infinite"></i>
+                <p>+1-666-420-6969</p>
+            </div>
+            <div class="col">
+                <i class="fa fa-envelope-o fa-3x animate__animated animate__wobble animate__infinite"></i>
+                <p><a class="contact-email" href="mailto:holy@stuff.com">holy@stuff.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap, Smoothscroll, External JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+     <!-- Smoothscroll NOT working? -->
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+     <!-- <script src="assets/js/script.js"></script> -->
+    </body>
 </html>

@@ -1,3 +1,219 @@
-/* 
-Add in your custom style such that you can develop the wonderful website within the exercise. 
-*/
+html {
+  /* It does not work in Safari. Need to fix it with JS */
+  scroll-behavior: smooth;
+  /* disable copy/paste */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Is there a more efficent way to do this (insteadn of 2 #? */
+#LeftonNavbar {
+  color: #fff;
+}
+
+/* ======================== Navbar ======================== */
+#navbarNavAltMarkup {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background: transparent;
+}
+
+/* ======================== Jumbotron ======================== */
+.jumbotron {
+  background: url('/DE_D4/Exercise_A/assets/images/header.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  /* add space around the text: top left&right bottom */
+  padding: 0vh 10% 0.5rem;
+  /* center the text in the moddle(by using column) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 8vh;
+}
+
+hr {
+  width: 40px;
+  height: 10px;
+  color: red;
+}
+
+p {
+  font-size: 1rem;
+  display: center;
+  text-align: center;
+  padding: 0 10% 1rem;
+}
+
+.btn {
+  background-color: #f05f40;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  /* margin-top: 1vh;
+  padding: 1rem 1rem; */
+  border-radius: 35px;
+}
+
+/* ===================== 2nd Division ===================== */
+.div-2 {
+  background: #ee6648;
+  /* Equal spacing on top and bottom? (auto adjusted) */
+  /* height: 58vh; */
+  width: 100%;
+  padding: 20vh 0;
+}
+
+h2 {
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.div-2 p {
+  color: #ffffff99;
+}
+
+/* ======================= Four Icons ======================= */
+.four-icons {
+  padding: 8% 0;
+}
+
+.four-icons h4 {
+  margin: 1rem;
+}
+
+.four-icons p {
+  color: RGB(120, 135, 124);
+}
+
+.four-icons i.fa {
+  color: #f05f40;
+}
+
+.four-icons .row h4 {
+  margin: 1rem;
+}
+
+.four-icons p {
+  color: #00000099;
+}
+
+/* =================== Pics with Overlays =================== */
+.Pics {
+  background: #333;
+  padding-bottom: 15vh;
+}
+
+/* Remove margin between pictures and their "frame". 
+The pics are "relative and the texts are "absolute", so as to create an overlay effect. */
+.Pics .container-fluid,
+/* > targets DIRECT children of row */
+.Pics .row > div {
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+
+.OverlayText {
+  background: #f05f40e6;
+  text-transform: uppercase;
+  color: #ffffff99;
+  position: absolute;
+  /* Adjust the position of the texts relative to its "frame"(the picture)(relative&absolute position) */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.OverlayText:hover {
+  opacity: 1;
+}
+
+.Pics .OverlayText .Overlaytext_ {
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.OverlayText_ {
+  text-transform: uppercase;
+  font-size: 1.3rem !important;
+  color: rgb(39, 34, 34);
+}
+
+.container-fluid h2 {
+    padding-top: 5vh;
+}
+/* =================== Contact =================== */
+.contact {
+  padding: 8% 8%;
+}
+
+.contact p {
+  padding-top: 3%;
+  padding-bottom: 0%;
+}
+
+.container {
+  padding-bottom: 8%;
+}
+
+.contact-email {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: blue;
+}
+
+/* ==================== Responsive Web ==================== */
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 16px;
+  }
+}
