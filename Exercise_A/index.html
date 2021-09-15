@@ -4,36 +4,142 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solution for day 4 using Bootstrap v4</title>
+    <title>Every Fucking Bootstrap Website Ever</title>
+<!------------------------ added from here------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+<!------------------------ to here  ------------------------>
 
-    <!-- 
-      This is where we declare all of the external libraries our page uses
+<!-- This is where we declare all of the external libraries our page uses
       
       You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
+      ok--Animate CSS
+      ok--Bootstrap CSS
+      ok- You own custom stylesheet
       FontAwesome
 
       Refer to the Practice directory
     -->
-  </head>
-
-  <!-- Nav bar setup -->
-
-  <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
+  
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" >
+    
+    <!-- Nav bar setup -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+    <nav id="navbar" class="navbar navbar-light bg-light fixed-top" style="opacity: 30%;">
+      <a class="navbar-brand" href="#" style="color:rgb(181, 174, 174) ;">THE ONLY BOOTSTRAP PAGE</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#about" style="color:rgb(181, 174, 174) ;">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fouricons" style="color:rgb(181, 174, 174) ;">FOUR ICONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bullshit" style="color:rgb(181, 174, 174) ;">BULLSHIT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#callme" style="color:rgb(181, 174, 174) ;">CALL ME</a>
+        </li>
+      </div>
+       
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#one">one</a>
+            <a class="dropdown-item" href="#two">two</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#three">three</a>
+          </div>
+        </li> -->
+      </ul>
+    </nav>
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+    <header >
+    
+<!------------------------------- Can use Jumbotron------------------- -->
+   <!-- inline-styles in a document have the highest priority-->
+   <section class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.2) 100%,rgba(255,255,255,0.9) 100%),url(./assets/images/header.jpg);background-size:cover;">
+    <div class="container-fluid">
+    <h1 class="display-4">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+    <p class="lead">Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+    <a href="#about" class="btn btn-primary btn-xl page-scroll" style="background-color: #f05f40;border-radius:300px; border:none; color:white" >This button makes the page scroll</a>
+    <!-- WRONG TAG: <button type="button" href="#about" class="btn btn-primary" style="background-color: #f05f40;border-radius:300px; border:none; color:white">This button makes the page scroll</button> -->
+    <!-- USE: btn btn-primary btn-xl page-scroll, not btn btn-primary -->
+ </div>
+</section>
+  </header>
+   <!-------------- Second Section------------------ -->
+ <section class="sectiontwo" id="about">
+   <div class="container-fluid"> 
+  <h2 class="header-content-inner" >Want to make an original website yourself?</h2>
+  <!-- style="justify-content:center;text-align: center;margin-top:200px" -->
+  <p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+  <!-- style="justify-content: center;text-align: center;margin-bottom:200px" -->
+  <a href="https://zh.lmgtfy.app/?q=bootstrap+template" class="btn btn-primary" style="background-color:white;border-radius:300px; border:none; color:black">GOOGLE THAT SHIT</a>
+  </div>
+</section>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+ <!-- Four icons -->
+    <!-- <section class="logo" id="fouricons"></section>
+    <p>...</p> -->
+<!-- Four pictures with overlay -->
+<div class="container-fluid">
+<!-- ?or <div class="container-fluid"></div> -->
+    <div class="row" id="bullshit">
+      <!-- <section id="photos"> -->
+        <div class="col-xl-3 col-lg-6 col-12 p-0" >
+          <div class="overlay">
+            <img class="box" src="./assets/images/1.jpg" alt="">
+          </div>
+            <div><span class="overlay">ONE THING Look</span></div> 
+        </div>
+        <div class="col-xl-3 col-lg-6 col-12 p-0" >
+          <img class="box" src="./assets/images/2.jpg" alt="">
+          <div><span class="overlay">TWO THING At</span></div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-12 p-0" >
+          <img class="box" src="./assets/images/3.jpg" alt="">
+          <div><span class="overlay">THREE THING This</span></div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-12 p-0" >
+          <img class="box" src="./assets/images/4.jpg" alt="">
+          <div><span class="overlay">FOUR THING Bullshit</span></div>
+        </div>
+        <h3 style="justify-content: center; margin-top:50px;margin-bottom: 30px;">Seriously, This Is The Fucking Template! </h3>
+    <!-- </section> -->
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+    </div>
+</div>
+
+
+    
+
+   
+ <!-- contact me container -->
+ <!-- My Contact Information
+    Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.
+    
+    Honestly this template does look really nice, though.
+     -->
+ <!-- <div class="container" id="callme">CALL ME</div>
+    <p>...</p> -->
+
+
+
+    </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+  <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
     <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
@@ -41,5 +147,3 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
-  </body>
-</html>

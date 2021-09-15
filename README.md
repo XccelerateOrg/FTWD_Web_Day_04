@@ -41,6 +41,8 @@ Method one:
   - Type in node filename.js (make sure you have npm installed)
 
 ## Practice Questions :telescope:
+[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
+
 
 - [ ] Practice: Bootstrap Practice
 
