@@ -1,3 +1,35 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;500&family=Zen+Old+Mincho:wght@400;700&display=swap');
+
+h4 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+h1 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Zen Old Mincho', serif;
+}
+
+
+h3 {
+    font-family: 'Zen Maru Gothic', sans-serif; 
+}
+
+.bgblack {
+    background-color: rgba(0, 0, 0, 0.877)
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
