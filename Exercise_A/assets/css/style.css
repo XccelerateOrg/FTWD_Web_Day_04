@@ -1,3 +1,241 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&family=Ubuntu:wght@700&display=swap");
+
+/* General */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+h2 h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+
+/* nav bar */
+
+.navbar-brand .nav-link {
+  font-family: "Ubuntu", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-brand {
+  font-size: 18px;
+}
+
+.nav-link {
+  font-size: 15px;
+}
+
+/* Cover Section */
+
+header {
+  background-image: url(/Exercise_A/assets/images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.cover_content {
+  padding: 0px 15%;
+  margin-top: 15%;
+}
+
+.cover_text h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+hr {
+  max-width: 50px;
+  color: #f05f40;
+  height: 3px !important;
+  opacity: 1;
+  margin: 0 auto;
+  padding: 10px, 0;
+}
+
+.cover_text p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.cover_btn {
+  background-color: #f05f40;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-weight: 700;
+  border: none;
+}
+
+.cover_btn:hover {
+  background-color: #f04620;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-weight: 700;
+  border: none;
+}
+
+/* Want to make an original website yourself? */
+
+.about_container {
+  background-color: #f05f40;
+  color: #fff;
+}
+
+.about_content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about_content hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.about_text {
+  opacity: 0.7;
+}
+
+.about_btn {
+  color: #000;
+  background-color: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-weight: 700;
+  border: none;
+}
+
+.about_btn:hover {
+  color: #000;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-weight: 700;
+  border: none;
+}
+
+/* four icons */
+.fouricon_heading {
+  padding-top: 100px;
+}
+
+.icon_heading {
+  padding: 30px 0;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.fouricon_text hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fouricon_content i {
+  color: #f05f40;
+}
+
+.icon_text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* Four pictures with overlay etc */
+.pictures {
+  padding: 0 0;
+  position: relative;
+}
+
+.pictures img {
+  width: 100%;
+}
+
+.pic_text {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+.pic_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s;
+  opacity: 0;
+}
+
+.pic_content:hover {
+  opacity: 1;
+  background-color: rgba(240, 95, 64, 0.9);
+}
+
+/* black div  */
+.blackdiv h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.blackdiv {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+}
+
+/* contact me */
+.contact_container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact_content hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact_info {
+  margin: 0 0;
+}
+
+.info_two a {
+  color: #f05f40;
+  text-decoration: none;
+}
+
+.info_two a:hover {
+  color: #f05f40;
+  text-decoration: underline;
+}
+
+/* Media Query */
+/* @media only screen and (max-width: 1000px) {
+  .cover_text h1 {
+    font-size: 20px !important;
+  }
+} */
