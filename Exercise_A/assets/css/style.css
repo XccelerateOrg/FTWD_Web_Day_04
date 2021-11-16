@@ -1,3 +1,139 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    text-align: center;
+}
+
+.header-content{
+    background-image:url(/Exercise_A/assets/images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.h11{
+    font-size: 80px;
+}
+.h12{
+    font-size: 25px;
+}
+.hhrr{
+    text-align: center;
+    width: 30 px;
+    color:rgb(249, 105, 8);
+}
+
+#btn1{
+    padding: 15px;
+}
+
+.header-content-inner{
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.btn-danger {
+    background-color: rgb(249, 105, 8);
+    font-size: 25px;
+    padding: 7px;
+    color:white;
+    border-radius:  25px; 
+}
+.navbar-nav{
+    text-align:right;
+}
+
+.header-content{
+   
+    color: white;
+    
+    
+    
+}
+
+.h13{
+    font-family: 'Zen Old Mincho', serif;
+    
+}
+
+.hhrr2{
+    color: white;
+}
+
+
+.h14{
+    font-size: 18px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+
+
+
+.jumbotron{
+    padding:100px;
+    background-color:rgb(249, 105, 8);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.btn-default {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    border-radius:  25px; 
+    padding: 20px;
+    
+}
+
+.h15{
+    padding:60px;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.box1{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.contact{
+    padding: 100px;
+}
+.contact1{
+    font-size: 50px;
+}
+.contact2{
+    font-size: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.contact3{
+    font-size: 30px;
+}
+.contact4{
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   justify-content:space-around;
+   padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 30px;
+}
