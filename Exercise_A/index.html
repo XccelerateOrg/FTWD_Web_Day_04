@@ -6,40 +6,184 @@
 
     <title>Solution for day 4 using Bootstrap v4</title>
 
-    <!-- 
+<!--     
       This is where we declare all of the external libraries our page uses
       
       You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+      Animate CSS -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- You own custom stylesheet -->
+      <!-- FontAwesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
 
-      Refer to the Practice directory
-    -->
+      <!-- Refer to the Practice directory -->
+   
   </head>
 
-  <!-- Nav bar setup -->
+
+<body>
 
   <body data-spy="scroll" data-target=".navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+    <a href="#page-top" class="navbar-brand">Every Fucking Bootsrap</a>
+    <button
+    class="navbar-toggler"
+    type = "button"
+    data-bs-toggle="collapse"
+    data-bs-target=#navmenu"
+    >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navmenu">
+    <ul class="navbar-nav ms-auto">
+    <li class="nav-item">About
+    <a href="#About" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">Four Items
+    <a href="#Four_Items" class="nav-link">Four Items</a>
+    </li>
+    <li class="nav-item">Bullshit
+    <a href="#Bullshit" class="nav-link">Bullshit</a>
+    </li>
+    <li class="nav-item">Call Me
+    <a href="#Call_Me" class="nav-link">Call Me</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    
+    
+    <!--Banner Jumbotron of the image-->
+    <section class="jumbotron jumbotron-fluid banner">
+    <div class="heading">
+    <h1 class="display-4">Hey Look, It's every Bootstrap Website Ever</h1>
+    <button type="button" class="btn btn-danger" id="page-scroll">This button makes the page scroll</button>
+    </div>
+    </section>
+    
+  <section class="bg-danger" id="sectionOne">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="section-heading">Want to make an original website yourself?</h2>
+                  <hr>
+                  <p class="text-faded">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+                  <a href="#" class="btn btn-light btn-xl">Google That Shit</a>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+  <section id="sectionTwo">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">So Fucking Creative</h2>
+                  <hr>
+              </div>
+          </div>
+      </div>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 text-center">
+                  <div class="row">
+                      <i class="fa-4x fas fa-globe-africa text-danger"></i>
+                      <h3>This Fucking Template</h3>
+                      <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                  <div class="row">
+                      <i class="fa-4x fas fa-paper-plane text-danger"></i>
+                      <h3>This Set of Four Icons</h3>
+                      <p class="text-muted">Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                  <div class="row">
+                      <i class="fa-4x far fa-thumbs-up text-danger"></i>
+                      <h3>Lots of effort</h3>
+                      <p class="text-muted">We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                  <div class="row">
+                      <i class="fa-4x far fa-heart text-danger"></i>
+                      <h3>Made with Love</h3>
+                      <p class="text-muted">Because noting says hard work and talent like editing a few lines of text.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+  <section class="no-padding">
+      <div class="container-fluid">
+          <div class="row no-gutter">
+              <div class="col-lg-3 col-sm-6">
+                  <div class="portfolio-box">
+                      <img src="./assets/images/1.jpg" class="img-responsive" alt="pic1">
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                  <div class="portfolio-box">
+                      <img src="./assets/images/2.jpg" class="img-responsive" alt="pic2">
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                  <div class="portfolio-box">
+                      <img src="./assets/images/3.jpg" class="img-responsive" alt="pic3">
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                  <div class="portfolio-box">
+                      <img src="./assets/images/4.jpg" class="img-responsive" alt="pic4">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- 
-      All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
+  <div class="bg-dark">
+      <div class="container text-center">
+          <div>
+              <h2 class ="text-light" >Seriously, It's This Fucking Template !</h2>
+              <a href="#" class="btn btn-default btn-xl btn-light">That's Amazing!</a>
+          </div>
+      </div>
+    </div>
 
-      If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
-      Your custom JavaScript
-     -->
-  </body>
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="section-heading">My Contact Information</h2>
+                  <hr>
+                  <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+                  <p>Honestly this template does look really nice, though.</p>
+              </div>
+              <div class="col-lg-4 col-lg-offset-2 text-center">
+                <i class="fas fa-phone"></i>
+                  <p>+234-803-8338-251</p>
+              </div>
+              <div class="col-lg-4 text-center">
+                <i class="far fa-envelope"></i>
+                  <a href="mailto:holyshit@gmail.com">holy@shit.com</a>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
 </html>

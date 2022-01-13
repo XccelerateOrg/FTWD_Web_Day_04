@@ -64,4 +64,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+(Working with time constraints. I feel I can do better if I used my time more efficiently. But there's much to google...)
