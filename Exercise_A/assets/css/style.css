@@ -1,3 +1,92 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+navbar {
+  background: transparent;
+}
+
+.background {
+  background-image: url(/Exercise_A/assets/images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* h1 {
+    font-size: 60px;
+    color: white;
+    font: bold;
+} */
+
+.header-content {
+  margin-top: 200px;
+}
+
+.halfWidth {
+  color: red;
+  width: 10%;
+  margin: auto;
+  padding: 1px;
+}
+
+.section-heading {
+  margin-top: 50px;
+}
+
+.Pics {
+  background: rgb(49, 47, 47);
+  padding-bottom: 15vh;
+}
+
+.Pics .container-fluid,
+.Pics .row > div {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  size: cover;
+}
+
+.OverlayText {
+  background: #f05f40e6;
+  text-transform: uppercase;
+  color: #ffffff99;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.OverlayText:hover {
+  opacity: 1;
+}
+
+.Pics .OverlayText .Overlaytext_ {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.OverlayText_ {
+  text-transform: uppercase;
+  font-size: 1.3rem !important;
+  color: rgb(39, 34, 34);
+}
+
+.container-fluid h2 {
+  padding-top: 5vh;
+}
