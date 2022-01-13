@@ -1,0 +1,7 @@
+    .banner {
+        background: url("./assets/images/header.jpg") no-repeat center center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;}
