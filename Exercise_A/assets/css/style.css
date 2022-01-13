@@ -1,3 +1,106 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar {
+  width: 100%;
+}
+.navbarwhite {
+  background-color: white;
+}
+.header {
+  background-image: url(/Exercise_A/assets/images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.littleline {
+  outline: 1px solid #ff063f !important;
+  color: #ff063f;
+  width: 50px;
+  margin: auto;
+}
+.mainbutton {
+  background-color: #f05f40;
+  border-radius: 300px;
+  padding: 15px 30px 15px 30px;
+}
+.google {
+  background-color: #f05f40;
+  height: 60vh;
+}
+.whitebutton {
+  border-radius: 300px;
+  padding: 15px 30px 15px 30px;
+}
+.primary {
+  outline: 1px solid #ff063f !important;
+  color: #ff063f;
+  width: 50px;
+  margin: auto;
+}
+.fas {
+  color: #f05f40;
+}
+
+.image {
+  position: relative;
+}
+.image_img {
+  display: block;
+}
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.image_overlay--orange {
+  background: #f05f40;
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.3s;
+}
+
+.image_overlay:hover {
+  opacity: 0.8;
+}
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image_title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.image_phrase {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+.seriously {
+  height: 30vh;
+  padding: 50px 0;
+}
+.contact {
+  height: 50vh;
+}
+.fa-phone-alt {
+  color: black !important;
+}
+#mail {
+  color: #f05f40;
+}

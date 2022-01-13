@@ -1,45 +1,234 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solution for day 4 using Bootstrap v4</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 
-      This is where we declare all of the external libraries our page uses
-      
-      You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+  <title>Solution for day 4 using Bootstrap v4</title>
+  <!-- 
+      This is where we declare all of the external libraries our page uses -->
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-      Refer to the Practice directory
-    -->
-  </head>
+  <!-- Open Sans font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+  <!-- Animate CSS -->
+  <!-- <link rel="stylesheet" href="/Exercise_A/assets/css/animate.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- personal stylesheet link -->
+  <link rel="stylesheet" href="/Exercise_A/assets/css/style.css" />
+
+  <!-- You will need: Animate CSS Bootstrap CSS You own custom stylesheet
+    FontAwesome Refer to the Practice directory -->
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-offset="50">
   <!-- Nav bar setup -->
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-between bg-transparant fixed-top" id="navbar">
+    <a class="navbar-brand ms-3 fw-bold text-light" href="#">THE ONLY BOOTSTRAP PAGE</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navlinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navlinks">
+      <ul class="navbar-nav ms-auto me-5">
 
-  <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
-    <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
+        <!-- Nav bar items -->
+        <li class="nav-item p-15">
+          <a class="nav-link active text-light" href="#about">About</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#fouricons">Four Icons</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#bullshit">Bullshit</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#contact">Call me</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+  <!-- Can use Jumbotron -->
+  <header class="header p-5 text-center bg-image">
+    <div class="d-flex justify-content-center align-items-center h-100 jumbocontent">
+      <div class="text-white">
+        <h1 class="display-7">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+        <hr class="my-2 littleline" />
+        <p class="lead px-5">
+          Take a look around at the same fucking bootstrap page you've seen
+          ten million times before! Featuring all the same things as those
+          pages!
+        </p>
+        <a class="btn btn-primary btn-xl page-scroll mainbutton fw-bold text-uppercase mt-3" href="#!"
+          role="button">This button
+          makes the page scroll</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+  <!-- Second Section -->
+  <section class="container-fluid google p-5 text-center" id="about">
+    <div class="d-flex row justify-content-center">
+      <div class="col text-white align-items-center">
+        <h2 class="display-7">Want to make an original website yourself?</h1>
+          <hr class="light" />
+          <p class="lead fs-6 px-5">
+            Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser
+            and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way!
+            There are hundreds of templates to choose from, but go ahead and pick this same exact template from the
+            first result on google, edit a few lines, and you're on your way! No one will notice!
+          </p>
+          <a class="btn btn-light btn-xl text-uppercase whitebutton fw-bold mt-3"
+            href="https://en.lmgtfy.app/?q=bootstrap+template" target="_blank" role="button">Google That Shit</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+  <!-- Four icons -->
+  <section class="container align-items-center px-5" id="fouricons">
+    <div class="col12 iconheader text-center">
+      <h2 class="pt-5">So Fucking Creative</h2>
+      <hr class="primary">
+    </div>
+    <div class="row mt-5 g-1">
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fas fa-3x fa-globe-americas"></i>
+          <div class="card-body">
+            <h4 class="card-title">This Fucking Template</h4>
+            <p class="card-text">Guaranteed to use the same fucking template that every other bootstrap website uses,
+              downloaded straight from The Web™</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fas fa-3x fa-paper-plane"></i>
+          <div class="card-body">
+            <h4 class="card-title">This Set of Four Icons</h4>
+            <p class="card-text">Look at this cool set of four icons describing different things about us! We use four,
+              because it's the default.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fas fa-3x fa-thumbs-up"></i>
+          <div class="card-body">
+            <h4 class="card-title">Lots of effort</h4>
+            <p class="card-text">We even changed some of the icons! We take the extra effort to make our designs truly
+              original.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fas fa-3x fa-heart"></i>
+          <div class="card-body">
+            <h4 class="card-title">Made with Love</h4>
+            <p class="card-text">Because nothing says hard work and talent like editing a few lines of text.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- 
+
+
+  <!-- Four pictures with overlay etc -->
+  <section class="container-fluid no-padding no-margin portfolio" id="bullshit">
+    <div class="row no-gutter no-padding">
+      <div class="col-xs-12 col-md-6 col-lg-3 no-padding g-0 image">
+        <img class="img-fluid image_img" src="/Exercise_A/assets/images/1.jpg" alt="">
+        <div class="image_overlay image_overlay--orange">
+          <div class="image_title">One thing</div>
+          <p class="image_phrase">Look</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 no-padding g-0 image">
+        <img class="img-fluid image_img" src="/Exercise_A/assets/images/2.jpg" alt="">
+        <div class="image_overlay image_overlay--orange">
+          <div class="image_title">Two thing</div>
+          <p class="image_phrase">At</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 no-padding g-0 image">
+        <img class="img-fluid image_img" src="/Exercise_A/assets/images/3.jpg" alt="">
+        <div class="image_overlay image_overlay--orange">
+          <div class="image_title">Three thing</div>
+          <p class="image_phrase">This</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 no-padding g-0 image">
+        <img class="img-fluid image_img" src="/Exercise_A/assets/images/4.jpg" alt="">
+        <div class="image_overlay image_overlay--orange">
+          <div class="image_title">Four thing</div>
+          <p class="image_phrase">Bullshit</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="bg-dark seriously">
+    <div class="container-fluid text-center text-light justify-content-center">
+      <div class="textitems">
+        <h2>Seriously, It's This Fucking Template !</h2>
+        <a class="btn btn-light btn-xl text-uppercase whitebutton fw-bold mt-3" href="#" role="button">That's
+          amazing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact me container -->
+  <section class="contact container-fluid p-5 text-center" id="contact">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center align-items-center">
+        <h2>My Contact Information</h2>
+        <hr class="littleline mt-3">
+        <p class="pt-4">Here's my phone number and email address, because hey that's part of the template and why would
+          you not
+          include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in
+          from all the companies wanting my insane website design skills.
+        </p>
+        <p class="pt-1">Honestly this template does look really nice, though.</p>
+      </div>
+      <div class="row"></div>
+      <div class="col-lg-4 text-center">
+        <i class="fas fa-3x fa-phone-alt"></i>
+        <p>+1-608-317-1888</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <i class="far fa-3x fa-envelope"></i>
+        <p><a id="mail" href="mailto:holy@shit.com">holy@shit.com</a></p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+
+  <!-- 
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
 
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="/Exercise_A/assets/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
 </html>
