@@ -64,4 +64,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+It was a day of underachievement, indeed, as I only managed to write a single card widget using Bootstrap.
