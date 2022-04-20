@@ -1,3 +1,83 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+#secondSection{
+    background-color: orange;
+}
+
+h1{
+    font-size: 5vh;
+    display: block;
+}
+
+/* Banner */
+
+section.banner{
+    padding-top: 10rem;
+    padding-bottom: 5.5rem;
+    background-image: url("/Exercise_A/assets/images/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr.divider{
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: orange;
+    opacity: 1;
+}
+
+.btn-primary{
+    color: white;
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-primary:hover{
+    color: white;
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+/* Second Section */
+section#about{
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    background-color: orange;
+}
+
+hr.divider2{
+    background-color: white;
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    opacity: 1;
+}
+
+section#fourIcons{
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.fas{
+    font-size: 3rem;
+    color: darkorange;
+    padding-bottom: 1rem;
+}
+
+/* bullshit section */
+#amazing{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: black;
+    opacity: 80%;
+
+}
+
+/* CallMe */
+#callMe{
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
