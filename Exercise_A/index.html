@@ -17,6 +17,21 @@
 
       Refer to the Practice directory
     -->
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/495d85cf84.js" crossorigin="anonymous"></script>
+
+    <!-- CSS custom style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
   </head>
 
   <!-- Nav bar setup -->
@@ -25,14 +40,205 @@
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+      <div class="container px-4 px-lg-5">
+          <a class="navbar-brand text-white" href="#page-top">THE ONLY BOOTSTRAP PAGE</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" ><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                  <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="#fourIcons">Four Icons</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="#bullshit">Bullshit</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="#callMe">Call Me</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 
     <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+    <section class="banner" id="page-top">
+      <div class="container px-4px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+          <div class="col-lg-8 align-self-end">
+            <h1 class="text-white font-weight-bold">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+            <hr class="divider" />
+          </div>
+          <div class="col-lg-8 align-self baseline">
+            <p class="text-white-50 mb-5">Take a look around the same fucking bootstrap page you've seen ten million times before!
+              Featuring all the same things as those pages!</p>
+            <a href="#" class="btn btn-primary btn-xl">THIS BUTTON MAKES THE PAGE SCROLL</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section: About -->
+    <section class="page-section" id="about">
+      <div class="tcontainer px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">Want to make an original website yourself?</h2>
+            <hr class="divider2" />
+            <p class="text-white-75 mb-5">Forget that! Who would ever want to put in all of that effort for a website? 
+              Just open up your web browser and type "bootstrap template" into your favorite search engine, 
+              like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, 
+              but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+            </p>
+            <a href="https://www.google.com/" class="btn btn-light btn-xl">GOOGLE THAT SHIT</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+    <section id="fourIcons">
+      <div class="container px-4 px-lg-5">
+        <h2 class="text-center">So Fucking Creative</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+          
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="fas fa-globe-asia"></i></div>
+              <h3 class="mb-2">This Fucking Template</h3>
+              <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="fas fa-paper-plane"></i></div>
+              <h3 class="mb-2">This Fucking Template</h3>
+              <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="fas fa-thumbs-up"></i></div>
+              <h3 class="mb-2">This Fucking Template</h3>
+              <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="fas fa-heart"></i></div>
+              <h3 class="mb-2">This Fucking Template</h3>
+              <p class="text-muted">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Four pictures with overlay etc -->
+    <section id="bullshit">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="card bg-dark text-white">
+              <img src="assets/images/1.jpg" class="card-img" alt="img1">
+              <div class="card-img-overlay text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="card bg-dark text-white">
+              <img src="assets/images/2.jpg" class="card-img" alt="img2">
+              <div class="card-img-overlay text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="card bg-dark text-white">
+              <img src="assets/images/3.jpg" class="card-img" alt="img3">
+              <div class="card-img-overlay text-center">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="card bg-dark text-white">
+              <img src="assets/images/4.jpg" class="card-img" alt="img4">
+              <div class="card-img-overlay text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+          </div>  
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="amazing">
+      <div class="tcontainer px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0 pb-2">Seriously, It's This Fucking Amazing</h2>
+            <a href="#" class="btn btn-primary btn-xl">THAT'S AMAZING!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- contact me container -->
+    <section id="callMe">
+      <div class="tcontainer px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="mt-0">My Contact Information</h2>
+            <hr class="divider" />
+            <p class="mb-3">Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.
+
+              Honestly this template does look really nice, though.</p>
+            </p>
+
+            <div class="row gx-4 gx-lg-5">
+
+              <div class="col-lg-6 text-center">
+                <div class="mt-5">
+                  <div class="mb-2"><i class="fas fa-phone text-black"></i></div>
+                  <h5 class="mb-2">+1-608-317-1888</h5>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 text-center">
+                <div class="mt-5">
+                  <div class="mb-2"><i class="fas fa-envelope text-black"></i></div>
+                  <h5 class="mb-2">holy@shit.com</h5>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+    <!-- ========================================================================== -->
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
     <!-- 
@@ -41,5 +247,17 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+     <!-- Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+     crossorigin="anonymous"></script>
+
+     <!-- Smooth Scroll -->
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+     <!-- JS -->
+     <script src="./assets/javascript/script.js"></script>
+
   </body>
 </html>
