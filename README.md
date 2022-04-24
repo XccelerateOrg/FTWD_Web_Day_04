@@ -65,3 +65,5 @@ Method one:
 ## What is one thing that I learned from doing this project? :books:
 
 (Fill whatever you would like here)
+
+The one thing I learned the most is bootstrap, bootstrap made the website more easy to design in class. And it saves a lot more time in designing a website.
