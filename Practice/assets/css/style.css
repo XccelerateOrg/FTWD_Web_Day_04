@@ -1,9 +1,6 @@
-/* 
-Where you should add your own custom CSS to affect the website.
-*/
 .jumbotron {
   margin-bottom: 0;
-  background-image: url("../image/header.jpg");
+  background-image: url("/FTWD_Web_Day_04/Practice/assets/image/header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
