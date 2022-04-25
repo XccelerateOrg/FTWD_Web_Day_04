@@ -1,3 +1,158 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+html,body {
+    width: 100%;
+    scroll-behavior: smooth;
+    text-align: center;  
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+
+body {
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+/* --- navbar ---  */
+
+.navbar {
+    background-color: #fff;
+}
+
+
+.linebreaker {
+        height: 1rem;
+        max-width: 3.25rem;
+        margin: 1rem auto;
+        border: 3px solid #f05f40;
+        background-color: #f05f40;
+        opacity: 1;
+      }
+
+/*  --- main header --- */
+
+header {
+    padding-top: 20% 20%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(/FTWD_Web_Day_04/Exercise_A/assets/images/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1#header-headline {
+    font-size: 60px;
+}
+
+p.subheadline {
+    color: rgba(255, 255, 255, 0.743);
+    font-size: medium;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+a.btn {
+    background-color: #f05f40;
+    font-size: 13px;
+    transition: all .35s;
+    border-radius: 20em;
+    padding: 1.5em
+}
+
+.btn:hover{
+    background-color: #eb3d16;
+}
+
+
+/*  --- about section --- */
+
+section {
+    background-size: auto;
+    padding-top: 5%;
+    padding-bottom:5%;
+    position: relative;
+    text-align: center;
+}
+
+section#about{
+    background-color: #f05f40;
+    height:30rem;
+}
+
+h1#section-headline {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+#whiteline {
+    border: 2px solid #fff
+}
+
+#google{
+    background-color: #fff;
+    color: black;
+}
+
+
+/* --- 4icons --- */
+
+#fouricon {
+    position: relative;
+}
+
+#greytext {
+    color: rgba(0, 0, 0, 0.539);
+    position: relative;
+}
+
+
+i {
+    color: #f05f40;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: rgba(50, 49, 49, 0.544);
+    font-size: medium;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+.fa-solid {
+    color: black;
+    font-size: 70px;
+}
+
+/* ---Bullshit --- */
+
+.bullshit {
+    position: relative;
+}
+
+#portfoliobox {
+    position: relative;
+}
+
+/* --- callme --- */
+
+#call-me{
+    position: relative;
+}
+
