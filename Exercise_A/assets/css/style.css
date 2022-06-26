@@ -1,3 +1,172 @@
-/* 
-Add in your custom style such that you can develop the wonderful website within the exercise. 
-*/
+  body {
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    text-align: center;
+    position: relative;
+
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h4 {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar {
+  border-bottom: solid 1px #fff;
+  color: #000000;
+  font-weight: bold;
+}
+  .navbar-brand {
+    font-size: 1.15rem;
+    color: #b5b4b1;
+  }
+
+  .navbar-brand a:hover {
+    color: #e6e4df;
+
+  }
+
+  .nav-item a {
+    color: #b5b4b1;
+  }
+  
+  .nav-item a:hover {
+    color: #e6e4df;
+  }
+
+  .nav-item a:focus{
+    color: #f05f40;
+  }
+
+  .btn {
+    background-color: #f05f40;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.75rem 1.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-default {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+  }
+
+  hr {
+    max-width: 50px;
+    border-width: 3px;
+    border: 1px solid #f05f40;
+    outline: #f05f40 solid 1px;
+    
+  }
+
+  header { 
+    background-image: url(../images/header.jpg);
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+  }
+  .header-content{
+    width: 100%;
+    padding: 100px 20px;
+    text-align: center;
+
+  }
+
+/* Second Section*/
+
+  .section-two{
+    background-color: #f05f40;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    color: white;
+
+}
+/*Four icon section */
+
+.four-icons { 
+  text-align: center;
+  padding: 8% 0;
+}
+
+.four-icons i.fa {
+  color: #f05f40;
+}
+
+.four-icons .row h4 {
+  margin: 1rem;
+}
+
+.four-icons p {
+  color: #00000099;
+}
+
+/*Four pic section */
+.four-pic {
+  background: #333;
+  padding: 0% 0 3%;
+
+  color: white;
+}
+
+.four-pic .container-fluid,
+.four-pic .row {
+  padding: 0;
+  padding-bottom: 2%;;
+  position: relative;
+}
+
+.four-pic p {
+  color: #ffffff99;
+}
+
+.four-pic .row {
+  margin: 0;
+}
+
+.four-pic .project{
+  opacity: 0;
+  transition: opacity .5s;
+  background: #f05f40e6;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff99;
+}
+
+.four-pic .project:hover {
+  opacity: 1;
+}
+
+/*Call me section */
+
+.call-me {
+  padding: 7% 10%;
+}
+
+.call-me p {
+  padding: 0 20% 1rem;
+  color: #00000099;
+}
+
+.call-me .contacts {
+  margin: 2rem 0;
+}
