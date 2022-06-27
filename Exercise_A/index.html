@@ -17,11 +17,24 @@
 
       Refer to the Practice directory
     -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <!-- Nav bar setup -->
 
   <body data-spy="scroll" data-target=".navbar">
+    <div id="contatiner">
+      <div id="main">
+        <section class="wow fadeInDown" style="background-color: #f1c40f;"></section>
+        <section class="wow animate__pulse" style="background-color: #e74c3c;" data-wow-iteration="infinite" data-wow-duration="1500ms"></section>
+        <section class="section--purple wow animate__animated animate__slideInRight" data-wow-delay="2s"></section>
+        <section class="section--blue wow animate__animated animate__bounceInLeft" data-wow-offset="300"></section>
+        <section class="section--green wow animate__animated animate__slideInLeft" data-wow-duration="4s"></section>
+        <h1 class="wow animate__animated animate__bounce">An animated element</h1>
+        <button id="more">LOAD MORE!!</button>
+      </div>
+    </div>
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
@@ -41,5 +54,10 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+    <script src="./assets/js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

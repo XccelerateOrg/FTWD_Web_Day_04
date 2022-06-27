@@ -63,5 +63,4 @@ Method one:
   - [ ] Go slow. Do one thing at a time. You got this :muscle:
 
 ## What is one thing that I learned from doing this project? :books:
-
-(Fill whatever you would like here)
+After doing this project, I learnt how the animation works on html and some online resources, such as Bootstrap, WOW etc. I also learnt the interaction between the animation, css, html and javascript.
