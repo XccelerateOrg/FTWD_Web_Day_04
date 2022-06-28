@@ -1,3 +1,30 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+hr {
+    height: 4px;
+    background: orange;
+    opacity: 1;
+    width:60px;
+    margin: 0 auto;
+    border:0;
+}
+
+hr.white{
+    background:white;
+}
+.btn{
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img{
+    object-fit:cover;
+}
+
+html, body, header, .view {
+  scroll-behavior: smooth;
+}

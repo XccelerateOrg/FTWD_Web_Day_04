@@ -17,11 +17,132 @@
 
       Refer to the Practice directory
     -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75a20021a3.js" crossorigin="anonymous"></script>
   </head>
 
-  <!-- Nav bar setup -->
 
-  <body data-spy="scroll" data-target=".navbar">
+  <body>
+    <nav class="navbar fixed-top scrolling-navbar navbar-light bg-light navbar-expand-sm">
+      <a href="#" class="navbar-brand">THE ONLY BOOTSTRAP PAGE</a>
+      <button class="navbar-toggler ms-auto" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href='#About' class="nav-link">About</a></li>
+          <li class="nav-item"><a href='#Four' class="nav-link">Four Icons</a></li>
+          <li class="nav-item"><a href='#Bullshit' class="nav-link">Bullshit</a></li>
+          <li class="nav-item"><a href='#Call' class="nav-link">Call Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="bg-image p-5" style="background-image: url(./assets/images/header.jpg); height:40rem; background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="align-content-center text-center">
+            <h1 class='text-center' style="width:70%; margin-left: 15%; margin-top:10%; color:white;"><strong>HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</strong></h1>
+            <hr class="align-content-center">
+            <p class="lead text-center" style="color:white;"> Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+            <button type="button" class="btn btn-warning">This Button Makes The Page Scrolls</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color:orange; padding-bottom: 10%" id="About">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12"><h1 style="color:white; text-align:center; margin-top: 5rem;">Want to make an original website yourself?</h1></div>
+        </div>
+        <hr class="white mt-4">
+        <div class="row justify-content-center text-center mt-4">
+          <div class="col-8"><p1 style="color:white;;">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p1></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color:white; padding-top: 5%; padding-bottom: 5%" id="Four">
+      <div class="row justify-content-center text-center">
+        <div class="col-4 style:"><h1>So fucking creative</h1></div>
+      </div>
+      <hr>
+      <div class="row text">
+        <div class="col-3 d-flex justify-content-center"><i class="bi bi-globe" style="font-size: 50px; color: orange"></i></i></div>
+        <div class="col-3 d-flex justify-content-center"><i class="bi bi-discord" style="font-size: 50px; color: orange;"></i></div>
+        <div class="col-3 d-flex justify-content-center"><i class="bi bi-hand-thumbs-up-fill" style="font-size: 50px; color: orange;"></i></div>
+        <div class="col-3 d-flex justify-content-center"><i class="bi bi-heart-fill" style="font-size: 50px; color: orange;"></i></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-3 d-flex justify-content-center"><h3>This fucking template</h3></div>
+        <div class="col-3"><h3>This Set of Four icons</h3></div>
+        <div class="col-3"><h3>Lots of Effort</h3></div>
+        <div class="col-3"><h3>Made With Love</h3></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-3"><p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™</p></div>
+        <div class="col-3"><p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p></div>
+        <div class="col-3"><p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p></div>
+        <div class="col-3"><p>Because nothing says hard work and talent like editing a few lines of text.</p></div>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="row" style="height:200px;">
+        <div class="col-3 px-0"><img src="./assets/images/1.jpg" class="img-fluid"></div>
+        <div class="col-3 px-0"><img src="./assets/images/2.jpg" class="img-fluid"></div>
+        <div class="col-3 px-0"><img src="./assets/images/3.jpg" class="img-fluid"></div>
+        <div class="col-3 px-0"><img src="./assets/images/4.jpg" class="img-fluid"></div>
+      </div>
+    </section>
+
+    <section style="background-color: rgb(32,32,32); padding-top: 5%; padding-bottom: 5%">
+      <div class="row justify-content-center">
+        <div class="col-8 text-center"><h1 style="color:white;" id="Bullshit">Seriously, It's This Fucking Template !</h1></div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-4 text-center"><button type="button" class="btn btn-light"><strong>THAT'S AMAZING</strong></THAT></button></div>
+      </div>
+    </section>
+
+    <section style="background-color: white; padding-bottom:5%;">
+        <div class="row justify-content-center mt-5">
+          <div class="col-6 text-center" id="Call"><h1>My Contact Information</h1></div>
+        </div>
+        <hr class="mt-4">
+        <div class="row justify-content-center mt-4">
+          <div class="col-8 text-center"><p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p></div>  
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 text-center"><p>Honestly this template does look really nice, though.</p></div>  
+        </div>
+        <div class="row justify-content-around d-flex text-center mt-3">
+          <div class="col-3"><i class="bi bi-phone" style="font-size: 50px;"></i></div>
+          <div class="col-3"><i class="bi bi-envelope" style="font-size: 50px"></i></div>
+        </div>
+        <div class="row justify-content-around d-flex text-center">
+          <div class="col-3"><p>+852 90957521</p></div>
+          <div class="col-3"><p>holy@shit.com</p></div>
+        </div>
+        
+    </section>
+
+  </body>
+
+
+
+
+
+    <!-- Nav bar setup -->
+<!-- 
+  <body data-spy="scroll" data-target=".navbar">-->
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
@@ -41,5 +162,6 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
-  </body>
+  <!-- </body>-->
+  
 </html>
