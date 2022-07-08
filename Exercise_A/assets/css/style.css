@@ -5,23 +5,42 @@ Add in your custom style such that you can develop the wonderful website within 
 html {
   scroll-behavior: smooth;
 }
-#header{
-    border: 1px solid #c3b8b8
+body{
+    margin: 0;
+    padding: 0;
 }
-.section {
-  height: 600px;
-  width: 100vw;
-  margin: 10px;
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
-#one {
-  background-color: #808080;
+#header {
+  border: 1px solid #c3b8b8;
 }
-#two {
-  background-color: #a39797;
+.jumbotron {
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-#three {
-  background-color: #c3b8b8;
+.about{
+    background-color: #d25f44;
+    width: 100vw;
+    height: 350px;
 }
-#four {
-  background-color: #f1f1f1;
+.four-icons{
+    color: #272727;
+    width: 100vw;
+    height: 400px;
+}
+.bullshit{
+    background-color: #272727;
+    width: 100vw;
+    height: 450px;
+}
+.call-me{
+    color: #272727;
+    width: 100vw;
+    height: 350px;
 }
