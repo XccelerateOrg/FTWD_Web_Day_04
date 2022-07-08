@@ -1,3 +1,27 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+html {
+  scroll-behavior: smooth;
+}
+#header{
+    border: 1px solid #c3b8b8
+}
+.section {
+  height: 600px;
+  width: 100vw;
+  margin: 10px;
+}
+#one {
+  background-color: #808080;
+}
+#two {
+  background-color: #a39797;
+}
+#three {
+  background-color: #c3b8b8;
+}
+#four {
+  background-color: #f1f1f1;
+}

@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Solution for day 4 using Bootstrap v4</title>
-
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <!-- 
       This is where we declare all of the external libraries our page uses
       
@@ -22,6 +29,42 @@
   <!-- Nav bar setup -->
 
   <body data-spy="scroll" data-target=".navbar">
+    <header id="header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light justify-content-between"
+      >
+        <a class="navbar-brand" href="#">
+          <p class="text-capitalize font-weight-bold">THE ONLY BOOTSTRAP PAGE</p>
+        </a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#one">ABOUT</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#two">FOUR ICONS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#three">BULLSHIT</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#four">CALL ME</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="wow animate__animated animate__bounce">Welcome</h1>
+    <div>
+      <div class="section text-center" id="one">About</div>
+      <div class="section text-center" id="two">Four Icons</div>
+      <div class="section text-center" id="three">Some Stuff</div>
+      <div class="section text-center" id="four">Contact</div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button><a href="#top">Backtotop!</a></button>
+    </div>
+
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
@@ -41,5 +84,12 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/wow.js"></script>
+    <script>
+      newWOW().init();
+    </script>
   </body>
 </html>
