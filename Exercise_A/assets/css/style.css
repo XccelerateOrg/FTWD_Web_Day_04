@@ -1,3 +1,46 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+#header {
+  border: 1px solid #c3b8b8;
+}
+.jumbotron {
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.about{
+    background-color: #d25f44;
+    width: 100vw;
+    height: 350px;
+}
+.four-icons{
+    color: #272727;
+    width: 100vw;
+    height: 400px;
+}
+.bullshit{
+    background-color: #272727;
+    width: 100vw;
+    height: 450px;
+}
+.call-me{
+    color: #272727;
+    width: 100vw;
+    height: 350px;
+}
