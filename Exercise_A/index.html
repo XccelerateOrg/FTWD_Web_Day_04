@@ -1,45 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solution for day 4 using Bootstrap v4</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 
-      This is where we declare all of the external libraries our page uses
-      
-      You will need:
-      Animate CSS
-      Bootstrap CSS
-      You own custom stylesheet
-      FontAwesome
+  <title>Solution for day 4 using Bootstrap v4</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="./assets/js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/2308894a4c.js" crossorigin="anonymous"></script>
+</head>
 
-      Refer to the Practice directory
-    -->
-  </head>
+<body>
+  <header>
+    <nav class="primary-navbar flex ff-primary">
+      <div>
+        <a class="logo fw-bold fs-600" href="">THE ONLY BOOTSTRAP PAGE</a>
+      </div>
 
-  <!-- Nav bar setup -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+          class="sr-only">Menu</span></button>
 
-  <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
-    <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
+      <ul class="primary-navigation flex" id="primary-navigation" data-visible="false">
+        <li class="nav-buttons"><a href="" class=" fw-semi-bold  fs-400 nav-buttons-a">ABOUT</a></li>
+        <li class="nav-buttons"><a href="" class=" fw-semi-bold fs-400 nav-buttons-a">FOUR ICONS</a></li>
+        <li class="nav-buttons"><a href="" class=" fw-semi-bold fs-400 nav-buttons-a">BULLSHIT</a></li>
+        <li class="nav-buttons"><a href="" class=" fw-semi-bold fs-400 nav-buttons-a">CALL ME</a></li>
+      </ul>
+    </nav>
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+    <section class="home-section grid">
+      <div class="home-section-elements grid">
+        <h1 class="main-title ff-primary fs-900 text-neutral-100">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+        <p class="ff-primary text-neutral-100 main-sub-title">Take a look around at the same fucking bootstrap page
+          you've seen ten
+          million times
+          before!
+          Featuring all the
+          same things as those pages!</p>
+        <a href="" class="main-page-button ff-primary fs-300 text-neutral-100">THIS BUTTON MAKES THE PAGE SCROLL</a>
+      </div>
+    </section>
+  </header>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+  <section class="about-section grid-container bg-primary-400 flow">
+    <h2 class="section-heading ff-primary text-neutral-100">Want to make an original website yourself?</h2>
+    <p class="section-sub-heading ff-primary text-neutral-100">Forget that! Who would ever want to put in all of that
+      effort for a website?
+      Just open up your web browser and
+      type "bootstrap template" into your search engine, like Yahoo! or Bing, and you're on your way! There are hundred
+      of templates to choose from, but o ahead and pick this exact template from the first result on google, edit a few
+      lines, and you're on your way! No one will notice!</p>
+    <a target="_blank" href="https://lmgtfy.app/?q=bootstrap+template"
+      class="about-button ff-primary fs-300 text-neutral-900">GOOGLE
+      THAT SHIT</a>
+  </section>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+  <section class="grid-container four-icons-section">
+    <h2 class="section-heading ff-primary">So Fucking Creative</h2>
+    <div class="four-icons-container grid">
+      <div class="four-icons flow">
+        <i class="earth-icon fa-solid fa-earth-americas fa-3x text-primary-400 to-be-animated icons"></i>
+        <h3 class="ff-primary">This Fucking Template</h3>
+        <p class="ff-primary fs-300">Guaranteed to use the same fucking template that every other bootstrap website
+          uses,
+          downloaded straight from
+          The Web™</p>
+      </div>
+      <div class="four-icons flow">
+        <i class="fa-sharp fa-solid fa-paper-plane fa-3x text-primary-400 to-be-animated icons"></i>
+        <h3 class="ff-primary">This Set of Four Icons</h3>
+        <p class="ff-primary fs-300">Look at this cool set of four icons describing different things about us! We use
+          four,
+          because it's the default.</p>
+      </div>
+      <div class="four-icons flow">
+        <i class="fa-solid fa-thumbs-up fa-3x text-primary-400 to-be-animated icons"></i>
+        <h3 class="ff-primary">Lots of effort</h3>
+        <p class="ff-primary fs-300">We even changed some of the icons! We take the extra effort to make our designs
+          truly
+          original.</p>
+      </div>
+      <div class="four-icons flow">
+        <i class="fa-solid fa-heart fa-3x text-primary-400 to-be-animated icons"></i>
+        <h3 class="ff-primary">Made with Love</h3>
+        <p class="ff-primary fs-300">Because nothing says hard work and talent like editing a few lines of text.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- 
-      All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
+  <section class="bullshit-section">
+    <div class="bullshit-photos grid">
+      <div class="bullshit-block">
+        <img class="bullshit-images" src="./assets/images/1.jpg" alt="">
+        <div class="faded-text flex flow">
+          <div class="ff-primary text-neutral-100">ONE THING</div>
+          <div class="ff-primary fw-semi-bold fs-600 text-neutral-100">Look</div>
+        </div>
+      </div>
+      <div class="bullshit-block">
+        <img class="bullshit-images" src="./assets/images/2.jpg" alt="">
+        <div class="faded-text flex flow">
+          <div class="ff-primary text-neutral-100">TWO THING</div>
+          <div class="ff-primary fw-semi-bold fs-600 text-neutral-100">At</div>
+        </div>
+      </div>
+      <div class="bullshit-block">
+        <img class="bullshit-images" src="./assets/images/3.jpg" alt="">
+        <div class="faded-text flex flow">
+          <div class="ff-primary text-neutral-100">THREE THING</div>
+          <div class="ff-primary fw-semi-bold fs-600 text-neutral-100">This</div>
+        </div>
+      </div>
+      <div class="bullshit-block">
+        <img class="bullshit-images" src="./assets/images/4.jpg" alt="">
+        <div class="faded-text flex flow">
+          <div class="ff-primary text-neutral-100">FOUR THING</div>
+          <div class="ff-primary fw-semi-bold fs-600 text-neutral-100">Bullshit</div>
+        </div>
+      </div>
+    </div>
+    <div class="bullshit-bottom-section bg-neutral-900 grid">
+      <h2 class="section-title-bullshit ff-primary text-neutral-100">Seriously, It's This Fucking Template</h2>
+      <a class="amazing-button to-be-animated bg-neutral-100 ff-primary fs-300 text-neutral-900" href="">THAT'S
+        AMAZING!</a>
+    </div>
+  </section>
 
-      If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
-      Your custom JavaScript
-     -->
-  </body>
+  <section class="contact-section grid-container">
+    <h2 class="section-heading ff-primary">My Contact Information</h2>
+    <p class="ff-primary">Here's my phone number and email address, because hey that's part of the template and why
+      would you not include
+      that on
+      your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the
+      companies
+      wanting my insane website design skills.</p>
+    <p class="ff-primary">Honestly this template does look really nice, though.</p>
+    <div class="contact-information grid">
+      <div class="contact-block flow">
+        <i class="fa-solid fa-phone fa-2xl to-be-animated"></i>
+        <p class="ff-primary fs-400">+1-608-317-1888</p>
+      </div>
+      <div class="contact-block flow">
+        <i class="fa-regular fa-envelope fa-2xl to-be-animated"></i>
+        <p class="ff-primary fs-400">holy@shit.com</p>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
