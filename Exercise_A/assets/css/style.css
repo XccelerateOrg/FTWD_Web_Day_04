@@ -359,7 +359,7 @@ select {
     place-items: center;
     height: 100vh;
     padding-inline: clamp(1rem, 8vw, 10rem);
-    background-image: url(/assets/images/header.jpg);
+    background-image: url(./assets/images/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
