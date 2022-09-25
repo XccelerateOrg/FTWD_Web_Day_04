@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap test</title>
-    <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap test</title>
+  <!-- CSS only -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/86c1a74e16.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  <!-- 
       Link to animate CSS (downloaded from https://github.com/animate-css/animate.css) 
       This link activates the usage of animated classes within this project. 
     -->
-    <link rel="stylesheet" href="./assets/css/animate.css" />
+  <link rel="stylesheet" href="./assets/css/animate.css" />
 
-    <!-- CDN to bootstrap CDN to allow usage of bootstrap classes to style your elements -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+  <!-- CDN to bootstrap CDN to allow usage of bootstrap classes to style your elements -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
-    <!-- 
+  <!-- 
       To get fontAwesome to work within your applications you will need to create an account such that you can generate the CDN below: 
 
     <script
@@ -30,33 +33,170 @@
       https://fontawesome.com/start
 
  -->
-    <!-- 
+  <!-- 
    Link to custom stylesheet
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-  <body>
+<body data-spy="scroll" data-target=".navbar">
+  <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
+  <!--Allows us to track the progress of the scroll bar, enabling the bootstrap navigation active bars.-->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Nav bar items -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#four-icons">Four Icons</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#fourPic">Pictures</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#call-me">Call me</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <!-- Can use Jumbotron -->
+  <section class="jumbotron">
+      <h1>Hey Look, It's Every Bootstrap Website Ever</h1>
+      <p>Take a look around at the same wonderful bootstrap page you've seen ten million times before! Featuring all
+          the same things as those pages!</p>
+      <a href="#call-me" class="btn btn-lg">This button makes the page scroll</a>
+  </section>
+
+  <!-- Second Section -->
+  <section class="about invert" id="about">
+      <h2>Want to make an original website yourself?</h2>
+      <p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser
+          and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way!
+          There are hundreds of templates to choose from, but go ahead and pick this same exact template from the
+          first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+      <a target="_blank" href="http://lmgtfy.com/?q=bootstrap+template" class="btn">Google that shit</a>
+  </section>
+
+  <!-- Four icons -->
+  <section class="four-icons" id="four-icons">
+      <h2>So wonderfully Creative</h2>
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-lg-3 col-md-6">
+                  <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                  <h4>This wonderful Template</h4>
+                  <p>Guaranteed to use the same wonderful template that every other bootstrap website uses, downloaded
+                      straight from The Web™</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+                  <h4>This set of four Icons</h4>
+                  <p>Look at this cool set of four icons describing different things about us! We use four, because
+                      it's the default.
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+                  <h4>Lots of Effort</h4>
+                  <p>We even changed some of the icons! We take the extra effort to make our designs truly original.
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                  <h4>Made with Love</h4>
+                  <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!-- Four pictures with overlay etc -->
+  <section class="fourPic invert" id="fourPic">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <img src="../Practice/assets/image/1.jpg" class="img-fluid" alt="one thing look">
+                  <div class="hint">one thing <span class="word">look</span></div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <img src="../Practice/assets/image/2.jpg" class="img-fluid" alt="two thing at">
+                  <div class="hint">two thing <span class="word">at</span></div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <img src="/Practice/assets/image/3.jpg" class="img-fluid" alt="three thing this">
+                  <div class="hint">three thing <span class="word">this</span></div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <img src="/Practice/assets/image/4.jpg" class="img-fluid" alt="four thing fourPic">
+                  <div class="hint">four thing <span class="word">fourPic</span></div>
+              </div>
+          </div>
+      </div>
+
+      <h2>Seriously, It's This wonderful Template !</h2>
+      <a href="#about" class="btn btn-lg">That's amazing</a>
+  </section>
+
+  <!-- contact me container -->
+  <section class="call-me" id="call-me">
+      <h2>My Contact Information</h2>
+      <p>Here's my phone number and email address, because hey that's part of the template and why would you not
+          include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in
+          from all the companies wanting my insane website design skills.</p>
+      <p>Honestly this template does look really nice, though.</p>
+
+      <div class="container-fluid contacts">
+          <div class="row align-items-center">
+              <div class="col-md-3 ml-md-auto">
+                  <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                  <p>+1-666-420-6969</p>
+              </div>
+              <div class="col-md-3 mr-md-auto">
+                  <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                  <p><a href="mailto:holy@stuff.com">holy@stuff.com</a></p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- 
       The links / CDNS to allow the usage of Bootstrap components with interactions (like modal/ navigation bar)
      -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <!-- 
        use CSS to achieve smooth scroll  OR  CDN to smooth scroll, allows you to activate smooth scroll within the application, from this github repo
@@ -67,5 +207,6 @@
       Script to custom JavaScript
      -->
     <script src="./assets/javascript/script.js"></script>
-  </body>
+</body>
+
 </html>
