@@ -17,11 +17,237 @@
 
       Refer to the Practice directory
     -->
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/3d47114245.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Own Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <!-- Nav bar setup -->
 
   <body data-spy="scroll" data-target=".navbar">
+    <!-- navbar -->
+    <div class="share-background">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-uppercase" href="#"
+            >the only bootstrap page</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link text-uppercase" href="#">about</a>
+              <a class="nav-link text-uppercase" href="#">four icons</a>
+              <a class="nav-link text-uppercase" href="#">bullshit</a>
+              <a class="nav-link text-uppercase" href="#">call me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="jumbotron container text-center">
+        <div class="row">
+          <div class="flex-container">
+            <div class="col-lg-8 text-uppercase jumbotron-top">
+              <strong>
+                hey look, it's every bootstrap website ever
+              </strong>
+            </div>
+            <div class="col-lg-8 jumbotron-mid">
+              Take a look around at the same fucking bootstrap page you've seen
+              ten million times before! Featuring all the same things as those
+              pages!
+            </div>
+          </div>
+          <div class="col">
+            <button class="jumbotron-button text-uppercase">
+              <strong>this button makes the page scroll</strong>
+            </button>
+          </div>
+          </div>
+      </div> -->
+
+      <!-- jumbotron -->
+      <div class="d-flex jumbotron flex-column">
+        <div
+          class="text-center text-uppercase col-md-7 display-1"
+          id="jumbotron-item1"
+        >
+          hey look, it's every bootstrap website ever
+        </div>
+        <div class="col-md-8 decoration text-center">
+          <hr class="decoration-line" />
+        </div>
+        <div class="col-md-4 text-center">
+          Take a look around at the same wonderful bootstrap page you've seen
+          ten million times before! Featuring all the same things as those
+          pages!
+        </div>
+        <div class="text-center">
+          <button class="jumbotron-button">
+            <strong>this button makes the page scroll</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex jumbotron flex-column content2">
+      <div class="text-center col-md-7 display-6">
+        Want to make an original website yourself?
+      </div>
+      <div class="col-md-8 decoration text-center">
+        <hr class="decoration-line" id="hr-content2" />
+      </div>
+      <div class="col-md-4 text-center">
+        Forget that! Who would ever want to put in all of that effort for a
+        website? Just open up your web browser and type "bootstrap template"
+        into your favorite search engine, like Yahoo! or Bing, and you're on
+        your way! There are hundreds of templates to choose from, but go ahead
+        and pick this same exact template from the first result on google, edit
+        a few lines, and you're on your way! No one will notice!
+      </div>
+      <div class="text-center">
+        <button class="jumbotron-button" id="button-content2">
+          <strong>google that shit</strong>
+        </button>
+      </div>
+    </div>
+    <!-- content3 -->
+    <div class="container d-flex jumbotron flex-column content3">
+      <div class="text-center col-md-7 display-6" id="jumbotron-item1">
+        So Fucking Creative
+      </div>
+      <br>
+      <div class="col-md-8 decoration text-center">
+        <hr class="decoration-line" />
+      </div>
+      <br>
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6">
+          <i class="fa-sharp fa-solid fa-earth-americas fa-3x"></i>
+          <div class="content3-card-title">This Fucking Template</div>
+          <div class="content3-card-description">
+            Guaranteed to use the same fucking template that every other
+            bootstrap website uses, downloaded straight from The Web™
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <i class="fa-solid fa-paper-plane fa-3x"></i>
+          <div class="content3-card-title">This Set of Four Icons</div>
+          <div class="content3-card-description">
+            Look at this cool set of four icons describing different things
+            about us! We use four, because it's the default.
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <i class="fa-solid fa-thumbs-up fa-3x"></i>
+          <div class="content3-card-title">Lots of effort</div>
+          <div class="content3-card-description">
+            We even changed some of the icons! We take the extra effort to make
+            our designs truly original.
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <i class="fa-solid fa-heart fa-3x"></i>
+          <div class="content3-card-title">Made with Love</div>
+          <div class="content3-card-description">
+            Because nothing says hard work and talent like editing a few lines
+            of text.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center content4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <img src="./assets/images/1.jpg" alt="" class="img-fluid image" />
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <img src="./assets/images/2.jpg" alt="" class="img-fluid image" />
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <img src="./assets/images/3.jpg" alt="" class="img-fluid image" />
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <img src="./assets/images/4.jpg" alt="" class="img-fluid image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex jumbotron flex-column content6">
+      <div class="text-center col-md-7 display-6">
+        Seriously, It's Fucking Template!
+      </div>
+      <div class="text-center">
+        <button class="jumbotron-button" id="button-content2">
+          <strong>THAT'S AMAZING</strong>
+        </button>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="d-flex jumbotron flex-column content5">
+      <div class="text-center col-md-7 display-6">My Contact Information</div>
+      <div class="col-md-8 decoration text-center">
+        <hr class="decoration-line" />
+      </div>
+      <div class="col-md-6 text-center">
+        Here's my phone number and email address, because hey that's part of the
+        template and why would you not include that on your webpage? You'd be a
+        fool not to! I can't wait for all the job offers to come pouring in from
+        all the companies wanting my insane website design skills.
+      </div>
+      <br />
+      <div class="col-md-6 text-center">
+        Honestly this template does look really nice, though.
+      </div>
+      <br>
+
+      <div class="container text-center d-flex justify-content-center">
+        <div class="row">
+          <div class="col" id="content5-logo">
+            <i class="fa-solid fa-phone content5-icon fa-3x"></i>
+            <div>+1-608-317-1888</div>
+          </div>
+          <div class="col" id="content5-logo">
+            <i class="fa-regular fa-envelope content5-icon fa-3x"></i>
+
+            <div>
+             <a class="mail" href="mailto: holy@shit.com">holy@shit.com</a> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
@@ -41,5 +267,14 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+
+     <script src="./assets/js/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

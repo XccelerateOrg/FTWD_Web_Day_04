@@ -1,3 +1,193 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body *  {
+    /* border: 3px solid red; */
+}
+.share-background   {
+    background-image: url(/Exercise_A/assets/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    /* height: 950px; */
+}
+
+.navbar{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* .navbar-brand, .nav-link  {
+    color: rgba(255, 255, 255, 0.7);
+} */
+
+/* .jumbotron.container    {
+    height: 500px;
+}
+
+.jumbotron  {
+    color: white; 
+}
+
+.jumbotron-top  {
+    font-size: 65px;
+}
+.jumbotron-mid  {   
+    font-size: 15px;
+}
+
+.jumbotron-button   {
+    background-color: rgb(240,95,64);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+
+.d-flex.jumbotron   {
+    height:900px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* #jumbotron-item1    {
+    font-size: 65px;
+} */
+.jumbotron-button{
+    background-color: rgb(240,95,64);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    /* margin-bottom: 250px; */
+}
+
+
+.col-md-8.decoration    {
+    width: 100px;
+}
+
+hr    {
+    color: rgb(240,95,64);
+    opacity: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 5px;
+    background-color: rgb(240,95,64);
+
+}
+
+.content2   {
+    color: white !important;
+    background-color: rgb(240,95,64)!important;
+    height: 500px!important;
+}
+
+#hr-content2    {
+    color: white!important;
+    background-color: white !important;
+}
+
+#button-content2    {
+    background-color: white;
+    color: black!important;
+}
+
+
+.content3   {
+    color: black!important;
+    background-color: white!important;
+    height: 500px!important;
+}
+
+
+@media screen and (max-width:991px){
+    div.content3   {
+        height: 600px!important;
+    }
+}
+@media screen and (max-width:767px){
+    div.content3   {
+        height: 800px!important;
+    }
+}
+
+#hr-content3    {
+    color: white!important;
+    background-color: white !important;
+}
+
+
+.content3-card-title    {
+    font-size: 25px;
+    color: black;
+}
+
+.content3-card-description  {
+    color: rgba(0, 0, 0,0.7);
+}
+i{
+   color: rgb(240,95,64)!important;
+}
+.content4   {
+    background-color: rgb(34,34,34);
+}
+.content5   {
+    color: black !important;
+    height: 500px!important;
+}
+
+#content5-logo  {
+    width: 500px;
+   justify-content: center;
+}
+
+.mail   {
+    color: rgb(240,95,64)!important;
+    text-decoration: none;
+}
+
+.mail:hover {
+    text-decoration: underline;
+}
+
+.content5-icon  {
+    color: black!important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.content6   {
+    height: 200px!important;
+    background-color: rgb(34,34,34);
+}
+
+.text   {   
+    color: red;
+    
+}
+
+.overlay    {
+    position: absolute;
+}
+
+
+
+.scroll-up  {
+    color: rgba(255, 255, 255, 0.7)!important;
+}
+
+.scroll-down    {
+    color: black!important;
+}
