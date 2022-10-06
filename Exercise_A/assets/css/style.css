@@ -1,3 +1,116 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family:;
+}
+
+.navbar-alignment {
+    justify-content: flex-end;
+}
+
+.part1 {
+    position: relative;
+}
+
+.part1 img {
+    width: 100vw;
+}
+
+.part1 h1{
+    font-size: 40px;
+}
+.part1 button {
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    background-color: #f05f40;
+    color: white;
+    border: none;
+}
+
+.part1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.part1-text hr {
+    width: 3rem; 
+    margin: 0.25rem auto;
+    border-top: 4px solid #f05f40;
+    opacity: 1;
+}
+
+.part2-container {
+    position: relative;
+    background-color: #f05f40;
+    color: white;
+    border: none;
+}
+.part2 button{
+width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    background-color: #f05f40;
+    color: white;
+    border: none;
+}
+.four-icons-container {
+    margin: 4rem 0;
+}
+
+.four-icons-container hr {
+    width: 3rem; 
+    margin: 1rem auto;
+    border-top: 4px solid #ff5d39;
+    opacity: 1;
+}
+
+.four-icons-container h3 {
+    text-align: center;
+}
+.four-icons-container h5 {
+    text-align: center;
+}
+.four-icons-container p {
+    text-align: center;
+}
+
+.icon-container p {
+    font-size: 12px;
+}
+
+.four-icons {
+    display: flex;
+}
+
+.icon-container {
+    /* width: 25rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 0.25rem; */
+}
+
+.four-pics{
+    width: 100%;
+    display: flex;
+}
+
+.row-below-icon {
+    align-content: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 20vh;
+    background: rgb(33, 33, 33);
+}
+
+.contact{
+
+}
