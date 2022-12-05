@@ -1,3 +1,88 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+* {
+  /* font-family: "Inter", sans-serif; */
+  margin: 0px;
+  padding: 0px;
+}
+
+.line {
+  background-color: rgb(234, 83, 60);
+  height: 3px;
+  width: 70px;
+  margin: 20px;
+}
+.line2 {
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  width: 70px;
+  margin: 20px;
+}
+.jumbotron {
+  height: 500px;
+  width: 100%;
+}
+.Abutton {
+  width: 350px;
+  background-color: rgb(234, 83, 60);
+}
+.Abutton:hover{
+  background-color: rgb(255, 17, 0);
+  transition: 1s;
+}
+.Bbutton {
+  width: 230px;
+  background-color: rgb(255, 255, 255);
+}
+.Bbutton:hover{
+  background-color: rgb(187, 187, 187);
+  color: black;
+  transition: 1s;
+}
+.BG2 {
+  height: 500px;
+  background-color: rgb(234, 83, 60);
+  width: 100%;
+}
+.BG3 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: fit-content;
+}
+.BG4 {
+  background-color: rgb(51, 50, 50);
+  width: 100%;
+  height: fit-content;
+}
+.icon1 {
+  position: relative;
+  top: 20px;
+  height: 65px;
+}
+.icon2 {
+  position: relative;
+  top: 20px;
+  height: 65px;
+}
+.card {
+  border: 0px;
+}
+.bar1:hover{
+  color:rgb(234, 83, 60);
+
+}
+#pic1{
+
+}  
+#pic1:hover{
+opacity: .3;
+background-color:rgb(234, 83, 60);
+transition: .5s;
+}
+
+.mask{
+  background-color:rgb(234, 83, 60);
+
+}
