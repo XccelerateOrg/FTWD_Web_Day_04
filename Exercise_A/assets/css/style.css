@@ -1,3 +1,251 @@
 /* 
-Add in your custom style such that you can develop the wonderful website within the exercise. 
-*/
+Add in your custom style such that you can develop the wonderful website within the exercise.  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h3 {
+  margin: 30px auto 20px;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+}
+
+.btn {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 15px 30px;
+  border-radius: 300px;
+  border: transparent;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* Nav */
+
+nav {
+  /* position: absolute; */
+  /* z-index: 1; */
+  text-transform: uppercase;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.nav-scrolled {
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand-scrolled {
+  color: #f05f40;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link-scrolled {
+  color: black;
+}
+
+/* Header */
+
+header {
+  /* position: absolute; */
+  height: 100vh;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+}
+
+#banner h1 {
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+}
+
+hr {
+  max-width: 50px !important;
+  border-color: #f05f40;
+  border-width: 3px;
+  margin: 30px auto !important;
+  line-height: 20px;
+  opacity: 90;
+}
+
+#banner p {
+  color: white;
+  font-weight: 300;
+  opacity: 0.7;
+  font-size: 1.3em;
+}
+
+#banner .btn {
+  background-color: #f05f40;
+}
+
+#banner .btn:hover {
+  background-color: #ff2f00;
+}
+
+/* Second section */
+
+.second {
+  background-color: #f05f40;
+  color: white;
+}
+
+/* .second h2 {
+    font-weight: 400;
+} */
+
+hr.light {
+  border-color: white;
+}
+
+.second p {
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+/* Third section */
+
+.third {
+  background-color: white;
+  color: black;
+}
+
+.third hr {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+  margin: 20px auto;
+  line-height: 20px;
+  opacity: 90;
+}
+
+i {
+  color: #f05f40;
+  font-size: 2em;
+}
+
+.i-box {
+  margin: 50px auto 0;
+}
+
+#about .btn {
+  background-color: white;
+  color: black;
+}
+
+#about .btn:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.text-muted {
+  opacity: 0.7;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Portfolio */
+
+.no-padding {
+  padding: 0;
+}
+
+.no-padding .container-fluid {
+  padding: 0;
+}
+
+.boxsize {                            /* gives the photo containers a position. else width from .overlay will go to the width of .row */
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f05f40;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.caption {
+  margin-bottom: 0;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+}
+
+.caption-lineone {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.caption-linetwo {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 1;
+}
+
+
+aside {
+  padding: 50px 0;
+}
+
+aside h2 {
+  color: white;
+}
+
+aside .btn {
+  background-color: white;
+}
+
+/* Contact */
+
+#contact i {
+  color: black;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #f05f40;
+}
