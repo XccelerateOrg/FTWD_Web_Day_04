@@ -1,6 +1,16 @@
 /* 
 Where you should add your own custom CSS to affect the website.
 */
+
+div {
+  height: 2000px;
+  width: 50%;
+  background-color: powderblue;
+}
+
+
+
+
 .jumbotron {
   margin-bottom: 0;
   background-image: url("../image/header.jpg");
