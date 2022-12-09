@@ -1,3 +1,218 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+    margin:0;
+    padding: 0;
+    border: 0;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: #393939;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+      width: 98%;
+    }
+}
+
+.banner{
+    background-image: url(../images/website-html-code-browser-view-printed-white-paper-closeup-view.jpg);
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+}
+
+.Name{
+    text-align: center;
+}
+
+h1{
+    font-family:'Rubik Glitch', cursive;
+    font-size: 72pt;
+    background-image: linear-gradient(45deg, #5975ef, #af4261);
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #5975ef, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 48pt;
+    color: #13267d;
+    margin-bottom: 20px;
+}
+
+.aboutMe{
+    background-color: #faf8d5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.aboutMe>.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.personalStatment{
+    max-width: 633px;
+}
+.profilePictureBlock{ 
+    max-width: 316px;
+    display: flex;
+}
+.profilePicture{
+    align-items: center;
+    justify-items: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;;
+}
+
+
+@media only screen and (max-width: 960px) { 
+    .aboutMe>.container{
+        justify-content: center;
+    }
+    
+    .personalStatment {
+        width: 100%;
+        align-items: center;
+    }
+    .profilePictureBlock{ 
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.hobbies{
+    background-color:#f3ec78;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hobbies h2,.life h2{
+    text-align: center;
+}
+
+h3{
+    font-size: 20pt;
+    color: #af4261;
+}
+
+.box{
+    text-align: center;
+}
+.hobbiesBox{
+    display:flex;
+    justify-content:space-around ;
+}
+
+.life{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.lifephoto{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+.lifeBlock{
+    display:flex;
+    margin: 20px 30px;
+}
+
+.lifeBlock>img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+.btnMorePhoto{
+    position:absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #008CBA;
+    color: white;
+    font-size: 16px;
+    padding: 12px 28px;
+    border: 0px;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+.btnMorePhoto:hover{
+    background-color: #076585;
+}
+#more{
+    display: none;
+    width: 960px;
+    justify-content:space-evenly;
+    flex-wrap:inherit;
+}
+
+.contactMe{
+    background-color: #faf8d5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contactMe>.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.contactMe-form{
+    font-size: 16pt;
+    color: #af4261;
+}
+
+input{
+    border: 0px;
+
+}
+@media only screen and (max-width: 960px) {
+    .contactMe>.container{
+        justify-content:left;
+    }
+    .contactMe-form {
+        width: 100%;
+    }
+    input{
+        width: 100%;
+
+    }
+    
+}
+
