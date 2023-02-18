@@ -64,4 +64,4 @@ Method one:
 
 ## What is one thing that I learned from doing this project? :books:
 
-(Fill whatever you would like here)
+(Through this exercise I was reminded of how important hands-on learning is. It was helpful to try using the different tools that we learned on Thursday, especially as we learned quite a bit in the short amount of time! I nearly forgot what wow.js was for when programming the dynamic icons until I revisited the material / videos!)

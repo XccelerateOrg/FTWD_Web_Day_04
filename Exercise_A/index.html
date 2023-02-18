@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Solution for day 4 using Bootstrap v4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!--animate css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" > <!--bootstrap css-->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!--your own stylesheet-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/> <!--Google Font - Lato-->
 
     <!-- 
       This is where we declare all of the external libraries our page uses
@@ -19,19 +23,130 @@
     -->
   </head>
 
-  <!-- Nav bar setup -->
-
-  <body data-spy="scroll" data-target=".navbar">
+  <!-- Nav bar setup -->    
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
+  
+  <!-- I decided to go with option 2 for Exercise A: implement two animate.css widgets, wow.js, font awesome, smooth scroll and a form on your page (Flower Shop)-->
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#google-map">Location</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Can use Jumbotron -->    
+    <div class="container-fluid banner">
+      <img src="./assets/images/flowershop.jpg" alt="flowershop background" class="backgroundimg">
+      <div class="container-fluid">
+        <div class="container1text">
+          <p class="center_text">Beautiful Flowers</p>
+          <!--<p class="button" href="#content-box" type="button">Learn more</p>-->
+          <a href="#content-box" class="btn btn-success btn-lg page-scroll" id="learn-more-button">Learn more</a>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
+      <div class="container-fluid" id="content-box">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-3 text-center flower">
+            <div class="service-box">
+              <img src="./assets/images/flower-icon.png" alt="flowericon" class="icon wow animate__animated animate__bounceIn">
+              <p></p>
+              <p>Flowers for every kind of situation</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 payment">
+            <div class="service-box">
+              <i class="fa-solid fa-3x fa-money-bill-wave text-black wow animate__animated animate__bounceIn animate__delay-0.4s"></i>
+              <p></p>
+              <p>All major payments kinds accepted</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 phone">
+            <div class="service-box">
+              <i class="fa-solid fa-3x fa-phone text-black wow animate__animated animate__bounceIn animate__delay-0.8s"></i>
+              <p></p>
+              <p>Free consultation</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 truck">
+            <div class="service-box">
+              <i class="fa-solid fa-3x fa-truck text-black wow animate__animated animate__bounceIn animate__delay-1.2s"></i>
+              <p></p>
+              <p>City wide delivery</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
     <!-- contact me container -->
+    <section id="contact-us">
+      <div class="container-fluid form">
+          <div class="contact-text text-center">
+            <i class="fa-solid fa-4x fa-envelope-open-text text-black wow animate__animated animate__bounce"></i>
+            <p></p>
+            <h3 class="formText text-center"><strong>Contact us for a quote!</strong></h3>
+            <p></p>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3" >
+            <label for="exampleText1" class="form-label">Subject</label>
+            <input type="text" class="form-text" id="exampletext" style="height:200px">
+          </div>
+          <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitModal">Submit</button>
+          <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Submission confirmed</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Thank you for your message! We will be in touch with you shortly.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="google-map">
+      <div class="map">
+        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14761.733600823445!2d114.15733573955076!3d22.337258499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340407314139411b%3A0x1fad074f1089257e!2sAgnes%20b.%20Fleuriste!5e0!3m2!1sen!2shk!4v1676551831872!5m2!1sen!2shk" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
@@ -41,5 +156,23 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+     <!--ANYTHING ELSE MISSING HERE?-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> <!--bootstrap popper 1-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> <!--bootstrap popper 2-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script> <!--smooth scroll-->
+    <script src="https://kit.fontawesome.com/1973e0b862.js" crossorigin="anonymous"></script> <!--Font Awesome-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="./assets/js/script.js"></script>
+
   </body>
 </html>
+
+
+<!--
+- [ ] Exercise A: Create a clone of this website: http://www.dagusa.com/ OR;
+ implement two animate.css widgets, wow.js, font awesome, smooth scroll and a form on your page
+-->
