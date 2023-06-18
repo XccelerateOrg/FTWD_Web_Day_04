@@ -1,3 +1,138 @@
-/* 
-Add in your custom style such that you can develop the wonderful website within the exercise. 
-*/
+header {
+    background-image: url('../../assets/images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 5rem;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 1.2rem;
+    width: 800px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.small-dash {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(255, 71, 4);
+    margin: 20px auto;
+}
+
+.scroll-button {
+    margin: 30px auto;
+    background-color: rgb(206, 87, 44);
+    border: none;
+    border-radius: 150px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.second-section {
+    background-color: rgb(253, 70, 4);
+    color: white;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.second-section h1 {
+    padding-top: 80px;
+}
+
+#white-dash {
+    background-color: white !important;
+}
+
+.second-section p {
+    width: 700px;
+    opacity: 0.7;
+    margin: 0 auto;
+}
+
+.google-button {
+    font-weight: 700;
+    border-radius: 150px;
+    margin: 30px 0;
+    padding: 10px 20px;
+}
+
+.third-section h1 {
+    padding-top: 80px;
+    font-size: 2rem;
+}
+
+.four-icons {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.four-icons i {
+    color: orangered;
+    margin-bottom: 1rem;
+}
+
+.four-icons h4 {
+    font-weight: 500;
+}
+
+.four-icons p {
+    opacity: 0.8;
+}
+
+.pictures {
+    margin: 0;
+}
+
+.fourth-section img {
+    max-width: 100%;
+}
+
+.fifth-section {
+    background-color: rgb(32, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+.fifth-section h2 {
+    padding-top: 50px;
+}
+
+.filler-div {
+    padding-bottom: 30px;
+}
+
+.contact-info {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+}
+
+.contact-info p {
+    width: 800px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contact-row {
+    margin-top: 50px;
+}
+
+.email {
+    color: orangered;
+}
