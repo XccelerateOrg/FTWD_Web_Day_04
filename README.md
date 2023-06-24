@@ -65,3 +65,4 @@ Method one:
 ## What is one thing that I learned from doing this project? :books:
 
 (Fill whatever you would like here)
+The most trickiest part is positioning the nav-items to the end of the navbar. By using the class ".navbar", the flex property has always been existed the whole time. In the beginning, I didn't realized that and the navbar always stay at the expended state. I looked up on the document and found out I duplicated the code: display: flex;, which is not needed. It is simply: justify-content: flex-end, that solves the issue real quick. Bootstrap helps to build the website components very fast but there are many default settings in my opinion which actually get in the way of development.

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solution for day 4 using Bootstrap v4</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 
+  <title>Solution for day 4 using Bootstrap v4</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+  <script src="https://kit.fontawesome.com/64f78b7cba.js" crossorigin="anonymous"></script>
+
+  <!--
       This is where we declare all of the external libraries our page uses
-      
+
       You will need:
       Animate CSS
       Bootstrap CSS
@@ -17,29 +26,160 @@
 
       Refer to the Practice directory
     -->
-  </head>
+</head>
 
+<body data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-expand-lg justify-content-end">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">THE ONLY BOOTSTRAP PAGE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#second-section">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#third-section">FOUR ICONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#forth-section">BULLSHIT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#last-section">CALL ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <!-- Nav bar setup -->
+  <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
+  <!--Allows us to track the progress of the scroll -->
+  <!-- Nav bar items -->
 
-  <body data-spy="scroll" data-target=".navbar">
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
-    <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
+  <div class="container-fluid flex-content" id="first-section">
+    <h1>HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER</h1>
+    <hr>
+    <p>Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the
+      same things as those pages!</p>
+    <button class="btn" href="#second-section">THIS BUTTON MAKES THE PAGES SCROLL</button>
+  </div>
 
-    <!-- Can use Jumbotron -->
-    <!-- Second Section -->
+  <div class="container-fluid flex-content text-center" id="second-section">
+    <h3>Want to make an original website yourself?
+    </h3>
+    <hr>
+    <p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and
+      type
+      "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are
+      hundreds
+      of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit
+      a few
+      lines, and you're on your way! No one will notice!</p>
+    <button class="btn btn-light white-button">GOOGLE THAT SHIT</button>
+  </div>
 
-    <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+  <div class="container-fluid text-center flex-content" id="third-section">
+    <div class="row">
+      <h3>So Fucking Creative</h3>
+    </div>
+    <hr>
+    <div class="row icons">
+      <div class="col-12 col-xl-3 col-lg-6">
+        <i class="fa-solid fa-earth-americas fa-2xl" style="color: #fa703e"></i>
+        <h4>This Fucking Template</h4>
+        <p>Guaranteed to use the same fucking template that every other bootstrap website uses,
+          downloaded straight from
+          The Web™</p>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-6">
+        <i class="fa fa-paper-plane fa-2xl" aria-hidden="true" style="color: #fa703e"></i>
+        <h4>This Set of Four Icons</h4>
+        <p>Look at this cool set of four icons describing different things about us! We use four, because it's the
+          default.</p>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-6">
+        <i class="fa-solid fa-thumbs-up fa-2xl" style="color: #fa703e"></i>
+        <h4>Lots of effort</h4>
+        <p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-6">
+        <i class="fa-solid fa-heart fa-2xl" style="color: #fa703e"></i>
+        <h4>Made with Love</h4>
+        <p>Because nothing says hard work and talent like editing a few lines of text.</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+  <div id="forth-section" class="container-fluid flex-content text-center">
+    <div class="photos row">
+      <img src="/Exercise_A/assets/images/1.jpg" alt="images" class="col-12 col-xl-3 col-lg-6">
+      <img src="/Exercise_A/assets/images/2.jpg" alt="images" class="col-12 col-xl-3 col-lg-6">
+      <img src="/Exercise_A/assets/images/3.jpg" alt="images" class="col-12 col-xl-3 col-lg-6">
+      <img src="/Exercise_A/assets/images/4.jpg" alt="images" class="col-12 col-xl-3 col-lg-6">
+    </div>
+  </div>
+  <div class="container-fluid forth-section-description">
+    <div class="text-center flex-content">
+      <h3>Seriously, It's This Fucking Template !</h3>
+      <button class="btn btn-light white-button">THAT'S AMAZING</button>
+    </div>
+  </div>
 
-    <!-- 
+  <div id="last-section" class="container-fluid flex-content text-center">
+    <h3>My Contact Information</h3>
+    <hr>
+    <p>Here's my phone number and email address, because hey that's part of the template and why would you not include
+      that on
+      your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the
+      companies
+      wanting my insane website design skills.</p>
+    <br>
+    <p>Honestly this template does look really nice, though.
+    </p>
+    <div class="contact-method container">
+      <div class="row">
+        <figure class="col-xl-6">
+          <i class="fa-solid fa-phone fa-3x mb-1" style="color: #00040a;"></i>
+          <figcaption>+1-608-317-1888</figcaption>
+        </figure>
+        <figure class="col-xl-6">
+          <i class="fa fa-envelope-o fa-3x mb-1"></i>
+          <figcaption>
+            <a id="contact-email">holy@shit.com</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Can use Jumbotron -->
+  <!-- Second Section -->
+
+  <!-- Four icons -->
+  <!-- Four pictures with overlay etc -->
+  <!-- contact me container -->
+
+  <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+
+  <!--
       All of your script tags for your JavaScript Bootstrap components, refer to the Practice folder
 
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="./assets/javascript/script.js"></script>
+</body>
+
 </html>
