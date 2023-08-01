@@ -11,12 +11,28 @@
       
       You will need:
       Animate CSS
+      
       Bootstrap CSS
       You own custom stylesheet
       FontAwesome
 
       Refer to the Practice directory
+
     -->
+    <link rel="stylesheet" href="/Exercise_A/assets/css/animate.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1d76f365f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/Exercise_A/assets/css/style.css" />
   </head>
 
   <!-- Nav bar setup -->
@@ -24,13 +40,235 @@
   <body data-spy="scroll" data-target=".navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
-    <!-- Nav bar items -->
 
-    <!-- Can use Jumbotron -->
+    <!-- Nav bar items -->
+    <div class="container ">
+      <img src="/Exercise_A/assets/images/header.jpg" alt="" class="bg-img " />
+    </div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="" class="navbar-brand">The only boostrap page</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About </a>
+              </li>
+              <li class="nav-item">
+                <a href="#four-icons" class="nav-link">Four Icons </a>
+              </li>
+              <li class="nav-item">
+                <a href="#bullshit" class="nav-link">Bullshit </a>
+              </li>
+              <li class="nav-item">
+                <a href="#call-me" class="nav-link">Call me </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Can use Jumbotron -->
+      <section  class="banner text-center d-flex align-items-center vh-100">
+        <div class="container-fluid">
+          <h1 class="display-4">Hey Look, It's Every Bootstrap Website Ever</h1>
+          <hr class="my-4 hr" />
+          <p class="my-5 lead">
+            Take a look around at the same fucking bootstrap page you've seen
+            ten million times before! Featuring all the same things as those
+            pages!
+          </p>
+          <p class="lead">
+            <a class="btn btn-primary btn-l p-3" href="#" role="button"
+              >This button makes the page scroll</a
+            >
+          </p>
+        </div>
+      </section>
+    </header>
+
     <!-- Second Section -->
+    <section id="about"  class="text-center p-5 info text-light">
+      <div class="container-fluid">
+        <h2 class="h2 text-light py-5">
+          Want to make an original website yourself?
+        </h2>
+        <hr class="my-3 hr hr-dark" />
+        <div class="container">
+          <p class="lead my-5 ">
+            Forget that! Who would ever want to put in all of that effort for a
+            website? Just open up your web browser and type "bootstrap template"
+            into your favorite search engine, like Yahoo! or Bing, and you're on
+            your way! There are hundreds of templates to choose from, but go ahead
+            and pick this same exact template from the first result on google,
+            edit a few lines, and you're on your way! No one will notice!
+          </p>
+        </div>
+        
+        <a href="" class="btn bg-dark btn-l p-3 text-uppercase text-light"
+          >Google that shit</a
+        >
+      </div>
+    </section>
 
     <!-- Four icons -->
+    <section id="four-icons " class="py-5 bg-dark text-light">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading py-3">So Fucking Creative</h2>
+            <hr class="hr" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-globe wow bounceIn text-primary text-danger my-3"
+              ></i>
+              <h3 ">This Fucking Template</h3>
+
+              <p class="text-muted">
+                Guaranteed to use the same fucking template that every other
+                bootstrap website uses, downloaded straight from The Web&#0153;
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-paper-plane wow bounceIn text-primary text-danger my-3"
+                data-wow-delay=".1s"
+              ></i>
+              <h3>This Set of Four Icons</h3>
+              <p class="text-muted">
+                Look at this cool set of four icons describing different things
+                about us! We use four, because it's the default.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-thumbs-up wow bounceIn text-primary text-danger my-3"
+                data-wow-delay=".2s"
+              ></i>
+              <h3>Lots of effort</h3>
+              <p class="text-muted">
+                We even changed some of the icons! We take the extra effort to
+                make our designs truly original.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i
+                class="fa fa-4x fa-heart wow bounceIn text-primary text-danger my-3"
+                data-wow-delay=".3s"
+              ></i>
+              <h3>Made with Love</h3>
+              <p class="text-muted">
+                Because nothing says hard work and talent like editing a few
+                lines of text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
     <!-- Four pictures with overlay etc -->
+
+    <section id="bullshit" class="gallery bg-dark py-5 ">
+      <div class="overflow-hidden">
+        <div class="row">
+          <div class=" bg-warning text-white col-sm-3 img-hover">
+            <img class="" src="/Exercise_A/assets/images/1.jpg" alt="Card image">
+            <div class=" img-overlay">
+              <div>
+                <h5 class="card-title">One Thing</h5>
+                <p class="card-text">Look</p>
+              </div>
+            </div>
+          </div>
+          <div class=" bg-warning text-white col-sm-3 img-hover">
+            <img class="" src="/Exercise_A/assets/images/2.jpg" alt="Card image">
+            <div class=" img-overlay">
+              <div>
+                <h5 class="card-title">One Thing</h5>
+                 <p class="card-text">Look</p>
+              </div>
+            </div>
+          </div>
+          <div class=" bg-warning text-white col-sm-3 img-hover">
+            <img class="" src="/Exercise_A/assets/images/3.jpg" alt="Card image">
+            <div class=" img-overlay">
+              <div>
+                <h5 class="card-title">One Thing</h5>
+                 <p class="card-text">Look</p>
+              </div>
+            </div>
+          </div>
+          <div class=" bg-warning text-white col-sm-3 img-hover">
+            <img class="" src="/Exercise_A/assets/images/4.jpg" alt="Card image">
+            <div class=" img-overlay">
+              <div>
+                <h5 class="card-title">One Thing</h5>
+                <p class="card-text">Look</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="bg-dark py-5 text-light">
+      <div class="container text-center">
+          <div>
+              <h2 class="py-4">Seriously, It's This Fucking Template !</h2>
+              <a href="#" class="btn">That's Amazing!</a>
+          </div>
+      </div>
+  </aside>
+
+  <section id="call-me" class="bg-dark py-5 text-center text-light">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h2 class="h2">My Contact Information</h2>
+                <hr class="primary">
+                <div class="container-sm">
+                  <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+                  <p>Honestly this template does look really nice, though.</p>
+                </div>
+                
+            </div>
+            <div class="col-sm-6">
+                <i class="fa fa-phone fa-3x py-4"></i>
+                <p>+1-608-317-1888</p>
+            </div>
+            <div class="col-sm-6">
+                <i class="fa fa-envelope-o fa-3x py-4" data-wow-delay=".1s"></i>
+                <p><a href="" class="text-danger">holy@shit.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- contact me container -->
 
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
@@ -41,5 +279,30 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- cdn smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- personal js script -->
+    <script src="/Exercise_A/assets/js/script.js"></script>
+    <script src="/Exercise_A/assets/js/wow.js"></script>
   </body>
 </html>

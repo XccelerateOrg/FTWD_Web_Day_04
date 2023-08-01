@@ -65,3 +65,5 @@ Method one:
 ## What is one thing that I learned from doing this project? :books:
 
 (Fill whatever you would like here)
+
+Still learning but mostly all about boostrap!
