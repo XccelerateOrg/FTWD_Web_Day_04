@@ -1,3 +1,57 @@
 /* 
 Add in your custom style such that you can develop the wonderful website within the exercise. 
 */
+/*!
+ * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.subheader{
+    font-size: xx-large;
+}
+
+hr{
+    width: 50px;
+    height: 3px;
+    background-color: red;
+}
+
+.navbar-brand,.nav-link{
+    -webkit-text-fill-color: rgb(196, 192, 192);
+    font-weight: bold;
+    
+}
+
+.nav-hero-container{
+    background-image: url('../images/header.jpg');
+}
+
+.hero-container{
+    padding: 12%;
+}
+
+#second{
+    background-color: #f05f40;
+
+}
+
+.card-img-overlay:hover{
+    display: inline-block;
+    transition: all 0.35s;
+}
+
+#templateDiv{
+    background-color: rgb(24, 23, 23);
+    color:white;
+}

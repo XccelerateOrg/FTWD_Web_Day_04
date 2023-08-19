@@ -12,27 +12,209 @@
       You will need:
       Animate CSS
       Bootstrap CSS
+      
       You own custom stylesheet
       FontAwesome
 
       Refer to the Practice directory
     -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+  rel="stylesheet"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </head>
 
   <!-- Nav bar setup -->
 
-  <body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target="#navbar">
     <!-- data-spy="scroll" data-target=".navbar" data-offset="50" -->
     <!--Allows us to track the progress of the scroll -->
     <!-- Nav bar items -->
-
+    <div class="nav-hero-container ">
+    <nav id="navbar" class="navbar bg-transparent border-bottom border-white 
+     navbar-expand-lg navbar-light d-flex flex-row justify-content-between  bg-light">
+      <a class="navbar-brand " href="#">THE ONLY BOOTSTRAP PAGE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        
+        <ul class="navbar-nav justify-content-end  mr-auto w-100 ">
+          <li class="nav-item ">
+            <a class="nav-link " href="#second">ABOUT </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#icons">FOUR ICONS</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link " href="#pics">BULLSHIT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#contact">CALL ME</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <!-- /.container-fluid -->
+ 
     <!-- Can use Jumbotron -->
     <!-- Second Section -->
+    <div class="jumbotron bg-transparent  jumbotron-fluid" id="hero">
+      <div class="hero-container container-fluid container d-flex flex-column text-center  align-items-center">
+        <h1 style="color:white; font-weight: bold;"
+        class=" display-4">HEY LOOK, IT'S EVERY<br/>BOOTSTRAP WEBSITE EVER</h1>
+        <hr/>
+        <p class="lead" style="color:rgb(168, 164, 155);">Take a look around at the same fucking bootstrap page you've seen
+        ten million times before! Featuring all the same things as those pages!</p>
+        <button type="button" style="background-color: #f05f40;"
+        class="btn  py-3 rounded-pill back btn-primary">THIS BUTTON MAKES THE PAGE SCROLL</button>
+      </div>
+    </div>
+  </div>
 
+    <div id="second" class=" text-white  
+    jumbotron jumbotron-fluid">
+      <div class="container-fluid container d-flex flex-column text-center   align-items-center">
+        <h1 
+        class="subheader">Want to make an original website yourself?</h1>
+        <hr/>
+        <p class="lead">Forget that! Who would ever want to put in all of that effort for a website?
+           Just open up your web browser and type "bootstrap template" into your favorite search
+            engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+        <button type="button" class="btn rounded-pill bg-white text-black btn-primary">GOOGLE THAT SHIT</button>
+      </div>
+    </div>
+    
     <!-- Four icons -->
-    <!-- Four pictures with overlay etc -->
-    <!-- contact me container -->
+    <div id="icons" class=" text-black m-0  bg-white 
+    jumbotron jumbotron-fluid">
+      <div class=" container d-flex flex-column text-center w-100   align-items-center">
+        <h1 
+        class="subheader">So Fucking Creative</h1>
+        <hr/>
+        <div class="d-flex flex-row w-100 justify-content-between pt-4" >
+          <div class="d-flex flex-column  align-content-center justify-content-between ">
+            <i class="fa-4x fa-solid fa-earth-americas animate__animated animate__bounceIn " style="color: #f05f40;"></i>
+            <h3>This Fucking Template
+            </h3>
+            <p>Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web™
 
+            </p>
+          </div>
+          <div>
+            <i class="fa-4x fa-solid fa-paper-plane animate__animated animate__bounceIn " style="color: #f05f40;"></i>
+            <h3>This Set of Four Icons
+            </h3>
+            <p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.
+
+            </p>
+          </div>
+          <div>
+            <i class="fa-4x fa-solid fa-thumbs-up animate__animated animate__bounceIn " style="color: #f05f40;"></i>
+            <h3>Lots of effort
+            </h3>
+            <p>We even changed some of the icons! We take the extra effort to make our designs truly original.
+
+            </p>
+          </div>
+          <div>
+            <i class="fa-4x fa-solid fa-heart animate__animated animate__bounceIn" style="color: #f05f40;"></i>
+            <h3>Made with Love
+            </h3>
+            <p>Because nothing says hard work and talent like editing a few lines of text.
+
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Four pictures with overlay etc -->
+    <div id="pics" class=" text-black m-0 p-0 bg-white d-flex flex-row w-100 
+    jumbotron jumbotron-fluid">
+      <div class="bg-image hover-overlay ripple shadow-1-strong w-25 " data-mdb-ripple-color="light"
+    >
+        <img src="./assets/images/1.jpg" class="w-100" alt="Louvre" />
+        <a href="#!">
+          <div class="mask text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(240, 95, 64,0.8)">
+            <p>ONE THING</p>
+            <p style="font-size: 24px;">Look</p>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image hover-overlay ripple shadow-1-strong w-25 " data-mdb-ripple-color="light"
+    >
+        <img src="./assets/images/2.jpg" class="w-100" alt="Louvre" />
+        <a href="#!">
+          <div class="mask text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(240, 95, 64,0.8)">
+            <p>TWO THING</p>
+            <p style="font-size: 24px;">At</p>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image hover-overlay ripple shadow-1-strong w-25 " data-mdb-ripple-color="light"
+    >
+        <img src="./assets/images/3.jpg" class="w-100" alt="Louvre" />
+        <a href="#!">
+          <div class="mask text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(240, 95, 64,0.8)">
+            <p>THREE THING</p>
+            <p style="font-size: 24px;">This</p>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image hover-overlay ripple shadow-1-strong w-25 " data-mdb-ripple-color="light"
+    >
+        <img src="./assets/images/4.jpg" class="w-100" alt="Louvre" />
+        <a href="#!">
+          <div class="mask text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(240, 95, 64,0.8)">
+            <p>FOUR THING</p>
+            <p style="font-size: 24px;">Bullshit</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column py-5 w-100 align-items-center m-0" id="templateDiv">
+      <h3>Seriously,It's This Fucking Template!</h3>
+      <button class="btn rounded-pill bg-white text-black" style="font-size: medium; font-weight: 600;">THAT'S AMAZING!</button>
+    </div>
+    <!-- contact me container -->
+    <section id="contact">
+      <div class="container py-5">
+          <div class="d-flex flex-column align-items-center">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="section-heading">My Contact Information</h2>
+                  <hr class="primary">
+                  <p>Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+                  <p>Honestly this template does look really nice, though.</p>
+              </div>
+              <div class="d-flex flex-row justify-content-between w-50">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <p>+1-608-317-1888</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa-regular fa-envelope fa-3x wow bounceIn animate__animated animate__bounceIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
+                    <p><a href="mailto:tab@report.ly">holy@shit.com</a></p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
     <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
 
     <!-- 
@@ -41,5 +223,11 @@
       If you do not use CSS to do smooth scroll then... You need the CDN for Smooth Scroll
       Your custom JavaScript
      -->
+     
   </body>
+  <script src="./assets/js/script.js"></script>
+     <script src="./assets/js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </html>
